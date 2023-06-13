@@ -1,0 +1,91 @@
+angular.module('servicos', ['ngResource']);
+
+angular.module('servicos').factory("Componente", ["$resource", function($resource) {
+    return $resource("index.php?r=componenteCurricular/get&id=:id", {
+        id: "@id"
+    }, {
+        query: {
+            url: "index.php?r=componenteCurricular/todos",
+            method: "GET",
+            isArray: true,
+        },
+    });
+}]);
+
+angular.module('servicos').factory("PreinscricaoComponente", ["$resource", function($resource) {
+    return $resource("index.php?r=preinscricaoComponente/get&cpf=:cpf", {
+        cpf: "@cpf"
+    }, {
+        get: {
+			url: "index.php?r=preinscricaoComponente/get",
+            isArray: true
+        }
+    });
+}]);
+
+angular.module('servicos').factory("Habilitacao", ["$resource", function($resource) {
+    return $resource("index.php?r=habilitacao/get&cpf=:cpf", {
+        cpf: "@cpf"
+    }, {
+        get: {
+            isArray: true,
+        }
+    });
+}]);
+
+angular.module('servicos').factory("Oferta", ["$resource", function($resource) {
+    return $resource("index.php?r=oferta/get&id=:id", {
+        id: "@id"
+    }, {
+        query: {
+            url: "index.php?r=oferta/todos",
+            method: "GET",
+            isArray: true,
+        },
+        periodo: {
+            url: "index.php?r=oferta/periodo&deMes=:deMes&deAno=:deAno&ateMes=:ateMes&ateAno=:ateAno",
+            method: "GET",
+            isArray: true,
+        },
+        // Retorna as ofertas do período que está aberto no momento
+        doPeriodoAberto: {
+            url: "index.php?r=oferta/doPeriodoAberto",
+            method: "GET",
+            isArray: true,
+        }
+    });
+}]);
+
+/*angular.module('servicos').factory("InscricaoComponente", ["$resource", function($resource) {
+    return $resource("index.php?r=inscricaoComponente/get&cpf=:cpf", {
+        cpf: "@cpf"
+    }, {
+        get: {
+			url: "index.php?r=inscricaoComponente/get",
+            isArray: true
+        }
+    });
+}]);*/
+
+angular.module('servicos').factory("InscricaoOferta", ["$resource", function($resource) {
+    return $resource("index.php?r=inscricaoOferta/get&cpf=:cpf", {
+        cpf: "@cpf"
+    }, {
+        get: {
+			url: "index.php?r=inscricaoOferta/get",
+            isArray: true
+        }
+    });
+}]);
+
+angular.module('servicos').factory("Configuracao", ["$resource", function($resource) {
+	return $resource("index.php?r=configuracao/get&atributo=:atributo", {
+        atributo: "@atributo"
+    }, {
+        query: {
+            url: "index.php?r=configuracao/todos",
+            method: "GET",
+            isArray: true,
+        }
+    });
+}]);

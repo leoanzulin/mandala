@@ -1,0 +1,305 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: corbel;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 1.9em;
+  padding-top: 8px;
+}
+
+h2 {
+  font-size: 1.7em;
+  padding-top: 8px;
+}
+
+h3 {
+  font-size: 1.3em;
+  padding-top: 2px;
+}
+
+p.corpo {
+  padding-top: 40px;
+  line-height: 1.6;
+  text-align: justify;
+  font-size: 1.05em;
+}
+
+p.data {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+div.fundo-frente {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/modelos_certificados/modelo_especializacao_frente.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div.fundo-verso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/modelos_certificados/modelo_especializacao_verso.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div.conteudo {
+  position: absolute;
+  top: 170px;
+  left: 110px;
+  width: 842px;
+  height: 480px;
+  padding: 30px;
+  padding-top: 60px;
+}
+
+div.assinatura-digital-1 {
+  position:absolute;
+  top: 570px;
+  left: 260px;
+}
+
+div.assinatura-digital-2 {
+  position:absolute;
+  top: 560px;
+  right: 282px;
+}
+
+div.assinatura-glauber-verso{
+  position:absolute;
+  top: 560px;
+  right: 160px;
+}
+
+div.assinatura-mill-verso{
+  position:absolute;
+  top: 640px;
+  right: 170px;
+}
+
+
+div.assinatura1, div.assinatura2 {
+  top: 590px;
+  position: fixed;
+  width: 438px;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 1.1em;
+}
+
+div.assinatura1 {
+  left: 122px;
+
+}
+
+div.assinatura2 {
+  right: 122px;
+}
+
+
+
+div.cabecalho-verso {
+  position: absolute;
+  top: 30px;
+  left: 110px;
+  width: 842px;
+  height: 480px;
+  padding: 30px;
+}
+
+h2.titulo-verso {
+  font-size: 1.35em;
+  padding-top: 2px;
+}
+
+h3.subtitulo-verso {
+  font-size: 1.1em;
+  padding-top: 2px;
+}
+h3.subtitulo-verso2 {
+  font-size: 1.1em;
+  padding-top: 2px;
+}
+
+div.cabecalho-bolinha {
+  position: absolute;
+  left: 598px;
+  top: 84px;
+  font-family: calibri;
+}
+
+span.bolinha {
+  font-size: 0.65em;
+}
+
+div.div-nome-aluno {
+  position: absolute;
+  top: 150px;
+  left: 85px;
+}
+
+p.nome-aluno {
+  font-size: 1.05em;
+}
+
+div.tabela-componentes-cursados {
+  position: absolute;
+  top: 210px;
+  left: 85px;
+  width: 685px;
+}
+
+table {
+  width: 685px;
+  /* width: 100%; */
+  border-collapse: collapse;
+}
+table th, table td {
+  border: 1px solid #CCC;
+  font-size: 0.55em;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+th {
+  font-weight: normal;
+}
+
+th.coluna-docente {
+  width: 250px;
+}
+th.coluna-nota-carga-horaria {
+  width: 45px;
+}
+td.nota-carga-horaria {
+  text-align: right;
+}
+
+div.tabela-tcc {
+  position: absolute;
+  left: 85px;
+  top: 630px;
+  width: 330px;
+  font-size: 12px;
+}
+div.nome-tcc {
+  position: absolute;
+  left: 90px;
+  top: 635px;
+  font-size: 10px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  width: 300px; 
+}
+table.tcc td {
+  font-size: 20px;
+  padding: 10px;
+}
+
+div.tabela-media {
+  position: absolute;
+  left: 440px;
+  top: 630px;
+  width: 330px;
+  font-size: 12px;
+}
+table.totais td {
+  width: 50%;
+  font-size: 20px;
+  padding: 10px;
+}
+
+div.quadro-processo {
+  position: absolute;
+  top: 690px;
+  left: 440px;
+  width: 330px;
+  border: 1px solid #CCC;
+  padding: 0px;
+  font-size: 0.7em;
+  font-family: calibri;
+}
+p.processo {
+  padding: 5px;
+  margin-top: -3px;
+}
+
+div.quadro-nome-social,
+div.quadro-periodo,
+div.quadro-forma-avaliacao,
+div.quadro-coordenador-1,
+div.quadro-coordenador-2,
+div.quadro-registro {
+  position: absolute;
+  border: 1px solid #000;
+  top: 165px;
+  right: 85px;
+  width: 210px;
+  padding: 7px;
+  font-size: 0.65em;
+  line-height: 1.5;
+  text-align: justify;
+  font-family: calibri;
+}
+p.quadro {
+  margin-top: -4px;
+  line-height: 1.25em;
+}
+p.linha-preenchimento-2 {
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+div.quadro-periodo {
+  top: 312px;
+}
+div.quadro-forma-avaliacao {
+  top: 449px;
+  height: 70px;
+}
+div.quadro-coordenador-1 {
+  
+  top: 542px;
+  height: 70px;
+  text-align: center;
+  line-height:1;
+
+}
+
+div.quadro-coordenador-2 {
+  top: 635px;
+  height: 70px;
+  line-height:1;
+  text-align: center;
+}
+p.coordenador {
+  margin-top: 70px;
+}
+div.quadro-registro {
+  top: 635px;
+}
+
+img.assinatura-verso-1 {
+  position: absolute;
+  top: 550px;
+  right: 200px;
+}
+img.assinatura-verso-2 {
+  position: absolute;
+  top: 600px;
+  right: 200px;
+}

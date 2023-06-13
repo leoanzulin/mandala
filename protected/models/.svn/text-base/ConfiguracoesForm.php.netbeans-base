@@ -1,0 +1,56 @@
+<?php
+
+class ConfiguracoesForm extends CFormModel
+{
+
+    public $inicioPeriodo;
+    public $fimPeriodo;
+
+    public function rules()
+    {
+        return array(
+            array('inicioPeriodo, fimPeriodo', 'required'),
+            array('inicioPeriodo, fimPeriodo', 'ehData'),
+        );
+    }
+
+    public function attributeLabels()
+    {
+        return array(
+            'inicioPeriodo' => 'Início do período ofertado',
+            'fimPeriodo' => 'Fim do período ofertado',
+        );
+    }
+
+    public function ehData($atributo, $params)
+    {
+        if (!preg_match('/^\d\d?\/\d\d\d\d$/', $this->$atributo)) {
+            $this->addError($atributo, 'O período deve ter o formato MM/AAAA');
+        }
+    }
+
+    public function getMesInicio()
+    {
+        $partes = explode('/', $this->inicioPeriodo);
+        return $partes[0];
+    }
+
+    public function getAnoInicio()
+    {
+        $partes = explode('/', $this->inicioPeriodo);
+        return $partes[1];
+    }
+
+    public function getMesFim()
+    {
+        $partes = explode('/', $this->fimPeriodo);
+        return $partes[0];
+    }
+
+    public function getAnoFim()
+    {
+        $partes = explode('/', $this->fimPeriodo);
+        return $partes[1];
+    }
+
+}

@@ -1,0 +1,11 @@
+<?php
+/**
+ * @property Inscricao $inscricao
+ */
+?>
+
+<h1>Envio de documentos realizado com sucesso!</h1>
+<br>
+<p>Caro(a) <b><?php echo $inscricao->nome . ' ' . $inscricao->sobrenome; ?></b>, seus documentos foram enviados com sucesso!</p>
+
+<p>Em breve enviaremos um e-mail para seu e-mail <b><?php echo $inscricao->email; ?></b> com mais informações.</p>

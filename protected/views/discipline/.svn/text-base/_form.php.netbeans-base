@@ -1,0 +1,54 @@
+<?php
+/* @var $this DisciplineController */
+/* @var $model Discipline */
+/* @var $form CActiveForm */
+?>
+
+<div class="form">
+
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'discipline-form',
+	'enableAjaxValidation'=>false,
+)); ?>
+
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
+
+	<?php echo $form->errorSummary($model); ?>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'course_id'); ?>
+		<?php echo $form->textField($model,'course_id'); ?>
+		<?php echo $form->error($model,'course_id'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'discipline_name'); ?>
+		<?php echo $form->textField($model,'discipline_name',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'discipline_name'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'menu'); ?>
+		<?php echo $form->textArea($model,'menu',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'menu'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'workload'); ?>
+		<?php echo $form->textField($model,'workload'); ?>
+		<?php echo $form->error($model,'workload'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'objective'); ?>
+		<?php echo $form->textArea($model,'objective',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'objective'); ?>
+	</div>
+
+	<div class="row buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	</div>
+
+<?php $this->endWidget(); ?>
+
+</div><!-- form -->

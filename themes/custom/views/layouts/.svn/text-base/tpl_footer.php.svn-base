@@ -1,0 +1,85 @@
+<section id="bottom">
+    <div class="container bottom"> 
+        <div class="row-fluid ">
+            <div class="span3">
+                <h5>Realização</h5>
+                <p><a href="http://sistemas3.sead.ufscar.br/ojs/index.php/horizonte"><img src="<?php echo $baseURL; ?>/images/logo_horizontes.png" style="width: 80%"></a></p>
+                <br>
+                <h5>Apoio</h5>
+                <p><a href="http://www.sead.ufscar.br/"><img src="<?php echo $baseURL; ?>/images/branco_h.png" style="width: 50%;"></a></p>
+                <br>
+                <p><a href="http://www.ufscar.br/"><img src="<?php echo $baseURL; ?>/images/ufscar.png" style="width: 50%;"></a></p>
+            </div>
+
+            <?php
+            foreach (Pages::model()->findAll($criteria) as $pagina)
+                $menuPaginas1[] = array('label' => $pagina->page_name, 'url' => array('/pages/view&id=' . $pagina->page_id), 'visible' => Yii::app()->user->isGuest, 'linkOptions');
+            $acesso[] = array('label' => 'Acessar Sistema', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest, 'linkOptions');
+            $acesso[] = array('label' => 'Sair (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest, 'linkOptions');
+            ?>
+            <div class="span3">
+                <h5>Mapa do site</h5>
+                <?php
+                $this->widget('zii.widgets.CMenu', array(
+                    'htmlOptions' => array('class' => 'sitemap'),
+                    'itemCssClass' => 'item-test',
+                    'encodeLabel' => false,
+                    'items' => $menuPaginas1,
+                ));
+                ?>
+            </div>
+
+            <div class="span4">
+                <h5>Contato</h5>
+                <p>
+                    Grupo Horizonte<br>
+                    Secretaria do Curso Educação e Tecnologias<br>
+                    Universidade Federal de São Carlos<br>
+                    E-mail: edutec@ead.ufscar.br<br>
+                    WhatsApp: (16) 98124-2040<br>
+                    Facebook:<br>
+                    Youtube:<br>
+                </p>
+                <br>
+                <h5>Acesso</h5>
+                <p><?php
+                    $this->widget('zii.widgets.CMenu', array(
+                        'htmlOptions' => array('class' => 'sitemap'),
+                        'itemCssClass' => 'item-test',
+                        'encodeLabel' => false,
+                        'items' => $acesso));
+                    ?></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            &copy; 2016 Educação e Tecnologias
+            <!--        	Copyright &copy; 2012. Designed by webapplicationthemes.com - High quality HTML Theme-->
+        </div>
+    </div>
+</footer>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-transition.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-alert.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-modal.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-dropdown.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-scrollspy.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-tab.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-tooltip.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-popover.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-button.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-collapse.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-carousel.js"></script>
+<script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap-typeahead.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+
+</body>
+</html>

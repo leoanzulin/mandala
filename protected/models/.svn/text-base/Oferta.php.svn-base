@@ -1,0 +1,84 @@
+<?php
+
+/**
+ * This is the model class for table "oferta".
+ *
+ * The followings are the available columns in table 'oferta':
+ * @property string $id
+ * @property string $componente_curricular_id
+ * @property integer $ano
+ * @property integer $mes
+ *
+ * The followings are the available model relations:
+ * @property Matricula[] $matriculas
+ * @property ComponenteCurricular $componenteCurricular
+ */
+class Oferta extends CActiveRecord
+{
+
+    public function tableName()
+    {
+        return 'oferta';
+    }
+
+    public function rules()
+    {
+        return array(
+            array('componente_curricular_id, ano, mes', 'required'),
+            array('ano, mes', 'numerical', 'integerOnly' => true),
+            array('id, componente_curricular_id, ano, mes', 'safe', 'on' => 'search'),
+        );
+    }
+
+    public function relations()
+    {
+        return array(
+            'matriculas' => array(self::MANY_MANY, 'Matricula', 'matricula_oferta(oferta_id, matricula_id)'),
+            'componenteCurricular' => array(self::BELONGS_TO, 'ComponenteCurricular', 'componente_curricular_id'),
+            'inscricoes' => array(self::MANY_MANY, 'Inscricao', 'inscricao_oferta(inscricao_id, oferta_id)'),
+        );
+    }
+
+    public function attributeLabels()
+    {
+        return array(
+            'id' => 'ID',
+            'componente_curricular_id' => 'Componente Curricular',
+            'ano' => 'Ano',
+            'mes' => 'Mês',
+        );
+    }
+
+    public function search()
+    {
+        $criteria = new CDbCriteria;
+        $criteria->compare('id', $this->id, true);
+        $criteria->compare('componente_curricular_id', $this->componente_curricular_id, true);
+        $criteria->compare('ano', $this->ano);
+        $criteria->compare('mes', $this->mes);
+        return new CActiveDataProvider($this, array(
+            'criteria' => $criteria,
+        ));
+    }
+
+    public static function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
+
+    public function asArray()
+    {
+        return array(
+            'id' => $this->id,
+            'componente_id' => $this->componente_curricular_id,
+            'ano' => $this->ano,
+            'mes' => $this->mes,
+        );
+    }
+
+    public function toJSON()
+    {
+        return json_encode($this->asArray());
+    }
+
+}

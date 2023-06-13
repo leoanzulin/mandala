@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/edtec/!svn/ver/72/trunk/protected/views/admin
+END
+visualizarPreInscricoesEmComponentes.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/edtec/!svn/ver/70/trunk/protected/views/admin/visualizarPreInscricoesEmComponentes.php
+END
+visualizarMatriculados.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/edtec/!svn/ver/71/trunk/protected/views/admin/visualizarMatriculados.php
+END
+gerenciarOfertas.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/edtec/!svn/ver/69/trunk/protected/views/admin/gerenciarOfertas.php
+END
+relatorios.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/edtec/!svn/ver/59/trunk/protected/views/admin/relatorios.php
+END
+configuracoes.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/edtec/!svn/ver/55/trunk/protected/views/admin/configuracoes.php
+END
+visualizarInscritos.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/edtec/!svn/ver/71/trunk/protected/views/admin/visualizarInscritos.php
+END
+gerenciarPreInscricoes.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/edtec/!svn/ver/72/trunk/protected/views/admin/gerenciarPreInscricoes.php
+END
+visualizarPreInscricao.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/edtec/!svn/ver/70/trunk/protected/views/admin/visualizarPreInscricao.php
+END

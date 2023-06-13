@@ -1,0 +1,177 @@
+<?php
+
+class AlunoController extends Controller
+{
+
+    public function actionIndex()
+    {
+        $nome = Usuario::model()->findByPk(Yii::app()->user->id)->nome;
+        $this->render('index', array('nome' => $nome));
+    }
+
+    public function actionSimulador()
+    {
+        $inscricao = Inscricao::model()->findByCpf(Yii::app()->user->id);
+
+        if (!empty($_POST['Preinscricao'])) {
+
+            PreinscricaoComponente::model()->deleteAll('inscricao_id = ' . $inscricao->id);
+            $salvoComSucesso = true;
+            $erros = array();
+
+            foreach ($_POST['Preinscricao']['componentes'] as $item) {
+                $preinscricaoComponente = new PreinscricaoComponente();
+                $preinscricaoComponente->componente_curricular_id = $item['componente_id'];
+                $preinscricaoComponente->inscricao_id = $item['inscricao_id'];
+                $preinscricaoComponente->periodo = $item['periodo'];
+
+                if (!$preinscricaoComponente->save()) {
+                    $salvoComSucesso = false;
+                    array_push($erros, $preinscricaoComponente->errors);
+                }
+            }
+
+            if ($salvoComSucesso) {
+                Yii::app()->user->setFlash('notificacao', 'Simulação salva com sucesso!');
+                Yii::log("{$inscricao} salvou simulação de sua grade curricular.", 'info', 'system.controllers.AlunoController');
+            } else {
+                Yii::app()->user->setFlash('notificacao-negativa', 'Problema ao salvar a simulação. Erros: ' . print_r($erros, true));
+                Yii::log("{$inscricao} teve problemas ao salvar a simulação de sua grade curriular. Erros: " . print_r($erros, true), 'error', 'system.controllers.AlunoController');
+            }
+        }
+
+        $cs = Yii::app()->getClientScript();
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/bower_components/angular/angular.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/bower_components/angular-resource/angular-resource.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/servicos.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/auxilio_preinscricao.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/ui-bootstrap-tpls-1.3.3.min.js');
+
+        $this->render('simulador', array(
+            'model' => $inscricao,
+            'inscricaoId' => $inscricao->id,
+        ));
+    }
+
+    /**
+     * Tela de inscrição dos alunos em componentes curriculares.
+     * 
+     * @throws CHttpException
+     */
+    public function actionInscricao()
+    {
+        $inscricao = Inscricao::model()->findByCpf(Yii::app()->user->id);
+
+        if (isset($_POST['Inscricao'])) {
+
+            $deMes = Configuracao::model()->findByPk('inscricoes.inicio_periodo_aberto.mes')->valor;
+            $deAno = Configuracao::model()->findByPk('inscricoes.inicio_periodo_aberto.ano')->valor;
+            $ateMes = Configuracao::model()->findByPk('inscricoes.fim_periodo_aberto.mes')->valor;
+            $ateAno = Configuracao::model()->findByPk('inscricoes.fim_periodo_aberto.ano')->valor;
+            InscricaoOferta::model()->deleteDentroDoPeriodo($inscricao, $deMes, $deAno, $ateMes, $ateAno);
+
+            $salvoComSucesso = true;
+
+            foreach ($_POST['Inscricao'] as $periodo => $componentes) {
+                $partes = explode('_', $periodo);
+                $ano = $partes[0];
+                $mes = $partes[1];
+                foreach ($componentes as $id => $x) {
+
+                    $ofertaSendoInscrita = Oferta::model()->findByAttributes(array(
+                        'ano' => $ano,
+                        'mes' => $mes,
+                        'componente_curricular_id' => $id,
+                    ));
+
+                    $inscricaoOferta = new InscricaoOferta();
+                    $inscricaoOferta->inscricao_id = $inscricao->id;
+                    $inscricaoOferta->oferta_id = $ofertaSendoInscrita->id;
+                    if (!$inscricaoOferta->save()) {
+                        $salvoComSucesso = false;
+                    }
+                }
+            }
+
+            if ($salvoComSucesso) {
+                Yii::app()->user->setFlash('notificacao', 'Inscrição em ofertas feitas com sucesso!');
+                Yii::log("{$inscricao} fez inscrições em ofertas.", 'info', 'system.controllers.AlunoController');
+            } else {
+                Yii::app()->user->setFlash('notificacao-negativa', 'Problema na inscrição em ofertas');
+                Yii::log("{$inscricao} teve problemas na inscrição em ofertas.", 'error', 'system.controllers.AlunoController');
+            }
+        }
+
+        $cs = Yii::app()->getClientScript();
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/bower_components/angular/angular.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/bower_components/angular-resource/angular-resource.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/ui-bootstrap-tpls-1.3.3.min.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/servicos.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/auxilio_inscricao_componentes.js');
+
+        $this->render('inscricao', array(
+            'inscricao' => $inscricao,
+        ));
+    }
+
+    public function actionPerfil()
+    {
+        $inscricao = Inscricao::model()->findByCpf(Yii::app()->user->id);
+        $inscricao->candidato_a_bolsa = $inscricao->candidato_a_bolsa == true ? 'Sim' : 'Não';
+
+        $this->render('perfil', array(
+            'model' => $inscricao,
+            'formacoes' => $inscricao->formacoes,
+        ));
+    }
+
+    public function actionEditarPerfil()
+    {
+        $inscricao = Inscricao::model()->findByCpf(Yii::app()->user->id);
+
+        if (isset($_POST['Inscricao'])) {
+            $inscricao->attributes = $_POST['Inscricao'];
+            $inscricao->cep = str_replace('-', '', $inscricao->cep);
+            $inscricao->candidato_a_bolsa = $inscricao->candidato_a_bolsa == true ? 1 : 0;
+
+            if ($inscricao->validate() && $inscricao->update()) {
+                $this->salvarFormacoes($inscricao);
+                $usuario = Usuario::model()->findByPk(Yii::app()->user->id);
+                Yii::app()->user->setFlash('notificacao', 'Alterações salvas com sucesso!');
+                Yii::log("{$usuario} alterou suas informações de perfil.", 'info', 'system.controllers.AlunoController');
+                $this->redirect(Yii::app()->createUrl('aluno/perfil'));
+            }
+        }
+
+        $cs = Yii::app()->getClientScript();
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/mascara_celular.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/bower_components/angular/angular.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/editarPerfilApp.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/editarPerfil.js');
+
+        $this->render('editarPerfil', array(
+            'model' => $inscricao,
+            'modelFormacao' => new Formacao(),
+        ));
+    }
+
+    private function salvarFormacoes(Inscricao $inscricao)
+    {
+        foreach ($inscricao->formacao as $formacao) {
+            $f = new Formacao();
+            $f->attributes = $formacao;
+            $f->inscricao_id = $inscricao->id;
+            $f->save();
+        }
+    }
+
+    public function actionTrocarSenha()
+    {
+        if (isset($_POST['trocar'])) {
+            ResetarSenha::model()->fazerSolicitacao(Yii::app()->user->id);
+            $this->redirect(Yii::app()->createUrl('aluno/perfil'));
+        }
+        $this->render('trocarSenha');
+    }
+
+}

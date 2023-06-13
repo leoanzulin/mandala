@@ -1,0 +1,7 @@
+<?php
+
+?>
+
+<h2>Olá, <?php echo $nome; ?></h2>
+
+<p>Seja bem vindo(a) à sua área online do curso EduTec!</p>

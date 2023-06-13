@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/edtec/!svn/ver/64/trunk/protected/controllers
+END
+ComponenteCurricularController.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/edtec/!svn/ver/56/trunk/protected/controllers/ComponenteCurricularController.php
+END
+SiteController.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/edtec/!svn/ver/56/trunk/protected/controllers/SiteController.php
+END
+ExportadorController.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/edtec/!svn/ver/59/trunk/protected/controllers/ExportadorController.php
+END
+AdminController.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/edtec/!svn/ver/64/trunk/protected/controllers/AdminController.php
+END
+TrocarSenhaController.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/edtec/!svn/ver/57/trunk/protected/controllers/TrocarSenhaController.php
+END
+PreinscricaoComponenteController.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/edtec/!svn/ver/56/trunk/protected/controllers/PreinscricaoComponenteController.php
+END
+InscricaoController.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/edtec/!svn/ver/62/trunk/protected/controllers/InscricaoController.php
+END
+InscricaoOfertaController.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/edtec/!svn/ver/56/trunk/protected/controllers/InscricaoOfertaController.php
+END
+AlunoController.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/edtec/!svn/ver/56/trunk/protected/controllers/AlunoController.php
+END
+PagesController.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/edtec/!svn/ver/56/trunk/protected/controllers/PagesController.php
+END
+ConfiguracaoController.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/edtec/!svn/ver/56/trunk/protected/controllers/ConfiguracaoController.php
+END
+HabilitacaoController.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/edtec/!svn/ver/56/trunk/protected/controllers/HabilitacaoController.php
+END
+OfertaController.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/edtec/!svn/ver/61/trunk/protected/controllers/OfertaController.php
+END

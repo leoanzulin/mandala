@@ -1,0 +1,43 @@
+<?php
+
+class ConfiguracoesForm extends CFormModel
+{
+
+    public $mesInicio;
+    public $anoInicio;
+    public $mesFim;
+    public $anoFim;
+
+    public function rules()
+    {
+        return array(
+            array('mesInicio, anoInicio, mesFim, anoFim', 'required'),
+            array('mesInicio, mesFim', 'ehMes'),
+            array('anoInicio, anoFim', 'ehAno'),
+        );
+    }
+
+    public function attributeLabels()
+    {
+        return array(
+            'inicioPeriodo' => 'Início do período ofertado',
+            'fimPeriodo' => 'Fim do período ofertado',
+        );
+    }
+
+    public function ehMes($atributo, $params)
+    {
+        $mes = $this->$atributo;
+        if (!preg_match('/^\d\d?$/', $mes) || $mes < 1 || $mes > 12) {
+            $this->addError($atributo, 'O mês deve ser informado em dígitos');
+        }
+    }
+
+    public function ehAno($atributo, $params)
+    {
+        if (!preg_match('/^\d\d\d\d$/', $this->$atributo)) {
+            $this->addError($atributo, 'O ano deve ser informado em 4 dígitos');
+        }
+    }
+
+}

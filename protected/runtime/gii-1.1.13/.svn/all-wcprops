@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/edtec/!svn/ver/6/trunk/protected/runtime/gii-1.1.13
+END
+ControllerCode.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/edtec/!svn/ver/6/trunk/protected/runtime/gii-1.1.13/ControllerCode.php
+END
+FormCode.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/edtec/!svn/ver/6/trunk/protected/runtime/gii-1.1.13/FormCode.php
+END
+ModuleCode.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/edtec/!svn/ver/6/trunk/protected/runtime/gii-1.1.13/ModuleCode.php
+END
+CrudCode.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/edtec/!svn/ver/6/trunk/protected/runtime/gii-1.1.13/CrudCode.php
+END
+ModelCode.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/edtec/!svn/ver/6/trunk/protected/runtime/gii-1.1.13/ModelCode.php
+END

@@ -1,0 +1,72 @@
+body {
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 0.7em; }
+
+h1 {
+  text-align: center;
+  padding-bottom: 15px; }
+
+p.cabecalho {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  padding-bottom: 13px; }
+
+table {
+  width: 100%;
+  border: 1px solid #666;
+  border-collapse: collapse;
+  margin-bottom: 20px; }
+  table th {
+    text-align: center; }
+  table td {
+    padding: 5px; }
+
+table.simulador tr {
+  border: 1px solid #666; }
+table.simulador thead tr th.habilitacao {
+  width: 25px; }
+table.simulador thead tr th.carga-horaria {
+  width: 50px; }
+table.simulador tbody tr td {
+  text-align: center; }
+table.simulador tbody tr td.componente {
+  text-align: left; }
+table.simulador tbody tr td.prioridade3 {
+  background-color: #e5b8b7;
+  font-weight: bold; }
+table.simulador tbody tr td.prioridade4 {
+  background-color: #fabf8f;
+  font-weight: bold; }
+table.simulador tbody tr td.prioridade1 {
+  background-color: #ccc0d9;
+  font-weight: bold; }
+table.simulador tbody tr td.prioridade2 {
+  background-color: #b6dde8;
+  font-weight: bold; }
+table.simulador tbody tr td.prioridade5 {
+  background-color: #c2d69b;
+  font-weight: bold; }
+
+div.simulador-resumo {
+  margin: 30px 0;
+  padding: 15px;
+  border: 1px solid #666; }
+  div.simulador-resumo table {
+    border: none; }
+
+table.historico thead tr {
+  border: 1px solid #666; }
+  table.historico thead tr th.item {
+    width: 60px; }
+table.historico tbody tr.linha-periodo {
+  background: #F0F0F0; }
+table.historico tbody tr.linha-oferta td {
+  text-align: center; }
+table.historico tbody tr.linha-oferta td.componente {
+  text-align: left; }
+
+/*# sourceMappingURL=teste.css.map */

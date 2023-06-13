@@ -1,0 +1,95 @@
+<?php
+
+/**
+ * This is the model class for table "inscricao_oferta".
+ *
+ * The followings are the available columns in table 'inscricao_oferta':
+ * @property string $oferta_id
+ * @property string $inscricao_id
+ */
+class InscricaoOferta extends CActiveRecord
+{
+
+    public function tableName()
+    {
+        return 'inscricao_oferta';
+    }
+
+    public function rules()
+    {
+        return array(
+            array('oferta_id, inscricao_id', 'required'),
+        );
+    }
+
+    public function relations()
+    {
+        return array(
+            'oferta' => array(self::BELONGS_TO, 'Oferta', 'oferta_id'),
+            'inscricao' => array(self::BELONGS_TO, 'Inscricao', 'inscricao_id'),
+        );
+    }
+
+    public function attributeLabels()
+    {
+        return array(
+            'oferta_id' => 'Oferta',
+            'inscricao_id' => 'Inscricao',
+        );
+    }
+
+    public static function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
+
+    public function deleteDentroDoPeriodo($inscricao, $deMes, $deAno, $ateMes, $ateAno)
+    {
+        if (empty($inscricao))
+            return;
+
+        $mesAtual = $deMes;
+        $anoAtual = $deAno;
+
+        while ($this->antes($mesAtual, $anoAtual, $ateMes, $ateAno)) {
+            $ofertasDoPeriodo = Oferta::model()->findAllByAttributes(array(
+                'mes' => $mesAtual,
+                'ano' => $anoAtual,
+            ));
+
+            foreach ($ofertasDoPeriodo as $oferta) {
+                $this->deleteAllByAttributes(array(
+                    'oferta_id' => $oferta->id,
+                    'inscricao_id' => $inscricao->id,
+                ));
+            }
+
+            $mesAtual++;
+            if ($mesAtual == 13) {
+                $mesAtual = 1;
+                $anoAtual++;
+            }
+        }
+    }
+
+    private function antes($mesAtual, $anoAtual, $ateMes, $ateAno)
+    {
+        $mesesAtual = $anoAtual * 12 + $mesAtual;
+        $mesesAte = $ateAno * 12 + $ateMes;
+        return $mesesAtual < $mesesAte;
+    }
+
+    public function asArray()
+    {
+        return array(
+            'oferta_id' => $this->oferta_id,
+            'inscricao_id' => $this->inscricao_id,
+        );
+    }
+
+    public function toJSON()
+    {
+        return json_encode($this->asArray());
+    }
+
+}

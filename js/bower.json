@@ -1,0 +1,14 @@
+{
+  "name": "edutec",
+  "description": "Dependências do Angular para o sistema EduTec",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-mocks": "1.4.x",
+    "angular-route": "1.4.x",
+    "angular-resource": "1.4.x",
+    "angular-utils-pagination": "x"
+  } 
+} 
+

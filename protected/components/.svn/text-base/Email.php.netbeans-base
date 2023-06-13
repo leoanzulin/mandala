@@ -1,0 +1,408 @@
+<?php
+/*
+class Email
+{
+
+    public static function mensagemPreInscricao($nome, $email)
+    {
+        $to = "{$nome} <{$email}>\r\n";
+        $subject = "[Educação e Tecnologias] Confirmação de recebimento de formulário de pré-inscrição.";
+        $message = "
+<html>
+<head><title>Confirmação de recebimento de formulário de pré-inscrição</title></head>
+<body>
+<p>Caro(a) {$nome}, sua pré-inscrição foi realizada com sucesso!</p><br>
+<p>Caso ainda não tenha efetuado o pagamento clique no link abaixo para gerar o boleto <a href='http://www3.fai.ufscar.br/Fundacao/CURSOS/asp/mostraturma.asp?turma=675**1*2/16' target='_blank'>http://www3.fai.ufscar.br/Fundacao/CURSOS/asp/mostraturma.asp?turma=675**1*2/16</a></p>
+<p>Após realizarmos a confirmação de seu pagamento daremos prosseguimento ao processo de inscrição.</p>
+<p>Obrigado!</p>
+<p>Secretaria do Curso Educação e Tecnologias</p>
+</body>
+</html>";
+        $headers = "From: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+            "Reply-To: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+            "Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .    
+            "MIME-Version: 1.0\r\n" .
+            "Content-Type: text/html; charset=UTF-8\r\n";
+        mail($to, $subject, $message, $headers);
+    }
+
+    public static function mensagemPreInscricaoDetalhada()
+    {
+//
+//<p>Você se inscreveu na(s) seguinte(s) habilitação(ões):</p>
+//<ul>
+//    <li><b>{$nomesHabilitacoes[0]}</b></li>";
+//                if (count($nomesHabilitacoes) > 1) {
+//                    $message .= "<li><b>{$nomesHabilitacoes[1]}</b></li>";
+//                }
+//                $message .= "
+//</ul>
+//<p>Futuramente você receberá mais informações sobre sua inscrição.</p>
+//<p>No caso de dúvidas, favor entrar em contato com a secretaria do curso pelo e-mail:</p>
+//<p>edutec@ead.ufscar.br</p>
+//<p>Obrigado!</p><br>
+//<p>Grupo Horizonte</p>
+//<p>Secretaria do Curso Educação e Tecnologias</p>
+//</body>
+//</html>
+//";
+    }
+
+    public static function mensagemEnviarDocumentos($nome, $email, $cpf)
+    {
+        $to = "{$nome} <{$email}>\r\n";
+        $subject = "[Educação e Tecnologias] Confirmação de pagamento da inscrição";
+        $message = "
+<html>
+<head><title>Confirmação de pagamento da inscrição</title></head>
+<body>
+<p>Caro(a) {$nome},</p><br>
+<p>O pagamento de sua inscrição no curso de Educação e Tecnologias foi confirmado.</p>
+<p>Para dar prosseguimento ao processo de inscrição, solicitamos que acesse o endereço <a href=\"http://edutec.ead.ufscar.br/index.php?r=inscricao/documentos&cpf={$cpf}\">http://edutec.ead.ufscar.br/index.php?r=inscricao/documentos&cpf={$cpf}</a>
+e envie uma cópia simples dos seguintes documentos:</p>
+<ul>
+<li>CPF</li>
+<li>RG</li>
+<li>Diploma de maior titulação</li>
+<li>Comprovante de residência</li>
+<li>Currículo</li>
+</ul>
+<p>Obrigado!</p>
+<p>Secretaria do Curso Educação e Tecnologias</p>
+</body>
+</html>";
+        $headers = "From: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+            "Reply-To: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+            "Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .     
+            "MIME-Version: 1.0\r\n" .
+            "Content-Type: text/html; charset=UTF-8\r\n";
+        mail($to, $subject, $message, $headers);
+    }
+    
+    public static function mensagemPagamentoMatricula($nome, $sobrenome, $senha, $email, $cpf)
+    {
+        $to = "{$nome} {$sobrenome}<{$email}>\r\n";
+        $subject = "[Educação e Tecnologias] Confirmação de pagamento da matrícula";
+        $message = "
+<html>
+<head><title>Confirmação de pagamento da matrícula</title></head>
+<body>
+<p>Caro(a) {$nome} {$sobrenome},</p>
+<p>O pagamento de sua matrícula no curso de Educação e Tecnologias foi confirmado.</p>
+<p>Foi criado um usuário para você no sistema, para acessar o sistema entre no endereço <a href=\"http://localhost/edtec/index.php?r=site/login\">http://localhost/edtec/index.php?r=site/login</a>
+com as informações abaixo.</p>
+<ul>
+<li>Nome de usuário: {$cpf}</li>
+<li>Senha: {$senha}</li>
+</ul>
+<p>Qualquer dúvida entrar m contato com a secretaria do curso através do e-mail: edutec@ead.ufscar.br</p>
+<p>Atenciosamente,</p>
+<p>Secretaria do Curso Educação e Tecnologias</p>
+</body>
+</html>";
+        $headers = "From: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+            "Reply-To: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+            "Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .     
+            "MIME-Version: 1.0\r\n" .
+            "Content-Type: text/html; charset=UTF-8\r\n";
+        mail($to, $subject, $message, $headers);
+    }
+    
+}
+*/
+
+
+
+
+//class Email
+//{
+
+    /**
+     * Headers:
+From: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n
+Reply-To: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n
+Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n
+MIME-Version: 1.0\r\n
+Content-Type: text/html; charset=UTF-8\r\n
+     */
+//    private static $headers = "From: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\nReply-To: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\nCc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=UTF-8\r\n";
+    
+//    public static function mensagemPreInscricao($nome, $email, $cpf, $senha)
+//    {
+//        Yii::log("Enviando e-mail para {$nome} ({$email} - {$cpf} - {$senha})", 'info', 'system.components.Email');
+//        $to = "{$nome} <{$email}>\r\n";
+//        $subject = "[Educação e Tecnologias] Login e confirmação de recebimento de formulário de pré-inscrição.";
+//        $message = "
+//<html>
+//<head><title>Confirmação de recebimento de formulário de pré-inscrição</title></head>
+//<body>
+//<p>Caro(a) {$nome}, sua pré-inscrição foi realizada com sucesso!</p><br>
+//<p>Suas credenciais para acessar sua área virtual no EduTec são:</p>
+//<p>Login: <b>{$cpf}</b></p>
+//<p>Senha: <b>{$senha}</b></p>
+//<p>Acesse sua área virtual no endereço <a href=\"http://edutec.ead.ufscar.br/index.php?r=site/login\">http://edutec.ead.ufscar.br/index.php?r=site/login</a>.</p>
+//<p>Caso ainda não tenha efetuado o pagamento da sua inscrição clique no link abaixo para gerar o boleto <a href='http://www3.fai.ufscar.br/Fundacao/CURSOS/asp/mostraturma.asp?turma=675**1*2/16' target='_blank'>http://www3.fai.ufscar.br/Fundacao/CURSOS/asp/mostraturma.asp?turma=675**1*2/16</a></p>
+//<p>Após realizarmos a confirmação de seu pagamento daremos prosseguimento ao processo de inscrição.</p>
+//<p>Obrigado!</p>
+//<p>Secretaria do Curso Educação e Tecnologias</p>
+//</body>
+//</html>";
+//        mail($to, $subject, $message, self::$headers);
+//    }
+
+//    public static function mensagemPreInscricaoDetalhada()
+//    {
+//
+//<p>Você se inscreveu na(s) seguinte(s) habilitação(ões):</p>
+//<ul>
+//    <li><b>{$nomesHabilitacoes[0]}</b></li>";
+//                if (count($nomesHabilitacoes) > 1) {
+//                    $message .= "<li><b>{$nomesHabilitacoes[1]}</b></li>";
+//                }
+//                $message .= "
+//</ul>
+//<p>Futuramente você receberá mais informações sobre sua inscrição.</p>
+//<p>No caso de dúvidas, favor entrar em contato com a secretaria do curso pelo e-mail:</p>
+//<p>edutec@ead.ufscar.br</p>
+//<p>Obrigado!</p><br>
+//<p>Grupo Horizonte</p>
+//<p>Secretaria do Curso Educação e Tecnologias</p>
+//</body>
+//</html>
+//";
+//    }
+
+//    public static function mensagemEnviarDocumentos($nome, $email, $cpf)
+//    {
+//        Yii::log("Enviando e-mail para {$nome} ({$email} - {$cpf})", 'info', 'system.components.Email');
+//        $to = "{$nome} <{$email}>\r\n";
+//        $subject = "[Educação e Tecnologias] Confirmação de pagamento da inscrição";
+//        $message = "
+//<html>
+//<head><title>Confirmação de pagamento da inscrição</title></head>
+//<body>
+//<p>Caro(a) {$nome},</p><br>
+//<p>O pagamento de sua inscrição no curso de Educação e Tecnologias foi confirmado.</p>
+//<p>Para dar prosseguimento ao processo de inscrição, solicitamos que acesse o endereço <a href=\"http://edutec.ead.ufscar.br/index.php?r=inscricao/documentos&cpf={$cpf}\">http://edutec.ead.ufscar.br/index.php?r=inscricao/documentos&cpf={$cpf}</a>
+//e envie uma cópia simples dos seguintes documentos:</p>
+//<ul>
+//<li>CPF</li>
+//<li>RG</li>
+//<li>Diploma de maior titulação</li>
+//<li>Comprovante de residência</li>
+//<li>Currículo</li>
+//</ul>
+//<p>Obrigado!</p>
+//<p>Secretaria do Curso Educação e Tecnologias</p>
+//</body>
+//</html>";
+//        mail($to, $subject, $message, self::$headers);
+//    }
+    
+//    public static function mensagemMatriculaRealizada($nome, $email, $cpf, $token)
+//    {
+//        Yii::log("Enviando e-mail para {$nome} ({$email} - {$cpf} - {$token})", 'info', 'system.components.Email');
+//        $to = "{$nome} <{$email}>\r\n";
+//        $subject = "[Educação e Tecnologias] Matrícula realizada com sucesso";
+//        $message = "
+//<html>
+//<head><title>Matrícula realizada com sucesso</title></head>
+//<body>
+//<p>Caro(a) {$nome},</p><br>
+//<p>Sua matrícula no Curso de Especialização em Educação e Tecnologias foi realizada com sucesso!</p>
+//<p>Para ter acesso ao sistema, solicitamos que cadastre uma senha no endereço <a href=\"http://edutec.ead.ufscar.br/index.php?r=inscricao/criarSenha&cpf={$cpf}\">http://edutec.ead.ufscar.br/index.php?r=inscricao/documentos&cpf={$cpf}
+//<p>Para dar prosseguimento ao processo de inscrição, solicitamos que acesse o endereço <a href=\"http://edutec.ead.ufscar.br/index.php?r=inscricao/documentos&cpf={$cpf}\">http://edutec.ead.ufscar.br/index.php?r=inscricao/documentos&cpf={$cpf}</a>
+//e envie uma cópia simples dos seguintes documentos:</p>
+//<p>Obrigado!</p>
+//<p>Secretaria do Curso Educação e Tecnologias</p>
+//</body>
+//</html>";
+//        mail($to, $subject, $message, self::$headers);
+//    }
+    
+//    public static function mensagemResetarEmail($nome, $email, $link)
+//    {
+//        Yii::log("Enviando e-mail para {$nome} ({$email} - {$link})");
+//        $to = "{$nome} <{$email}>\r\n";
+//        $subject = "[Educação e Tecnologias] Solicitação de troca de senha";
+//        $message = "
+//<html>
+//<head><title>Solicitação de troca de senha</title></head>
+//<body>
+//<p>Caro(a) {$nome},</p><br>
+//<p>Recentemente foi feita uma solicitação de troca de senha para sua conta no EduTec. Para fazer isso, basta acessar o seguinte link:</p>
+//<p><a href=\"{$link}\">{$link}</a></p>
+//<p>Esse link expira em 24 horas. Se você não fez essa solicitação, por favor ignore este e-mail.</p>
+//<p>Obrigado!</p>
+//<p>Secretaria do Curso Educação e Tecnologias</p>
+//</body>
+//</html>";
+//        mail($to, $subject, $message, self::$headers);
+//    }
+
+//    public static function mensagemUsuarioCriado($nome, $email, $cpf, $senha)
+//    {
+//        Yii::log("Enviando e-mail para {$nome} ({$email} - {$cpf} - {$senha})", 'info', 'system.components.Email');
+//        $to = "{$nome} <{$email}>\r\n";
+//        $subject = "[Educação e Tecnologias] Usuário criado";
+//        $message = "
+//<html>
+//<head><title>Usuário criado</title></head>
+//<body>
+//<p>Caro(a) {$nome}, agora você tem acesso à área virtual do EduTec!</p><br>
+//<p>As credenciais para acessar sua área são:</p>
+//<p>Login: <b>{$cpf}</b></p>
+//<p>Senha: <b>{$senha}</b></p>
+//<p>Acesse sua área virtual no endereço <a href=\"http://edutec.ead.ufscar.br/index.php?r=site/login\">http://edutec.ead.ufscar.br/index.php?r=site/login</a>. Por favor, acesse sua conta para preencher quaisquer pendências em seu cadastro.</p>
+//<p>Obrigado!</p>
+//<p>Secretaria do Curso Educação e Tecnologias</p>
+//</body>
+//</html>";
+//        mail($to, $subject, $message, self::$headers);
+//    }
+    
+//}
+
+
+
+
+
+
+
+
+class Email
+{
+
+    public static function mensagemPreInscricao($nome, $email, $cpf, $senha)
+    {
+        Yii::log("Enviando e-mail para {$nome} ({$email})");
+        $to = "{$nome} <{$email}>\r\n";
+        $subject = "[Educação e Tecnologias] Confirmação de recebimento de formulário de pré-inscrição";
+        $message = "
+<html>
+<head><title>Confirmação de recebimento de formulário de pré-inscrição</title></head>
+<body>
+<p>Caro(a) {$nome}, sua pré-inscrição foi realizada com sucesso!</p><br>
+<p>Suas credenciais para acessar sua área virtual no EduTec são:</p>
+<p>Login: <b>{$cpf}</b></p>
+<p>Senha: <b>{$senha}</b></p>
+<p>Acesse sua área virtual no endereço <a href=\"http://edutec.ead.ufscar.br/index.php?r=site/login\">http://edutec.ead.ufscar.br/index.php?r=site/login</a>.</p>
+<p>Caso ainda não tenha efetuado o pagamento clique no link abaixo para gerar o boleto <a href='http://www3.fai.ufscar.br/Fundacao/CURSOS/asp/mostraturma.asp?turma=675**1*2/16' target='_blank'>http://www3.fai.ufscar.br/Fundacao/CURSOS/asp/mostraturma.asp?turma=675**1*2/16</a></p>
+<p>Após realizarmos a confirmação de seu pagamento daremos prosseguimento ao processo de inscrição.</p>
+<p>Obrigado!</p>
+<p>Secretaria do Curso Educação e Tecnologias</p>
+</body>
+</html>";
+        $headers = "From: Coordenação EDUTEC <naoresponda@sistemas2.sead.ufscar.br>\r\n" .
+            "Reply-To: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+	    "Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .	
+            "MIME-Version: 1.0\r\n" .
+            "Content-Type: text/html; charset=UTF-8\r\n";
+        mail($to, $subject, $message, $headers);
+    }
+
+    public static function mensagemPreInscricaoDetalhada()
+    {
+//
+//<p>Você se inscreveu na(s) seguinte(s) habilitação(ões):</p>
+//<ul>
+//    <li><b>{$nomesHabilitacoes[0]}</b></li>";
+//                if (count($nomesHabilitacoes) > 1) {
+//                    $message .= "<li><b>{$nomesHabilitacoes[1]}</b></li>";
+//                }
+//                $message .= "
+//</ul>
+//<p>Futuramente você receberá mais informações sobre sua inscrição.</p>
+//<p>No caso de dúvidas, favor entrar em contato com a secretaria do curso pelo e-mail:</p>
+//<p>edutec@ead.ufscar.br</p>
+//<p>Obrigado!</p><br>
+//<p>Grupo Horizonte</p>
+//<p>Secretaria do Curso Educação e Tecnologias</p>
+//</body>
+//</html>
+//";
+    }
+
+    public static function mensagemEnviarDocumentos($nome, $email, $cpf)
+    {
+        $to = "{$nome} <{$email}>\r\n";
+        $subject = "[Educação e Tecnologias] Confirmação de pagamento da inscrição";
+        $message = "
+<html>
+<head><title>Confirmação de pagamento da inscrição</title></head>
+<body>
+<p>Caro(a) {$nome},</p><br>
+<p>O pagamento de sua inscrição no curso de Educação e Tecnologias foi confirmado.</p>
+<p>Para dar prosseguimento ao processo de inscrição, solicitamos que acesse o endereço <a href=\"http://edutec.ead.ufscar.br/index.php?r=inscricao/documentos&cpf={$cpf}\">http://edutec.ead.ufscar.br/index.php?r=inscricao/documentos&cpf={$cpf}</a>
+e envie uma cópia simples dos seguintes documentos:</p>
+<ul>
+<li>CPF</li>
+<li>RG</li>
+<li>Diploma de maior titulação</li>
+<li>Comprovante de residência</li>
+<li>Currículo</li>
+</ul>
+<p>Obrigado!</p>
+<p>Secretaria do Curso Educação e Tecnologias</p>
+</body>
+</html>";
+        $headers = "From: Coordenação EDUTEC <naoresponda@sistemas2.sead.ufscar.br>\r\n" .
+            "Reply-To: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+	    "Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+            "MIME-Version: 1.0\r\n" .
+            "Content-Type: text/html; charset=UTF-8\r\n";
+        mail($to, $subject, $message, $headers);
+    }
+
+    public static function mensagemResetarEmail($nome, $email, $link)
+    {
+        Yii::log("Enviando e-mail para {$nome} ({$email})");
+        $to = "{$nome} <{$email}>\r\n";
+        $subject = "[Educação e Tecnologias] Solicitação de troca de senha";
+        $message = "
+<html>
+<head><title>Solicitação de troca de senha</title></head>
+<body>
+<p>Caro(a) {$nome},</p><br>
+<p>Recentemente foi feita uma solicitação de troca de senha para sua conta no EduTec. Para fazer isso, basta acessar o seguinte link:</p>
+<p><a href=\"{$link}\">{$link}</a></p>
+<p>Esse link expira em 24 horas. Se você não fez essa solicitação, por favor ignore este e-mail.</p>
+<p>Obrigado!</p>
+<p>Secretaria do Curso Educação e Tecnologias</p>
+</body>
+</html>";
+        $headers = "From: Coordenação EDUTEC <naoresponda@sistemas2.sead.ufscar.br>\r\n" .
+            "Reply-To: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+	    "Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+            "MIME-Version: 1.0\r\n" .
+            "Content-Type: text/html; charset=UTF-8\r\n";
+        mail($to, $subject, $message, $headers);
+    }
+
+    public static function mensagemUsuarioCriado($nome, $email, $cpf, $senha)
+    {
+        Yii::log("Enviando e-mail para {$nome} ({$email} - {$cpf})", 'info', 'system.components.Email');
+        $to = "{$nome} <{$email}>\r\n";
+        $subject = "[Educação e Tecnologias] Usuário criado";
+        $message = "
+<html>
+<head><title>Usuário criado</title></head>
+<body>
+<p>Caro(a) {$nome}, agora você tem acesso à área virtual do EduTec!</p><br>
+<p>As credenciais para acessar sua área são:</p>
+<p>Login: <b>{$cpf}</b></p>
+<p>Senha: <b>{$senha}</b></p>
+<p>Acesse sua área virtual no endereço <a href=\"http://edutec.ead.ufscar.br/index.php?r=site/login\">http://edutec.ead.ufscar.br/index.php?r=site/login</a>. Por favor, acesse sua conta para preencher quaisquer pendências em seu cadastro.</p>
+<p>Obrigado!</p>
+<p>Secretaria do Curso Educação e Tecnologias</p>
+</body>
+</html>";
+        $headers = "From: Coordenação EDUTEC <naoresponda@sistemas2.sead.ufscar.br>\r\n" .
+            "Reply-To: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+	    "Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+            "MIME-Version: 1.0\r\n" .
+            "Content-Type: text/html; charset=UTF-8\r\n";
+        mail($to, $subject, $message, $headers);
+    }
+    
+}

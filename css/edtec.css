@@ -1,0 +1,532 @@
+@charset "UTF-8";
+label {
+  width: 145px;
+  padding-right: 8px;
+  text-align: right;
+  float: left; }
+
+input[type="checkbox"], input[type="radio"] {
+  float: left;
+  margin-top: 0; }
+
+input[type="radio"] + label {
+  width: auto;
+  padding-left: 10px; }
+input[type="radio"] + label + input[type="radio"] {
+  margin-left: 20px; }
+
+.checkboxes {
+  /* Seleção de habilitações quando faz inscrição */ }
+  .checkboxes label {
+    float: none;
+    width: auto;
+    margin: 7px;
+    display: inline-block; }
+  .checkboxes td {
+    background: #F9F9F9;
+    padding: 5px;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD; }
+  .checkboxes tr.selecionado td {
+    background: #FFF2E6; }
+
+fieldset {
+  margin: 20px 0 30px 0; }
+
+span.errorMessage {
+  color: #F00;
+  margin-left: 10px; }
+
+.checkboxes span.errorMessage {
+  margin-left: 0; }
+
+select.curto {
+  width: 150px; }
+
+select.muito-curto {
+  width: 80px; }
+
+input.curto {
+  width: 120px; }
+
+input.muito-curto {
+  width: 60px; }
+
+/* OK - Mostra as formações de uma determinada inscrição */
+#tabela-formacao {
+  background: #f9f9f9;
+  margin: 10px 0 20px 0; }
+  #tabela-formacao tr {
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD; }
+  #tabela-formacao th, #tabela-formacao td {
+    padding: 5px; }
+  #tabela-formacao th:nth-child(1) {
+    width: 15%; }
+  #tabela-formacao th:nth-child(2), #tabela-formacao th:nth-child(3) {
+    width: 35%; }
+  #tabela-formacao th:nth:child(4) {
+    width: 5%; }
+  #tabela-formacao th:nth:child(5) {
+    width: 10%; }
+
+/* OK - Estilo aplicado quando uma oferta é selecionada no simulador ou na inscrição real */
+tr.selecionado td {
+  background: #e7f0c7;
+  color: #000; }
+
+/* OK - Na lista de inscrição em ofertas, destaca uma oferta que havia sido escolhida no simulador */
+tr.selecionado-simulador {
+  border: 2px solid #f9d9a7;
+  background: #f9f1e5; }
+
+/* Deixa o simulador com fundo azul. Usado em todos os locais que mostram a grade do simulador  */
+div.simulador-container {
+  border: 1px solid #666;
+  padding: 15px;
+  background: #eff3ff; }
+
+table td.prioridade {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Deixa os fundos das letras das habilitações com suas respectivas cores */
+table td.prioridade3 {
+  background-color: #e5b8b7;
+  font-weight: bold;
+  text-align: center; }
+
+table td.prioridade4 {
+  background-color: #fabf8f;
+  font-weight: bold;
+  text-align: center; }
+
+table td.prioridade1 {
+  background-color: #ccc0d9;
+  font-weight: bold;
+  text-align: center; }
+
+table td.prioridade2 {
+  background-color: #b6dde8;
+  font-weight: bold;
+  text-align: center; }
+
+table td.prioridade5 {
+  background-color: #c2d69b;
+  font-weight: bold;
+  text-align: center; }
+
+/* OK - Usado nas tabelas que mostram a lista de ofertas em que um usuário pode se inscrever */
+table.tabela-inscricao {
+  margin-bottom: 30px; }
+  table.tabela-inscricao th {
+    width: 20px;
+    background: #f0f0f0;
+    text-align: center; }
+    table.tabela-inscricao th:first-child {
+      width: auto;
+      text-align: left; }
+  table.tabela-inscricao td {
+    text-align: center;
+    vertical-align: middle; }
+    table.tabela-inscricao td:first-child {
+      text-align: left; }
+
+/**
+  * OK - Aplicado nos resumos de número de componentes por prioridade,
+  *      encapsulado na diretiva contagem-de-componentes
+  */
+div.resumo-inscricoes {
+  position: sticky;
+  top: 0;
+  margin: 30px 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+  div.resumo-inscricoes div {
+    position: sticky;
+    top: 100px;
+    width: 85%;
+    text-align: right;
+  }
+
+  div.resumo-inscricoes div i {
+    color: #666;
+    cursor: help;
+  }
+
+  div.resumo-inscricoes table {
+    font-size: 1em;
+    border: 1px solid #AAA;
+    margin-top: 10px;
+  }
+    div.resumo-inscricoes table td {
+      padding: 5px;
+    }
+    div.resumo-inscricoes table thead {
+      border-bottom: 1px solid #AAA;
+    }
+    div.resumo-inscricoes table tr th:nth-child(1), div.resumo-inscricoes table tr td:nth-child(1),
+    div.resumo-inscricoes table tr th:nth-child(2), div.resumo-inscricoes table tr td:nth-child(2),
+    div.resumo-inscricoes table tr th:nth-child(3), div.resumo-inscricoes table tr td:nth-child(3),
+    div.resumo-inscricoes table tr th:nth-child(4), div.resumo-inscricoes table tr td:nth-child(4),
+    div.resumo-inscricoes table tr th:nth-child(5), div.resumo-inscricoes table tr td:nth-child(5) {
+      width: 100px;
+      border-right: 1px solid #AAA;
+      text-align: center;
+    }
+    div.resumo-inscricoes table tr th:nth-child(2), div.resumo-inscricoes table tr td:nth-child(2),
+    div.resumo-inscricoes table tr th:nth-child(3), div.resumo-inscricoes table tr td:nth-child(3),
+    div.resumo-inscricoes table tr th:nth-child(4), div.resumo-inscricoes table tr td:nth-child(4),
+    div.resumo-inscricoes table tr th:nth-child(5), div.resumo-inscricoes table tr td:nth-child(5) {
+      border-bottom: 1px solid #AAA;
+    }
+    div.resumo-inscricoes table tfoot {
+      border-top: 1px solid #AAA;
+    }
+    div.resumo-inscricoes span.componente-repetido {
+      color: #AAA;
+    }
+    .nao-cumpriu-criterios {
+      background-color: #f9d9a7;
+      color: red;
+      font-weight: bold;
+    }
+    .cumpriu-criterios {
+      background-color: #e7f0c7;
+      color: blue;
+      font-weight: bold;
+    }
+    div.resumo-inscricoes table td.excedeu-total {
+      color: red;
+      font-weight: bold;
+      background-color: #e7f0c7;
+    }
+    div.resumo-inscricoes p.explicacao-total {
+      margin-top: 5px;
+      text-align: justify;
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 1.3em;
+    }
+
+  div.resumo-inscricoes table.criterios {
+    width: 100%;
+  }
+  div.resumo-inscricoes table.criterios tr td {
+    text-align: left;
+    border-bottom: 1px solid #AAA;
+    border-right: none;
+  }
+  div.resumo-inscricoes table.criterios tr td:nth-child(2) {
+    border-left: none;
+    width: 10px;
+    text-align: center;
+  }
+
+/**
+ * OK - Aplicado nas tabelas de seleção de ofertas no simulador e no gerenciamento de ofertas.
+ *      Também no gerenciamento de componentes curriculares
+ *      TODO: Verificar esta classe, está sendo usada
+ *      em lugares diferentes demais.
+ */
+table.simulador {
+  width: 100%;
+  border: 1px solid #666;
+  margin-bottom: 20px;
+  background-color: #FFF;
+  /* Estilo usado apenas em oferta/gerenciar */ }
+  table.simulador tr {
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666; }
+  table.simulador th {
+    text-align: center; }
+  table.simulador td {
+    padding: 7px; }
+  table.simulador tr.simulador-linha td {
+    width: 15px;
+    text-align: center; }
+    table.simulador tr.simulador-linha td:first-child {
+      width: auto;
+      text-align: left; }
+
+/* OK - Usado na view admin/visualizarInscricoesEmOfertasSimulador */
+table.numero-inscricoes-ofertas-resumo {
+  width: 100%; }
+  table.numero-inscricoes-ofertas-resumo tr {
+    border-top: 1px solid #666; }
+  table.numero-inscricoes-ofertas-resumo th {
+    padding: 5px;
+    background: #f0f0f0; }
+  table.numero-inscricoes-ofertas-resumo td {
+    padding: 5px 0;
+    /* Campo de número de inscritos */ }
+    table.numero-inscricoes-ofertas-resumo td:nth-child(2) {
+      text-align: center; }
+
+p.explicacao {
+  color: #AAA;
+  font-style: italic;
+  font-size: 0.9em; }
+
+/* Muda o cabeçalho dos CGridviews do yii */
+#inscritos-form table thead tr th,
+#visualizar-matriculas-grid table thead tr th,
+#docente-grid table thead tr th,
+#tutor-grid table thead tr th {
+  background-color: #94af92;
+  background-image: none; }
+
+/* Muda o tamanho dos inputs de filtro dos cgridviews */
+.grid-view .filters input {
+  width: 85%; }
+
+.button-column {
+  min-width: 20px; }
+
+/*
+  Submenu
+  http://www.yiiframework.com/forum/index.php/topic/7589-cmenu-multiple-submenu/
+  https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
+*/
+ul.nav {
+  position: relative;
+  z-index: 10; }
+  ul.nav li .item-test {
+    position: relative; }
+  ul.nav li:hover > ul {
+    visibility: visible; }
+  ul.nav ul.nav-sub {
+    visibility: hidden;
+    position: absolute;
+    top: 36px;
+    margin-left: 0;
+    z-index: 10000;
+    background: #FFF;
+    border: 1px solid #666;
+    border-top: none; }
+    ul.nav ul.nav-sub li {
+      list-style: none;
+      padding: 0;
+      float: none;
+      width: 200px;
+      margin: 0;
+      background: #FFF; }
+      ul.nav ul.nav-sub li a {
+        display: block;
+        padding: 10px 15px;
+        line-height: 20px;
+        float: none;
+        margin: 0;
+        color: #444;
+        background: #FFF; }
+        ul.nav ul.nav-sub li a:hover {
+          background: #e7f0c7;
+          text-decoration: none; }
+
+/* Gerenciamento de notas */
+#gerenciar-notas-form table {
+  width: 100%;
+  margin-top: 20px; }
+  #gerenciar-notas-form table th, #gerenciar-notas-form table td {
+    padding: 5px; }
+  #gerenciar-notas-form table thead {
+    border-bottom: 1px solid #666; }
+  #gerenciar-notas-form table tbody tr:nth-child(odd) {
+    background: #f9f9f9; }
+  #gerenciar-notas-form table tbody tr td {
+    font-size: 16px;
+    text-align: center; }
+    #gerenciar-notas-form table tbody tr td:first-child {
+      text-align: left;
+      font-size: 14px; }
+    #gerenciar-notas-form table tbody tr td select {
+      width: 120px; }
+
+/* Gerenciamento de pagamento de bolsas para docentes e tutores */
+table.bolsas {
+  width: 100%;
+  margin-top: 20px;
+  /* Centraliza as datas */ }
+  table.bolsas th, table.bolsas td {
+    border: 1px solid #666;
+    padding: 7px; }
+  table.bolsas thead tr {
+    /* Nome do docente/tutor */
+    /* Campos "valor" e "data" */
+    /* Botão "$" */ }
+    table.bolsas thead tr:nth-child(1) td:nth-child(1) {
+      font-weight: bold;
+      font-size: 1.3em; }
+    table.bolsas thead tr:nth-child(3) th:nth-child(2), table.bolsas thead tr:nth-child(3) th:nth-child(3) {
+      width: 120px; }
+    table.bolsas thead tr:nth-child(3) th:nth-child(4) {
+      width: 30px; }
+  table.bolsas tbody td:nth-child(3) {
+    text-align: center; }
+
+/* Consutla do saldo total do projeto, descontando as bolsas pagas e adicionando pagamentos de alunos */
+table.saldo-bolsas {
+  width: 100%;
+  margin-top: 20px;
+  /* Centraliza campo "data" */ }
+  table.saldo-bolsas th, table.saldo-bolsas td {
+    border: 1px solid #666;
+    padding: 7px; }
+  table.saldo-bolsas thead th {
+    /* Campos "docente" e "tutor" */
+    /* Campos "data" e "valor" */ }
+    table.saldo-bolsas thead th:nth-child(2), table.saldo-bolsas thead th:nth-child(3) {
+      width: 150px; }
+    table.saldo-bolsas thead th:nth-child(4), table.saldo-bolsas thead th:nth-child(5) {
+      width: 100px; }
+  table.saldo-bolsas tbody td:nth-child(4) {
+    text-align: center; }
+  table.saldo-bolsas tfoot {
+    font-weight: bold;
+    background: #f0f0f0; }
+
+/* Controle de pagamento feito por alunos */
+table.pagamentos {
+  width: 100%;
+  margin-top: 20px; }
+  table.pagamentos th, table.pagamentos td {
+    border: 1px solid #666;
+    padding: 7px; }
+  table.pagamentos tbody tr:nth-child(odd) {
+    background: #f9f9f9; }
+  table.pagamentos tbody td {
+    text-align: center; }
+    table.pagamentos tbody td.item-de-pagamento-selecionado {
+      background: #ffd5a1; }
+
+table.historico {
+  table-layout: fixed; }
+  table.historico th {
+    width: 200px;
+    padding: 10px; }
+    table.historico th:first-child {
+      width: 600px; }
+  table.historico tbody tr {
+    background-color: #FCFCFC; }
+    table.historico tbody tr:nth-child(odd) {
+      background-color: #F0F0F0; }
+  table.historico tbody td {
+    text-align: center;
+    padding: 10px; }
+    table.historico tbody td:first-child {
+      text-align: left; }
+
+/* Estilos das mensagens flash */
+div.notificacao, div.notificacao-negativa {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #666;
+  background: #e7f0c7;
+  color: black;
+  text-align: center; }
+
+div.notificacao-negativa {
+  background: #f9d9a7; }
+
+.esmaecido {
+  opacity: 0.5; }
+
+.atencao {
+  color: red; }
+
+.atencao-grande {
+  color: red;
+  font-size: 1.5em; }
+
+#sintese-componente-form textarea, #sintese-componente-form select, #sintese-componente-form input[type="text"],
+#proposta-pedagogica-form textarea, #proposta-pedagogica-form select, #proposta-pedagogica-form input[type="text"],
+#tcc-form textarea, #tcc-form select, #tcc-form input[type="text"],
+#caracterizacao-especialista-form textarea, #caracterizacao-especialista-form select, #caracterizacao-especialista-form input[type="text"],
+#avaliar-tcc-form textarea, #avaliar-tcc-form select, #avaliar-tcc-form input[type="text"]
+{
+  width: 400px;
+}
+
+textarea.mensagem-automatica, input.mensagem-automatica
+{
+  width: 700px;
+}
+
+#pagamentos-colaboradores-grid th:nth-child(1), #pagamentos-colaboradores-grid td:nth-child(1) {
+  width: 80px;
+}
+#pagamentos-colaboradores-grid th:nth-child(2) {
+  width: 100px;
+}
+#pagamentos-colaboradores-grid td:nth-child(3) {
+  padding: 0;
+}
+.tabela-servicos {
+  width: 100%;
+}
+#pagamentos-colaboradores-grid .tabela-servicos tbody td:nth-child(1) {
+  width: 70px;
+  border: 1px solid gray;
+  padding: 3px;
+}
+#pagamentos-colaboradores-grid .tabela-servicos tbody td:nth-child(2) {
+  border: 1px solid gray;
+  padding: 3px;
+}
+#pagamentos-colaboradores-grid .tabela-servicos tbody td:nth-child(3) {
+  width: 70px;
+  border: 1px solid gray;
+  padding: 3px;
+}
+#pagamentos-colaboradores-grid th:nth-child(4), #pagamentos-colaboradores-grid th:nth-child(5), #pagamentos-colaboradores-grid th:nth-child(6) {
+  width: 80px;
+}
+#pagamentos-colaboradores-grid th:nth-child(7) {
+  width: 80px;
+}
+#pagamentos-colaboradores-grid th:nth-child(8) {
+  width: 20px;
+}
+
+.tabela-servicos-formulario {
+  border: 1px solid gray;
+  margin: 20px 0;
+}
+.tabela-servicos-formulario th, .tabela-servicos-formulario td {
+  padding: 7px;
+}
+
+.tabela-despesas-formulario {
+  border: 1px solid gray;
+  margin: 20px 0;
+}
+.tabela-despesas-formulario th, .tabela-despesas-formulario td {
+  padding: 7px;
+}
+.tabela-despesas {
+  width: 100%;
+}
+
+/*# sourceMappingURL=edtec.css.map */
+
+.mensagem-de-erro {
+  display: block;
+  padding: 10px;
+  font-size: 1.3em;
+  line-height: 2em;
+  color: #333;
+  border: 1px solid #333;
+  background-color: rgb(249, 217, 167);
+}
+.mensagem-de-erro ul {
+  margin: 10px;
+  margin-left: 20px;
+}

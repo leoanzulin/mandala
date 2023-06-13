@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * This is the model class for table "componente_habilitacao".
+ *
+ * The followings are the available columns in table 'componente_habilitacao':
+ * @property string $componente_curricular_id
+ * @property string $habilitacao_id
+ * @property integer $prioridade
+ */
+class ComponenteHabilitacao extends CActiveRecord
+{
+
+    const PRIORIDADE_NECESSARIA = 0;
+    const PRIORIDADE_PRIORITARIA = 1;
+    const PRIORIDADE_LIVRE = 2;
+    
+    public function tableName()
+    {
+        return 'componente_habilitacao';
+    }
+
+    public function rules()
+    {
+        return array(
+            array('componente_curricular_id, habilitacao_id, prioridade', 'required'),
+            array('prioridade', 'numerical', 'integerOnly' => true),
+        );
+    }
+
+    public function relations()
+    {
+        return array(
+        );
+    }
+
+    public function attributeLabels()
+    {
+        return array(
+            'componente_curricular_id' => 'Componente Curricular',
+            'habilitacao_id' => 'Habilitacao',
+            'prioridade' => 'Prioridade',
+        );
+    }
+
+    public static function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
+
+}

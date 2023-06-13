@@ -1,0 +1,67 @@
+<div class="resumo-inscricoes">
+
+    <div>
+        <table class="contagem-de-componentes">
+            <thead>
+                <tr>
+                    <th colspan="2">Nº de componentes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Obrigatórios
+                        <i
+                            class="fa fa-question-circle"
+                            title="{{constantes.STRING_COMPONENTES_OBRIGATORIOS_PARA_EXTENSAO_E_APERFEICOAMENTO}}"
+                        >
+                        </i>
+                    </td>
+                    <td
+                        ng-class="{
+                            'nao-cumpriu-criterios': cargaHorariaTotal().componentesObrigatorios < constantes.NUMERO_DE_COMPONENTES_OBRIGATORIOAS_PARA_EXTENSAO_E_APERFEICOAMENTO,
+                            'cumpriu-criterios': cargaHorariaTotal().componentesObrigatorios >= constantes.NUMERO_DE_COMPONENTES_OBRIGATORIOAS_PARA_EXTENSAO_E_APERFEICOAMENTO
+                        }"
+                    >
+                        {{cargaHorariaTotal().componentesObrigatorios}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>Livres</td>
+                    <td
+                        ng-class="{
+                            'nao-cumpriu-criterios': cargaHorariaTotal().componentesLivres < numeroTotalDeOfertas - constantes.NUMERO_DE_COMPONENTES_OBRIGATORIOAS_PARA_EXTENSAO_E_APERFEICOAMENTO,
+                            'cumpriu-criterios': cargaHorariaTotal().componentesLivres >= numeroTotalDeOfertas - constantes.NUMERO_DE_COMPONENTES_OBRIGATORIOAS_PARA_EXTENSAO_E_APERFEICOAMENTO
+                        }"
+                    >
+                        {{cargaHorariaTotal().componentesLivres}}
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td
+                        ng-class="{
+                            'excedeu-total': excedeuTotal(),
+                            'cumpriu-criterios': cargaHorariaTotal().total >= numeroTotalDeOfertas,
+                            'nao-cumpriu-criterios': cargaHorariaTotal().total < numeroTotalDeOfertas
+                        }"
+                    >
+                        {{cargaHorariaTotal().total}}
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p ng-if="excedeuTotal()" class="explicacao-total">
+            Sua trilha tem mais componentes que o máximo previsto.
+            Se desejar mantê-la assim, <span style="color: red">pode haver cobrança de parcelas extras</span>.
+        </p>
+    </div>
+
+    <input name="ContagemDeComponentes[total_geral]" value="{{cargaHorariaTotal().total}}" type="hidden">
+    <input name="ContagemDeComponentes[total_ok]" value="true" type="hidden" ng-if="cargaHorariaTotal().total >= numeroTotalDeOfertas">
+    <input name="ContagemDeComponentes[total_excedido]" value="true" type="hidden" ng-if="excedeuTotal()">
+
+</div>

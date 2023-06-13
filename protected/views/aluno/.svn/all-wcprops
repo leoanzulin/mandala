@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/edtec/!svn/ver/72/trunk/protected/views/aluno
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/edtec/!svn/ver/72/trunk/protected/views/aluno/index.php
+END
+trocarSenha.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/edtec/!svn/ver/54/trunk/protected/views/aluno/trocarSenha.php
+END
+editarPerfil.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/edtec/!svn/ver/54/trunk/protected/views/aluno/editarPerfil.php
+END
+inscricao.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/65/trunk/protected/views/aluno/inscricao.php
+END
+simulador.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/67/trunk/protected/views/aluno/simulador.php
+END
+perfil.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/edtec/!svn/ver/54/trunk/protected/views/aluno/perfil.php
+END

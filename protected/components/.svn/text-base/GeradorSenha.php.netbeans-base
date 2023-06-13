@@ -1,0 +1,103 @@
+<?php
+
+/**
+ * Agraga funcionalidades de geração de senhas e hashes para o sistema.
+ */
+class GeradorSenha
+{
+
+    /**
+     * Gera uma senha pseudo-aleatória.
+     *
+     * @return string Senha pseudo-aleatória
+     */
+    public static function pseudoAleatoria($length = 10, $underscores = 4)
+    {
+        // Do not modify anything below here
+        //~ $underscores = 4; // Maximum number of underscores allowed in password
+        //~ $length = 10; // Length of password
+
+        $p = "";
+        for ($i = 0; $i < $length; $i++)
+        {
+            $c = mt_rand(1, 7);
+            switch ($c)
+            {
+                case ($c <= 2):
+                    // Add a number
+                    $p .= mt_rand(0, 9);
+                break;
+                case ($c <= 4):
+                    // Add an uppercase letter
+                    $p .= chr(mt_rand(65, 90));
+                break;
+                case ($c <= 6):
+                    // Add a lowercase letter
+                    $p .= chr(mt_rand(97, 122));
+                break;
+                case 7:
+                    $len = strlen($p);
+                    if ($underscores > 0 && $len > 0 && $len < ($length - 1) && $p[$len - 1] != "_")
+                    {
+                        $p .= "_";
+                        $underscores--;
+                    }
+                    else
+                    {
+                        $i--;
+                        continue;
+                    }
+                break;
+            }
+        }
+        return $p;
+    }
+
+	/**
+	 * Gera o hash SHA da senha passada como parâmetro e faz a adequação para o
+	 * formato do LDAP.
+	 *
+	 * @param string $senha Senha a ser hasheada
+	 * @return string Hash SHA da senha no formato adequado para o LDAP
+	 */
+	public static function sha($senha)
+	{
+		return '{SHA}' . base64_encode(sha1($senha, true));
+	}
+
+	/**
+	 * Gera o hash SHA com sal da senha passada como parâmetro e faz a adequação
+	 * para o formato do LDAP. Este método não gera um SHA com sal aleatório,
+	 * ele usa o sal do hash da senha original e gera o hash da nova senha
+	 * passada como parâmetro para fins de autenticação.
+	 *
+	 * Formas de armazenar senhas no LDAP:
+	 * http://www.openldap.org/faq/data/cache/347.html
+	 * http://blog.michael.kuron-germany.de/2012/07/hashing-and-verifying-ldap-passwords-in-php/comment-page-1/
+	 * http://stackoverflow.com/questions/17733040/how-can-i-retrieve-a-salt-from-ldap
+	 *
+	 * @param string $senha Senha a ser hasheada
+	 * @param string $hashOriginal Hash SHA com sal da senha original
+	 * @return string Hash SHA com sal da senha passada como parâmetro
+	 */
+	public static function ssha($senha, $hashOriginal)
+	{
+		// Os 20 primeiros caracteres do hash original são o hash da senha, os
+		// demais são o sal
+		$sal = substr(base64_decode(substr($hashOriginal, 6)), 20);
+		return '{SSHA}' . base64_encode(sha1($senha . $sal, true) . $sal);
+	}
+
+	/*
+	 * Gera o hash MD5 da senha passada como parâmetro e faz a adequação para o
+	 * formato do LDAP.
+	 *
+	 * @param string $senha Senha a ser hasheada
+	 * @return string Hash MD5 da senha no formato adequado para o LDAP
+	 */
+    public static function md5($senha)
+    {
+		return '{MD5}' . base64_encode(md5($senha, true));
+	}
+
+}

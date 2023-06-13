@@ -1,0 +1,13 @@
+<?php
+/**
+ * @property Inscricao $inscricao
+ */
+?>
+
+<h1>Pré-inscrição realizada com sucesso!</h1>
+<br>
+<p>Caro(a) <b><?php echo $inscricao->nome . ' ' . $inscricao->sobrenome; ?></b>, sua pré-inscrição foi realizada com sucesso!</p>
+<p>Caso ainda não tenha efetuado o pagamento clique no link a seguir para gerar o boleto <a href="http://www3.fai.ufscar.br/Fundacao/CURSOS/asp/mostraturma.asp?turma=675**1*2/16" target="_blank">http://www3.fai.ufscar.br/Fundacao/CURSOS/asp/mostraturma.asp?turma=675**1*2/16</a></p>
+<p>Após realizarmos a confirmação de seu pagamento daremos prosseguimento ao processo de inscrição.</p>
+<p>Obrigado!</p>
+<p>Secretaria do Curso Educação e Tecnologias</p>

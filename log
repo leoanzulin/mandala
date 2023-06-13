@@ -1,0 +1,6 @@
+Version 1.10.9
+
+- Remove `bolsas` relation from one of the teachers' views
+- Rename constant `STATUS_PAGOU_PRE_INSCRICAO` to
+  `STATUS_DOCUMENTOS_SENDO_ANALISADOS`
+- Add unique CPF validation again

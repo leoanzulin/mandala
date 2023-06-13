@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * Controlador que implementa uma interface REST para o modelo Habilitacao.
+ * 
+ * Métodos:
+ * 
+ * habilitacao/get
+ * - Retorna um vetor com a(s) habilitação(ões) do aluno logado no momento.
+ * 
+ */
+class HabilitacaoController extends Controller
+{
+
+    public function actionGet()
+    {
+        $cpf = Yii::app()->user->name;
+        $inscricao = Inscricao::model()->findByAttributes(array('cpf' => $cpf));
+
+        $habilitacoesArray = array($inscricao->recuperarHabilitacao1()->asArray());
+        $habilitacao2 = $inscricao->recuperarHabilitacao2();
+        if ($habilitacao2) {
+            array_push($habilitacoesArray, $habilitacao2->asArray());
+        }
+        $this->respostaJSON(json_encode($habilitacoesArray));
+    }
+
+}

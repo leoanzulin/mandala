@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/edtec/!svn/ver/23/trunk/protected/views/enrollment
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/2/trunk/protected/views/enrollment/_form.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/edtec/!svn/ver/2/trunk/protected/views/enrollment/update.php
+END
+_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/edtec/!svn/ver/2/trunk/protected/views/enrollment/_search.php
+END
+_viewCurso.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/edtec/!svn/ver/11/trunk/protected/views/enrollment/_viewCurso.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/edtec/!svn/ver/11/trunk/protected/views/enrollment/index.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/2/trunk/protected/views/enrollment/admin.php
+END
+success.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/edtec/!svn/ver/18/trunk/protected/views/enrollment/success.php
+END
+manage.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/edtec/!svn/ver/20/trunk/protected/views/enrollment/manage.php
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/2/trunk/protected/views/enrollment/_view.php
+END
+manageCourse.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/edtec/!svn/ver/20/trunk/protected/views/enrollment/manageCourse.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/22/trunk/protected/views/enrollment/view.php
+END
+enroll.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/edtec/!svn/ver/23/trunk/protected/views/enrollment/enroll.php
+END

@@ -1,0 +1,68 @@
+<?php
+$this->breadcrumbs = array(
+    'Inscrição em ofertas',
+);
+?>
+
+<div ng-app="inscricaoApp" ng-controller="controlador">
+
+<h1>Inscrição em ofertas</h1>
+<br>
+
+<h3>Habilitações escolhidas:</h3>
+<ul>
+<?php
+    echo "<li><b>H1</b>: {$inscricao->recuperarHabilitacao1()->nome}</li>\n";
+    if ($inscricao->recuperarHabilitacao2()) {
+        echo "<li><b>H2</b>: {$inscricao->recuperarHabilitacao2()->nome}</li>\n";
+    }
+?>
+</ul>
+
+<H3>Legenda das prioridades</H3>
+<ul>
+    <li><b>N</b>: Componente necessária (obrigatória)</li>
+    <li><b>O</b>: Componente obrigatória</li>
+    <li><b>L</b>: Componente livre</li>
+</ul>
+
+<br>
+
+<?php $form=$this->beginWidget('CActiveForm', array(
+    'id'=>'inscricao-ofertas-form',
+    'enableAjaxValidation'=>false,
+)); ?>
+
+<div ng-repeat="periodo in periodos | orderBy: ['ano', 'mes']">
+
+    <h2>Ofertas de {{periodo.mes}}/{{periodo.ano}}</h2>
+
+    <table class="table tabela-inscricao">
+        <tr><th>Componente Curricular</th><th>H1</th><th>H2</th><th></th></tr>
+        <tr
+                ng-repeat="componente in periodo.componentes | orderBy: 'id'"
+                ng-click="selecionar(componente)"
+                ng-class="{'selecionado': componente.selecionado}">
+            <td>{{componente.nome}}</td>
+            <td class="{{componente.classesCss[habilitacao1]}}">{{componente.prioridadesLetras[habilitacao1]}}</td>
+            <td class="{{componente.classesCss[habilitacao2]}}">{{componente.prioridadesLetras[habilitacao2]}}</td>
+            <td>
+                <input
+                    id="Inscricao_{{componente.id}}_selecionado"
+                    type="checkbox"
+                    ng-model="componente.selecionado"
+                    ng-click="$event.stopPropagation()"
+                    name="Inscricao[{{periodo.ano}}_{{periodo.mes}}][{{componente.id}}][selecionado]">
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<?php echo CHtml::submitButton('Salvar inscrição', array(
+    'class' => 'btn btn-success btn-lg',
+)); ?>
+
+<?php $this->endWidget(); ?>
+
+</div>

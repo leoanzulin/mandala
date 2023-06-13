@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * This is the model class for table "pages".
+ *
+ * The followings are the available columns in table 'pages':
+ * @property integer $page_id
+ * @property string $page_name
+ * @property string $page_description
+ * @property integer $page_position
+ */
+class Pages extends CActiveRecord
+{
+
+    public static function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
+
+    public function tableName()
+    {
+        return 'pages';
+    }
+
+    public function rules()
+    {
+        return array(
+            array('page_name, page_shortname, page_description, page_position', 'required'),
+            array('page_position', 'numerical', 'integerOnly' => true),
+            array('page_name, page_shortname', 'length', 'max' => 255),
+
+            array('page_id, page_name, page_shortname, page_description, page_position', 'safe', 'on' => 'search'),
+        );
+    }
+
+    public function attributeLabels()
+    {
+        return array(
+            'page_id' => 'ID',
+            'page_name' => 'Título',
+            'page_shortname' => 'Título curto',
+            'page_description' => 'Conteúdo',
+            'page_position' => 'Posição',
+        );
+    }
+
+    public function search()
+    {
+        $criteria = new CDbCriteria;
+
+        $criteria->compare('page_id', $this->page_id);
+        $criteria->compare('page_name', $this->page_name, true);
+        $criteria->compare('page_description', $this->page_description, true);
+        $criteria->compare('page_position', $this->page_position);
+
+        return new CActiveDataProvider($this, array(
+            'criteria' => $criteria,
+        ));
+    }
+
+    /**
+     * Adiciona páginas novas sempre ao fim do menu.
+     */
+    public function beforeValidate()
+    {
+        if (empty($this->page_position)) {
+            $proximaPosicao = 0;
+            $paginas = Pages::model()->findAll();
+            foreach ($paginas as $pagina)
+                if ($pagina->page_position > $proximaPosicao)
+                    $proximaPosicao = $pagina->page_position;
+
+            $proximaPosicao++;
+            $this->page_position = $proximaPosicao;
+        }
+        return parent::beforeValidate();
+    }
+
+}

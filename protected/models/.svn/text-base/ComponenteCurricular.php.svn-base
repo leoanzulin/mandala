@@ -1,0 +1,116 @@
+<?php
+
+/**
+ * This is the model class for table "componente_curricular".
+ *
+ * The followings are the available columns in table 'componente_curricular':
+ * @property string $id
+ * @property string $nome
+ * @property integer $carga_horaria
+ *
+ * The followings are the available model relations:
+ * @property Habilitacao[] $habilitacaos
+ */
+class ComponenteCurricular extends CActiveRecord
+{
+
+    private $prioridadesParaLetras = array(
+        '0' => 'N', // (N)ecessárias
+        '1' => 'O', // (O)brigatórias
+        '2' => 'L', // (L)ivres
+    );
+    
+    public function tableName()
+    {
+        return 'componente_curricular';
+    }
+
+    public function rules()
+    {
+        return array(
+            array('nome, carga_horaria', 'required'),
+            array('carga_horaria', 'numerical', 'integerOnly' => true),
+            array('nome', 'length', 'max' => 256),
+            array('id, nome, carga_horaria', 'safe', 'on' => 'search'),
+        );
+    }
+
+    public function relations()
+    {
+        return array(
+            'habilitacaos' => array(self::MANY_MANY, 'Habilitacao', 'componente_habilitacao(componente_curricular_id, habilitacao_id)'),
+            'preinscricoes' => array(self::MANY_MANY, 'Inscricao', 'preinscricao_componente(componente_curricular_id, inscricao_id)'),
+        );
+    }
+
+    public function attributeLabels()
+    {
+        return array(
+            'id' => 'ID',
+            'nome' => 'Nome',
+            'carga_horaria' => 'Carga Horaria',
+        );
+    }
+
+    public static function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
+
+    public function asArray()
+    {
+        $componenteHabilitacoes = ComponenteHabilitacao::model()->findAllByAttributes(array(
+            'componente_curricular_id' => $this->id,
+        ));
+        $prioridades = array();
+        $prioridadesLetra = array();
+        $classesCss = array();
+
+        $prioridades[0] = -1;
+        $prioridadesLetra[0] = '-';
+        $classesCss[0] = '';
+        foreach ($componenteHabilitacoes as $componenteHabilitacao) {
+            $habilitacao = $componenteHabilitacao->habilitacao_id;
+            $prioridade = $componenteHabilitacao->prioridade;
+
+            $prioridades[$habilitacao] = $prioridade;
+            $prioridadesLetra[$habilitacao] = $this->prioridadesParaLetras[$prioridade];
+            $classesCss[$habilitacao] = $prioridade <= 1 ? 'prioridade' . $habilitacao : '';
+        }
+
+        return array(
+            'id' => $this->id,
+            'nome' => $this->nome,
+            'cargaHoraria' => $this->carga_horaria,
+            'prioridades' => $prioridades,
+            'prioridadesLetras' => $prioridadesLetra,
+            'classesCss' => $classesCss,
+        );
+    }
+
+    public function toJSON()
+    {
+        return json_encode($this->asArray());
+    }
+
+    /**
+     * Retorna a prioridade (em forma de letra) desta componente curricular em
+     * relação à habilitação passada como parâmetro.
+     * @param Habilitacao $habilitacao
+     * @return Prioridade
+     */
+    public function prioridadeParaHabilitacao($habilitacao)
+    {
+        if (empty($habilitacao) || $habilitacao->id == 0) {
+            return '-';
+        }
+
+        $componenteHabilitacao = ComponenteHabilitacao::model()->findByAttributes(array(
+            'componente_curricular_id' => $this->id,
+            'habilitacao_id' => $habilitacao->id,
+        ));
+
+        return $this->prioridadesParaLetras[$componenteHabilitacao->prioridade];
+    }
+
+}

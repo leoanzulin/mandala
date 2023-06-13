@@ -1,0 +1,271 @@
+<?php
+
+/**
+ * This is the model class for table "inscricao".
+ *
+ * The followings are the available columns in table 'inscricao':
+ * @property string $id
+ * @property string $cpf
+ * @property string $nome
+ * @property string $sobrenome
+ * @property string $sexo
+ * @property string $email
+ * @property string $data_nascimento
+ * @property string $naturalidade
+ * @property string $nome_mae
+ * @property string $nome_pai
+ * @property string $estado_civil
+ * @property string $telefone_fixo
+ * @property string $telefone_celular
+ * @property string $telefone_alternativo
+ * @property string $cep
+ * @property string $endereco
+ * @property string $numero
+ * @property string $complemento
+ * @property string $cidade
+ * @property string $estado
+ * @property string $cargo_atual
+ * @property string $empresa
+ * @property string $telefone_comercial
+ * @property string $forma_pagamento
+ * @property string $criterio_bolsa Servidor UFSCar, desempregado, etc.
+ * 
+ * @property string documento_cpf
+ * @property string documento_rg
+ * @property string documento_diploma
+ * @property string documento_comprovante_residencia
+ * @property string documento_curriculo
+ * 
+ * @property integer $status
+ * @property string $curso_id
+ *
+ * The followings are the available model relations:
+ * @property Habilitacao[] $habilitacoes
+ * @property Curso $curso
+ * @property Formacao[] $formacoes
+ */
+class Inscricao extends ActiveRecord
+{
+
+    const STATUS_PENDENTE = 0;
+    const STATUS_PAGOU_PRE_INSCRICAO = 1;
+    const STATUS_DOCUMENTOS_VERIFICADOS = 2;
+    const STATUS_MATRICULADO = 3;
+
+    public $confirmarEmail = '';
+    public $formacao = array();
+    public $habilitacoesEscolhidas = array();
+    
+    public $pagou_inscricao = false;
+    public $documentos_validados = false;
+
+    public function tableName()
+    {
+        return 'inscricao';
+    }
+
+    public function rules()
+    {
+        return array(
+            array('cpf, nome, sobrenome, sexo, email, confirmarEmail, data_nascimento, naturalidade, estado_civil, cep, endereco, numero, cidade, estado, curso_id', 'required', 'on' => 'insert'),
+            array('status', 'numerical', 'integerOnly' => true),
+            array('justificativa_bolsa', 'length', 'max' => 10485760),
+            array('nome, sobrenome, email, confirmarEmail, naturalidade, nome_mae, nome_pai, estado_civil, endereco, complemento, cidade, cargo_atual, empresa', 'length', 'max' => 256),
+            array('cpf, telefone_fixo, telefone_celular, telefone_alternativo, numero, telefone_comercial', 'length', 'max' => 30),
+            array('cep', 'length', 'max' => 8),
+            array('estado', 'length', 'max' => 2),
+            array('sexo', 'length', 'max' => 1),
+            array('formacoes, cargo_atual, empresa, habilitacoesEscolhidas', 'safe'),
+            array('cpf', 'validadorCpf'),
+            array('email, confirmarEmail', 'email'),
+            array('confirmarEmail', 'compare', 'compareAttribute' => 'email', 'on' => 'insert'),
+            array('habilitacoesEscolhidas', 'duasHabilitacoes', 'on' => 'insert'),
+            array('formacao', 'peloMenosUmaFormacao', 'on' => 'insert'),
+
+            array('documento_cpf', 'file', 'types'=>'pdf, jpg, jpeg, gif, png', 'maxSize' => 1024 * 1024 * 2, 'tooLarge' => 'Arquivo deve ter menos de 2MB', 'safe' => false, 'on' => 'documentos'),
+            array('documento_rg', 'file', 'types'=>'pdf, jpg, jpeg, gif, png', 'maxSize' => 1024 * 1024 * 2, 'tooLarge' => 'Arquivo deve ter menos de 2MB',  'safe' => false, 'on' => 'documentos'),
+            array('documento_diploma', 'file', 'types'=>'pdf, jpg, jpeg, gif, png', 'maxSize' => 1024 * 1024 * 2, 'tooLarge' => 'Arquivo deve ter menos de 2MB',  'safe' => false, 'on' => 'documentos'),
+            array('documento_comprovante_residencia', 'file', 'types'=>'pdf, jpg, jpeg, gif, png', 'maxSize' => 1024 * 1024 * 2, 'tooLarge' => 'Arquivo deve ter menos de 2MB',  'safe' => false, 'on' => 'documentos'),
+            array('documento_curriculo', 'file', 'types'=>'pdf, doc, docx, jpg, jpeg, gif, png', 'maxSize' => 1024 * 1024 * 2, 'tooLarge' => 'Arquivo deve ter menos de 2MB',  'safe' => false, 'on' => 'documentos'),
+<<<<<<< .mine
+            array('documento_justificativa', 'file', 'types' => 'pdf, doc, docx, jpg, jpeg, gif, png, zip', 'maxSize' => 1024 * 1024 * 2, 'tooLarge' => 'Arquivo deve ter menos de 2MB',  'safe' => false, 'on' => 'documentos', 'allowEmpty' => true),
+=======
+            array('documento_justificativa', 'file', 'types'=>'pdf, doc, docx, jpg, jpeg, gif, png, zip', 'maxSize' => 1024 * 1024 * 5, 'tooLarge' => 'Arquivo deve ter menos de 5MB',  'safe' => false, 'on' => 'documentos', 'allowEmpty' => true),
+            
+>>>>>>> .r35
+
+            array('pagou_inscricao, documentos_validados', 'boolean'),
+
+            // Impede que CPFs e e-mails repetidos sejam inscritos
+            array('cpf', 'multipleUnique', 'on' => 'insert'),
+            array('email', 'multipleUnique', 'on' => 'insert'),
+            array('id, cpf, nome, sobrenome, email, data_nascimento, nome_mae, nome_pai, estado_civil, telefone_fixo, telefone_celular, telefone_alternativo, cep, endereco, numero, complemento, cidade, estado, cargo_atual, empresa, telefone_comercial, status, curso_id', 'safe', 'on' => 'search'),
+        );
+    }
+
+    /**
+     * Validador para verificar se o usuário selecionou uma ou duas
+     * habilitações
+     */
+    public function duasHabilitacoes($attribute, $params)
+    {
+        if (count($this->$attribute) < 1) {
+            $this->addError($attribute, 'Selecione pelo menos 1 habilitação');
+        }
+        if (count($this->$attribute) > 2) {
+            $this->addError($attribute, 'Selecione no máximo 2 habilitações');
+        }
+    }
+
+    /**
+     * Validador para verificar se o usuário forneceu pelo menos uma formação
+     * acadêmica
+     */
+    public function peloMenosUmaFormacao($attribute, $params)
+    {
+        if (count($this->$attribute) < 1) {
+            $this->addError($attribute, 'Informe pelo menos uma formação acadêmica');
+        }
+    }
+
+    /**
+     * Validador para verificar se algum atributo já está inscrito
+     */
+    public function multipleUnique($attribute, $params)
+    {
+        $model = Inscricao::model()->findByAttributes(array(
+            $attribute => $this->$attribute,
+        ));
+        if (!empty($model)) {
+            $this->addError($attribute, 'Este ' . $attribute . ' já está inscrito.');
+        }
+    }
+
+    public function relations()
+    {
+        return array(
+            'formacoes' => array(self::HAS_MANY, 'Formacao', 'inscricao_id'),
+            'curso' => array(self::BELONGS_TO, 'Curso', 'curso_id'),
+            'habilitacoes' => array(self::MANY_MANY, 'Habilitacao', 'habilitacao_inscricao(inscricao_id, habilitacao_id)'),
+        );
+    }
+
+    public function attributeLabels()
+    {
+        return array(
+            'id' => 'ID',
+            'cpf' => 'CPF',
+            'nome' => 'Nome',
+            'sobrenome' => 'Sobrenome',
+            'sexo' => 'Sexo',
+            'email' => 'E-mail',
+            'confirmarEmail' => 'Confirme seu e-mail',
+            'data_nascimento' => 'Data de nascimento',
+            'naturalidade' => 'Naturalidade',
+            'nome_mae' => 'Nome da mãe',
+            'nome_pai' => 'Nome do pai',
+            'estado_civil' => 'Estado civil',
+            'telefone_fixo' => 'Telefone fixo',
+            'telefone_celular' => 'Telefone celular',
+            'telefone_alternativo' => 'Telefone alternativo',
+            'cep' => 'CEP',
+            'endereco' => 'Endereço',
+            'numero' => 'Número',
+            'complemento' => 'Complemento',
+            'cidade' => 'Cidade',
+            'estado' => 'Estado',
+            'cargo_atual' => 'Cargo atual',
+            'empresa' => 'Empresa',
+            'telefone_comercial' => 'Telefone comercial',
+            'forma_pagamento' => 'Forma de pagamento',
+            'criterio_bolsa' => 'Critério para solicitação de bolsa',
+            'justificativa_bolsa' => 'Justificativa para solicitação de bolsa',
+            'renda_familiar_aproximada' => 'Renda familliar aproximada (R$)',
+            'status' => 'Status',
+            'curso_id' => 'Curso',
+            
+            'documento_cpf' => 'CPF',
+            'documento_rg' => 'RG',
+            'documento_diploma' => 'Diploma da maior titulação',
+            'documento_comprovante_residencia' => 'Comprovante de residência',
+            'documento_curriculo' => 'Currículo',
+            'documento_justificativa' => 'Justificativa de próprio punho',
+            
+            'pagou_inscricao' => 'Pagou a inscrição?',
+            'documentos_validados' => 'Documentos validados?',
+        );
+    }
+
+    public function search()
+    {
+        $criteria = new CDbCriteria;
+
+        $criteria->compare('id', $this->id, true);
+        $criteria->compare('cpf', $this->cpf, true);
+        $criteria->compare('nome', $this->nome, true);
+        $criteria->compare('sobrenome', $this->sobrenome, true);
+        $criteria->compare('sexo', $this->sexo, true);
+        $criteria->compare('email', $this->email, true);
+        $criteria->compare('data_nascimento', $this->data_nascimento, true);
+        $criteria->compare('naturalidade', $this->naturalidade, true);
+        $criteria->compare('nome_mae', $this->nome_mae, true);
+        $criteria->compare('nome_pai', $this->nome_pai, true);
+        $criteria->compare('estado_civil', $this->estado_civil, true);
+        $criteria->compare('telefone_fixo', $this->telefone_fixo, true);
+        $criteria->compare('telefone_celular', $this->telefone_celular, true);
+        $criteria->compare('telefone_alternativo', $this->telefone_alternativo, true);
+        $criteria->compare('cep', $this->cep, true);
+        $criteria->compare('endereco', $this->endereco, true);
+        $criteria->compare('numero', $this->numero, true);
+        $criteria->compare('complemento', $this->complemento, true);
+        $criteria->compare('cidade', $this->cidade, true);
+        $criteria->compare('estado', $this->estado, true);
+        $criteria->compare('cargo_atual', $this->cargo_atual, true);
+        $criteria->compare('empresa', $this->empresa, true);
+        $criteria->compare('telefone_comercial', $this->telefone_comercial, true);
+//        $criteria->compare('forma_pagamento', $this->forma_pagamento, true);
+        $criteria->compare('status', $this->status);
+        $criteria->compare('curso_id', $this->curso_id, true);
+        
+        $criteria->compare('documento_cpf', $this->documento_cpf, true);
+        $criteria->compare('documento_rg', $this->documento_rg, true);
+        $criteria->compare('documento_curriculo', $this->documento_curriculo, true);
+        $criteria->compare('documento_diploma', $this->documento_diploma, true);
+        $criteria->compare('documento_comprovante_residencia', $this->documento_comprovante_residencia, true);
+        $criteria->compare('documento_justificativa', $this->documento_justificativa, true);
+
+        
+        
+        return new CActiveDataProvider($this, array(
+            'criteria' => $criteria,
+            'pagination' => array(
+                'pageSize' => 50,
+            ),
+        ));
+    }
+
+    public static function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
+
+    public function recuperarArquivoDocumento($documento, $caminhoCompleto = false)
+    {
+        $nomeAtributo = "documento_{$documento}";
+        $atributo = $this->$nomeAtributo;
+        if (empty($atributo)) return '';
+        
+        $extensao = $this->recuperarExtensao($atributo);
+        $caminho = '';
+        if ($caminhoCompleto == true) {
+            $caminho = Yii::app()->baseUrl . '/uploads/';
+        }
+        return "{$caminho}{$this->cpf}_{$documento}.{$extensao}";
+    }
+
+    private function recuperarExtensao($nomeArquivo)
+    {
+        $partes = pathinfo($nomeArquivo);
+        return $partes['extension'];    
+    }
+}

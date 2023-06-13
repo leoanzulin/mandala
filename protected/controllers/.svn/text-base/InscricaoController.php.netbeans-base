@@ -1,0 +1,187 @@
+<?php
+
+class InscricaoController extends Controller
+{
+
+    /**
+     * Formulário de pré-inscrição.
+     */
+    public function actionIndex()
+    {
+        $inscricao = new Inscricao();
+        $inscricao->curso_id = 1;
+
+        if (isset($_POST['Inscricao'])) {
+            $inscricao->attributes = $_POST['Inscricao'];
+            $inscricao->cep = str_replace('-', '', $inscricao->cep);
+            $inscricao->candidato_a_bolsa = $inscricao->candidato_a_bolsa == 'sim' ? 1 : 0;
+
+            if ($inscricao->save()) {
+                $this->salvarFormacoes($inscricao);
+                Yii::log("{$inscricao->nome} (CPF {$inscricao->cpf}) pré-inscrito com sucesso.", 'info', 'system.controllers.InscricaoController');
+                $senha = $inscricao->transformarEmUsuario();
+                if (isset($senha)) {
+                    Email::mensagemPreInscricao($inscricao->nome . ' ' . $inscricao->sobrenome, $inscricao->email, $inscricao->cpf, $senha);
+                    $this->redirect(array('sucesso', 'id' => $inscricao->id));
+                }
+            }
+        }
+
+        $cs = Yii::app()->getClientScript();
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/mascara_celular.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/inscricoes.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/bower_components/angular/angular.js');
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/inscricaoApp.js');
+
+        $inscricao->modalidade = 'distancia';
+        $inscricao->candidato_a_bolsa = 'nao';
+        $inscricao->habilitacao1 = 3;
+        $inscricao->habilitacao2 = 0;
+
+        $this->render('index', array(
+            'model' => $inscricao,
+            'modelFormacao' => new Formacao(),
+        ));
+    }
+
+    private function salvarFormacoes(Inscricao $inscricao)
+    {
+        foreach ($inscricao->formacao as $formacao) {
+            $f = new Formacao();
+            $f->attributes = $formacao;
+            $f->inscricao_id = $inscricao->id;
+            $f->save();
+        }
+    }
+
+    public function loadModel($id)
+    {
+        $model = Inscricao::model()->findByPk($id);
+        if ($model === null)
+            throw new CHttpException(404, 'The requested page does not exist.');
+        return $model;
+    }
+
+    protected function performAjaxValidation($model)
+    {
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'inscricao-form') {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
+    }
+
+    public function actionSucesso($id)
+    {
+        $this->render('sucesso', array(
+            'inscricao' => Inscricao::model()->findByPk($id),
+        ));
+    }
+
+    /**
+     * Formulário de envio de documentos.
+     * 
+     * @param string $cpf
+     * @throws CHttpException
+     */
+    public function actionDocumentos($cpf)
+    {
+        $model = Inscricao::model()->findByCpf($cpf);
+        if ($model === null) {
+            throw new CHttpException(404, 'O CPF informado não está pré-inscrito no EDUTEC.');
+        }
+        if (!empty($model->documento_cpf)) {
+            throw new CHttpException(500, 'Você já enviou os documentos necessários para inscrição.');
+        }
+
+        $model->scenario = 'documentos';
+
+        if (isset($_POST['Inscricao'])) {
+
+            $model->attributes = $_POST['Inscricao'];
+            $model->documento_cpf = CUploadedFile::getInstance($model, 'documento_cpf');
+            $model->documento_rg = CUploadedFile::getInstance($model, 'documento_rg');
+            $model->documento_diploma = CUploadedFile::getInstance($model, 'documento_diploma');
+            $model->documento_comprovante_residencia = CUploadedFile::getInstance($model, 'documento_comprovante_residencia');
+            $model->documento_curriculo = CUploadedFile::getInstance($model, 'documento_curriculo');
+            $model->documento_justificativa = CUploadedFile::getInstance($model, 'documento_justificativa');
+            if ($model->save()) {
+                $extensao = $this->recuperarExtensao($model->documento_cpf);
+                $model->documento_cpf->saveAs(Yii::app()->basePath . "/../uploads/{$model->cpf}_cpf.{$extensao}");
+                $extensao = $this->recuperarExtensao($model->documento_rg);
+                $model->documento_rg->saveAs(Yii::app()->basePath . "/../uploads/{$model->cpf}_rg.{$extensao}");
+                $extensao = $this->recuperarExtensao($model->documento_diploma);
+                $model->documento_diploma->saveAs(Yii::app()->basePath . "/../uploads/{$model->cpf}_diploma.{$extensao}");
+                $extensao = $this->recuperarExtensao($model->documento_comprovante_residencia);
+                $model->documento_comprovante_residencia->saveAs(Yii::app()->basePath . "/../uploads/{$model->cpf}_comprovante_residencia.{$extensao}");
+                $extensao = $this->recuperarExtensao($model->documento_curriculo);
+                $model->documento_curriculo->saveAs(Yii::app()->basePath . "/../uploads/{$model->cpf}_curriculo.{$extensao}");
+                if (!empty($model->documento_justificativa)) {
+                    $extensao = $this->recuperarExtensao($model->documento_justificativa);
+                    $model->documento_justificativa->saveAs(Yii::app()->basePath . "/../uploads/{$model->cpf}_justificativa.{$extensao}");
+                }
+                $this->redirect(array('documentosSucesso', 'cpf' => $model->cpf));
+            }
+        }
+
+        $this->render('documentos', array('model' => $model));
+    }
+
+    private function recuperarExtensao($nomeArquivo)
+    {
+        $partes = pathinfo($nomeArquivo);
+        return $partes['extension'];
+    }
+
+    public function actionDocumentosSucesso($cpf)
+    {
+        $this->render('documentosSucesso', array(
+            'inscricao' => Inscricao::model()->findByAttributes(array('cpf' => $cpf)),
+        ));
+    }
+
+    /**
+     * Tela de adição de informações complementares. Os alunos não podem
+     * utilizar o sistema enquanto não fornecerem estas informações.
+     */
+    public function actionInformacoesComplementares()
+    {
+        $inscricao = Inscricao::model()->findByCpf(Yii::app()->user->id);
+        $usuario = Usuario::model()->findByPk(Yii::app()->user->id);
+
+        // Se o usuário não precisa preencher as infromações faltantes, o redireciona
+        if (!empty($usuario) && !$usuario->temPapel('InscritoComInformacoesFaltantes')) {
+            $this->redirect(Yii::app()->createUrl('aluno'));
+        }
+
+        if (isset($_POST['Inscricao'])) {
+            $inscricao->attributes = $_POST['Inscricao'];
+            $inscricao->cep = str_replace('-', '', $inscricao->cep);
+            $inscricao->candidato_a_bolsa = $inscricao->candidato_a_bolsa == 'sim' ? 1 : 0;
+            if ($inscricao->habilitacao1 == $inscricao->habilitacao2) {
+                $inscricao->errors['habilitacao1'] = 'As habilitações escolhidas devem ser diferentes';
+            }
+
+            if ($inscricao->validate() && $inscricao->update()) {
+                Yii::app()->authManager->revoke('InscritoComInformacoesFaltantes', $inscricao->cpf);
+                Yii::app()->authManager->assign('Inscrito', $inscricao->cpf);
+                Yii::log("{$usuario} preencheu informações faltantes.", 'info', 'system.controllers.AlunoController');
+                Yii::app()->user->setFlash('notificacao', 'Informações salvas com sucesso!');
+                $this->redirect(Yii::app()->createUrl('aluno'));
+            }
+        }
+
+        $cs = Yii::app()->getClientScript();
+        $cs->registerScriptFile(Yii::app()->baseUrl . '/js/informacoesComplementares.js');
+
+        $inscricao->modalidade = 'distancia';
+        $inscricao->candidato_a_bolsa = 'nao';
+        $inscricao->habilitacao1 = 3;
+        $inscricao->habilitacao2 = 0;
+
+        $this->render('informacoesComplementares', array(
+            'usuario' => $usuario,
+            'model' => $inscricao,
+        ));
+    }
+
+}

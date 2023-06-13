@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmação de recebimento de formulário de inscrição</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p>Caro(a) {nome}, sua inscrição foi realizada com sucesso!</p><br>
+    <p>Suas credenciais para acessar sua área virtual no EduTec são:</p>
+    <p>Login: <b>{cpf}</b></p>
+    <p>Senha: <b>{senha}</b></p>
+
+    <p>Acesse sua área virtual no endereço
+    <a href="http://edutec.ead.ufscar.br/index.php?r=site/login">
+    http://edutec.ead.ufscar.br/index.php?r=site/login</a>.</p>
+    <p>Em sua área virtual você poderá alterar seu perfil e enviar a documentação necessária para finalizar sua inscrição.</p>
+
+    <p>Obrigado!</p>
+    <p>Secretaria do Curso Educação e Tecnologias</p>
+</body>
+</html>

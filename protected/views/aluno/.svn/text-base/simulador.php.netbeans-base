@@ -1,0 +1,162 @@
+<?php
+$this->breadcrumbs = array(
+	'Simulador',
+);
+?>
+
+<h2>Simulador de grade curricular</h2>
+
+<div ng-app="simuladorApp" ng-controller="controlador">
+
+<p>Habilitações escolhidas</p>
+<ul>
+<?php
+    echo "<li>{$model->recuperarHabilitacao1()->nome}</li>\n";
+    if ($model->recuperarHabilitacao2()) {
+        echo "<li>{$model->recuperarHabilitacao2()->nome}</li>\n";
+    }
+?>
+</ul>
+
+<div class="simulador-container">
+
+    <h2>Grade curricular</h2>
+
+    <div class="legenda">
+        <h3>Legenda das habilitações</h3>
+        <ul><ul>
+            <li><b>G</b>: Gestão da Educação a Distância</li>
+            <li><b>D</b>: Docência Virtual</li>
+            <li><b>M</b>: Mídias na Educação</li>
+            <li><b>T</b>: Produção e Uso de Tecnologias para Educação</li>
+            <li><b>P</b>: Design Instrucional (Projeto e Desenho Pedagógico)</li>
+        </ul></ul>
+        <H3>Legenda das prioridades</H3>
+        <ul><ul>
+            <li><b>N</b>: Componente necessária (obrigatória)</li>
+            <li><b>O</b>: Componente obrigatória</li>
+            <li><b>L</b>: Componente livre</li>
+        </ul></ul>
+    </div>
+    
+    <h3 ng-if="periodos.length === 0"><b>Não há nenhum período em sua grade</b></h3>
+
+    <?php $form=$this->beginWidget('CActiveForm', array(
+        'id'=>'preinscricao-form',
+        'enableAjaxValidation'=>false,
+    )); ?>
+
+    <table class="simulador" ng-repeat="periodo in periodos | orderBy: ['ano', 'mes']" dnd-list="periodo.componentes">
+        <tr><td colspan="8">
+            <p><b>{{$index + 1}}º período ({{periodo.mes}} / {{periodo.ano}})</b></p>
+            <ul>
+                <li>Carga horária: {{cargaHorariaDoPeriodo($index)}} horas</li>
+                <li>{{periodo.componentes.length}} componentes</li>
+            </ul>
+            <p></p>
+        </td></tr>
+        <tr><th>Componente curricular</th><th>G</th><th>D</th><th>M</th><th>T</th><th>P</th><th style="width: 30px">Carga horária</th><th style="width: 15px"></th></tr>
+        <tr ng-if="periodo.componentes.length === 0"><td><i>Não há nenhuma componente neste período</i></td><td colspan="7"></td></tr>
+
+        <tr ng-repeat="componente in periodo.componentes | orderBy: ['-ehNecessaria', 'nome']" class="simulador-linha">
+            <td style="width: auto; text-align: left">{{componente.nome}}</td>
+            <td ng-class="componente.classesCss[3]">{{componente.prioridadesLetras[3]}}</td>
+            <td ng-class="componente.classesCss[4]">{{componente.prioridadesLetras[4]}}</td>
+            <td ng-class="componente.classesCss[1]">{{componente.prioridadesLetras[1]}}</td>
+            <td ng-class="componente.classesCss[2]">{{componente.prioridadesLetras[2]}}</td>
+            <td ng-class="componente.classesCss[5]">{{componente.prioridadesLetras[5]}}</td>
+            <td style="text-align: center">{{componente.cargaHoraria}}</td>
+            <td><button ng-click="remover(componente, $parent.$index)" type="button" class="btn btn-default">X</button></td>
+
+            <input id="Preinscricao_{{componente.id}}_componente_id" type="hidden" name="Preinscricao[componentes][{{componente.id}}][componente_id]" value="{{componente.id}}">
+            <input id="Preinscricao_{{componente.id}}_inscricao_id" type="hidden" name="Preinscricao[componentes][{{componente.id}}][inscricao_id]" value="<?php echo $inscricaoId; ?>">
+            <input id="Preinscricao_{{componente.id}}_periodo" type="hidden" name="Preinscricao[componentes][{{componente.id}}][periodo]" value="{{$parent.$index + 1}}">
+        </tr>
+        <tr><td colspan="8">
+            <button type="button" class="btn btn-default" ng-click="open($index, periodo.ano, periodo.mes)">+</button>
+            <!--<button type="button" class="btn btn-default" ng-click="removerPeriodo($index)">Remover período</button>-->
+        </td></tr>
+    </table>
+
+    <!--<button ng-click="adicionarNovoPeriodo()" type="button" class="btn btn-default">Adicionar novo período</button>-->
+
+    <?php echo CHtml::submitButton('Salvar simulação', array(
+        'class' => 'btn btn-success btn-lg',
+    )); ?>
+
+    <br><br>
+
+    <div class="simulador-resumo">
+        <p>Número total de componentes: {{cargaHorariaTotal()[0].total}}</p>
+
+        <p>Divisão de componentes de acordo com a habilitação <b>{{habilitacoes[0].nome}}</b>:</p>
+        <table>
+            <tr><td>Necessárias (min. 7 componentes)</td><td>{{cargaHorariaTotal()[0].necessarias}}</td></tr>
+            <tr><td>Obrigatórias (min. 10 componentes)</td><td>{{cargaHorariaTotal()[0].prioritarias}}</td></tr>
+            <tr><td>Livres (min. 7 componentes)</td><td>{{cargaHorariaTotal()[0].livres}}</td></tr>
+        </table>
+        <br>
+
+        <?php  if ($model->recuperarHabilitacao2()) { ?>
+        
+        <p>Divisão da carga horária de acordo com a habilitação <b>{{habilitacoes[1].nome}}</b>:</p>
+        <table>
+            <tr><td>Necessárias (min. 7 componentes)</td><td>{{cargaHorariaTotal()[1].necessarias}}</td></tr>
+            <tr><td>Obrigatórias (min. 10 componentes)</td><td>{{cargaHorariaTotal()[1].prioritarias}}</td></tr>
+            <tr><td>Livres (min. 7 componentes)</td><td>{{cargaHorariaTotal()[1].livres}}</td></tr>
+        </table>
+
+        <?php } ?>
+    </div>
+
+</div>
+
+<?php $this->endWidget(); ?>
+
+<!-- Diálogo para selecionar disciplinas -->
+
+<script type="text/ng-template" id="myModalContent.html">
+    <div class="modal-header">
+        <h3 class="modal-title">Adicionar componentes curriculares ao {{periodoSelecionado}}º período ({{mes}} / {{ano}})</h3>
+    </div>
+    <div class="modal-body">
+
+        <table class="simulador">
+            <tr><td colspan="8"><h3>Componentes curriculares gerais</h3></td></tr>
+            <tr><th>Componente</th><th>G</th><th>D</th><th>M</th><th>T</th><th>P</th><th>Carga horária</th><th></th></tr>
+            <tr ng-repeat="componente in componentesDisponiveis | orderBy: 'nome'" ng-class="{'selecionado': componente.selecionado}" ng-click="selecionar(componente)" ng-if="componente.ehNecessaria">
+                <td>{{componente.nome}}</td>
+                <td ng-class="componente.classesCss[3]">{{componente.prioridadesLetras[3]}}</td>
+                <td ng-class="componente.classesCss[4]">{{componente.prioridadesLetras[4]}}</td>
+                <td ng-class="componente.classesCss[1]">{{componente.prioridadesLetras[1]}}</td>
+                <td ng-class="componente.classesCss[2]">{{componente.prioridadesLetras[2]}}</td>
+                <td ng-class="componente.classesCss[5]">{{componente.prioridadesLetras[5]}}</td>
+                <td style="text-align: center">{{componente.cargaHoraria}}</td>
+                <td><input type="checkbox" ng-model="componente.selecionado" ng-click="$event.stopPropagation()"></td>
+            </tr>
+        </table>
+        <br>
+
+        <table class="simulador">
+            <tr><td colspan="8"><h3>Componentes curriculares específicas</h3></td></tr>
+            <tr><th>Componente</th><th>G</th><th>D</th><th>M</th><th>T</th><th>P</th><th>Carga horária</th><th></th></tr>
+            <tr ng-repeat="componente in componentesDisponiveis | orderBy: 'nome'" ng-class="{'selecionado': componente.selecionado}" ng-click="selecionar(componente)" ng-if="!componente.ehNecessaria">
+                <td>{{componente.nome}}</td>
+                <td ng-class="componente.classesCss[3]">{{componente.prioridadesLetras[3]}}</td>
+                <td ng-class="componente.classesCss[4]">{{componente.prioridadesLetras[4]}}</td>
+                <td ng-class="componente.classesCss[1]">{{componente.prioridadesLetras[1]}}</td>
+                <td ng-class="componente.classesCss[2]">{{componente.prioridadesLetras[2]}}</td>
+                <td ng-class="componente.classesCss[5]">{{componente.prioridadesLetras[5]}}</td>
+                <td style="text-align: center">{{componente.cargaHoraria}}</td>
+                <td><input type="checkbox" ng-model="componente.selecionado" ng-click="$event.stopPropagation()"></td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-success" type="button" ng-click="ok()">Adicionar componentes ao período</button>
+        <button class="btn btn-default" type="button" ng-click="cancel()">Cancelar</button>
+    </div>
+</script>
+
+</div>

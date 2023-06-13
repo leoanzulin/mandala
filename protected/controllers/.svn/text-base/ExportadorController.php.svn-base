@@ -1,0 +1,29 @@
+<?php
+
+class ExportadorController extends Controller
+{
+
+    public function actionRelatorioDeInscricoesComStatus($status = 0, $formato = 'xls')
+    {
+        $inscricoes = Inscricao::model()->findAllByAttributes(array(
+            'status' => $status,
+        ));
+
+        $cabecalho = array('cpf', 'nome', 'sobrenome', 'email', 'habilitacao1', 'habilitacao2', 'modalidade');
+        $dados = array();
+        foreach ($inscricoes as $inscricao) {
+            array_push($dados, array(
+                $inscricao->cpf,
+                $inscricao->nome,
+                $inscricao->sobrenome,
+                $inscricao->email,
+                $inscricao->getHabilitacao1PorExtenso(),
+                $inscricao->getHabilitacao2PorExtenso(),
+                $inscricao->modalidade,
+            ));
+        }
+        $filename = 'Lista de inscrições.xls';
+        Exportador::exportar($cabecalho, $dados, $filename, $formato);
+    }
+
+}

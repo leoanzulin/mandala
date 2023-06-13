@@ -1,0 +1,2152 @@
+2023/05/20 11:34:10 [info] [system.controllers.TrocarSenhaController] [Usuário(a) Jéssica Fernanda Antunes da Silva (02164644042)] trocou de senha.
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (57)
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (32)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/20 11:38:55 [info] [system.components.UserIdentity] Usuário '05515680626' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 13:09:33 [info] [system.components.UserIdentity] Erro no login do usuário '823642' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 13:09:46 [info] [system.components.UserIdentity] Usuário '45786910806' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 13:50:11 [info] [system.components.UserIdentity] Usuário '45786910806' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2352 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2353 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2195 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2183 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2203 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2204 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2205 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2227 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2229 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2242 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2244 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2246 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2250 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2254 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2255 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2268 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2269 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2275 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2281 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2284 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] Inscrição 5844 se inscreveu na oferta 2271 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 13:55:09 [info] [system.controllers.AlunoController] [Inscrição de Mariana Lidia de Araujo (CPF 45786910806) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/20 13:55:29 [info] [system.controllers.AlunoController] [Inscrição de Mariana Lidia de Araujo (CPF 45786910806) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/20 13:56:21 [info] [system.controllers.AlunoController] [Inscrição de Mariana Lidia de Araujo (CPF 45786910806) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/20 18:25:41 [info] [system.components.UserIdentity] Usuário '47679719691' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 19:17:44 [info] [system.components.UserIdentity] Usuário '93523050944' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 19:39:18 [info] [system.components.UserIdentity] Usuário '47679719691' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2352 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2353 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2180 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2183 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2225 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2203 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2204 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2205 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2208 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2227 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2230 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2239 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2243 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2255 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2260 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2263 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2266 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2275 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2271 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2292 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2299 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2294 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] Inscrição 5856 se inscreveu na oferta 2126 pela habilitação 3
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 19:47:24 [info] [system.controllers.AlunoController] [Inscrição de Rose Mary Gonçalves (CPF 47679719691) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/20 20:04:08 [info] [system.components.UserIdentity] Usuário '03966601184' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 20:10:01 [info] [system.components.UserIdentity] Erro no login do usuário '02164644042' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 20:10:28 [info] [system.components.UserIdentity] Usuário '02164644042' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 20:12:20 [info] [system.controllers.AlunoController] [Inscrição de Jéssica Fernanda Antunes da Silva (CPF 02164644042) (Número UFSCar )] alterou suas informações de perfil.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (92)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/20 20:14:01 [info] [system.components.UserIdentity] Usuário '10029849713' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 20:39:38 [info] [system.components.UserIdentity] Usuário '03966601184' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 20:40:26 [info] [system.controllers.AlunoController] Inscrição 5842 se inscreveu na oferta 2352
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 20:40:26 [info] [system.controllers.AlunoController] Inscrição 5842 se inscreveu na oferta 2353
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 20:40:26 [info] [system.controllers.AlunoController] Inscrição 5842 se inscreveu na oferta 2196
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 20:40:26 [info] [system.controllers.AlunoController] Inscrição 5842 se inscreveu na oferta 2205
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 20:40:26 [info] [system.controllers.AlunoController] Inscrição 5842 se inscreveu na oferta 2229
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/20 20:40:26 [info] [system.controllers.AlunoController] [Inscrição de Laís Hadassa de Souza Guedes (CPF 03966601184) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/20 20:48:40 [info] [system.components.UserIdentity] Erro no login do usuário '03966601184' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 20:48:48 [info] [system.components.UserIdentity] Usuário '03966601184' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 21:23:42 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 21:23:53 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 21:24:07 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 21:24:55 [info] [system.components.UserIdentity] Erro no login do usuário '823649' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 21:25:08 [info] [system.components.UserIdentity] Erro no login do usuário '258.614.618-21' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/20 21:25:17 [info] [system.components.UserIdentity] Erro no login do usuário '258.614.618-21' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/21 09:38:45 [info] [system.components.UserIdentity] Usuário '02164644042' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/21 11:09:44 [info] [system.components.UserIdentity] Usuário '02164644042' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/21 13:50:00 [info] [system.components.UserIdentity] Usuário '02164644042' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2352 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2353 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2188 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2225 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2211 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2228 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2230 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2238 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2239 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2247 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2242 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2248 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2249 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2255 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2257 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2258 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2282 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2272 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2280 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2308 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] Inscrição 5827 se inscreveu na oferta 2126 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 13:55:20 [info] [system.controllers.AlunoController] [Inscrição de Jéssica Fernanda Antunes da Silva (CPF 02164644042) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/21 17:34:42 [info] [system.components.UserIdentity] Usuário '38290457863' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/21 18:28:56 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/21 19:23:51 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/21 19:25:49 [info] [system.components.UserIdentity] Usuário '01709749016' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/21 19:32:06 [info] [system.controllers.AlunoController] Inscrição 5039 se inscreveu na oferta 2194 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 19:32:06 [info] [system.controllers.AdminController] Administrador editou inscrições em ofertas de [Inscrição de Solange da Silva Barros (CPF 93523050944) (Número UFSCar 797524)].
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (527)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/21 19:52:17 [info] [system.components.UserIdentity] Usuário '22648368817' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/21 20:04:12 [info] [system.components.UserIdentity] Usuário '66457076068' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/21 20:43:18 [info] [system.components.UserIdentity] Usuário '43842306806' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/21 20:48:40 [info] [system.controllers.AlunoController] Inscrição 5570 se desinscreveu da oferta 2208 pela habilitação 6
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 20:48:40 [info] [system.controllers.AlunoController] Inscrição 5570 se inscreveu na oferta 2210 pela habilitação 6
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/21 20:48:40 [info] [system.controllers.AlunoController] [Inscrição de Beatriz Tomoyuri Unten (CPF 43842306806) (Número UFSCar 814573)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 00:32:39 [info] [system.controllers.InscricaoController] MARIZE (CPF 41797037854) pré-inscrito com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (28)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 00:32:39 [info] [system.models.Inscricao] [Usuário(a) MARIZE MORENO DE CARVALHO (41797037854)] criado com sucesso.
+in /var/www/html/edutec/sca/protected/models/Inscricao.php (470)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (29)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 00:32:39 [info] [system.components.Email] Enviando e-mail para MARIZE MORENO DE CARVALHO (moreno.marize@estudante.ufjf.br) sobre inscrição
+in /var/www/html/edutec/sca/protected/components/Email.php (73)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (31)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 00:32:39 [info] [system.components.Email] Enviando e-mail para edutec@ead.ufscar.br sobre inscrição de MARIZE MORENO DE CARVALHO - 41797037854
+in /var/www/html/edutec/sca/protected/components/Email.php (85)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (35)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 06:33:52 [info] [system.components.UserIdentity] Usuário '02131801629' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 08:26:07 [info] [system.components.UserIdentity] Usuário '33900435863' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 08:26:59 [info] [system.controllers.AlunoController] Inscrição 4998 se inscreveu na oferta 2227 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 08:26:59 [info] [system.controllers.AlunoController] [Inscrição de Evelin Fagundes dos Santos (CPF 33900435863) (Número UFSCar 746554)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 09:00:16 [info] [system.components.UserIdentity] Usuário '93523050944' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 09:00:45 [info] [system.components.UserIdentity] Usuário '31713042878' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 09:04:44 [info] [system.controllers.AlunoController] Inscrição 5610 se desinscreveu da oferta 2202 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 09:04:44 [info] [system.controllers.AlunoController] Inscrição 5610 se inscreveu na oferta 2195 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 09:04:44 [info] [system.controllers.AlunoController] [Inscrição de Alessandra Santos Pereira (CPF 31713042878) (Número UFSCar 816031)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 09:24:59 [info] [system.components.UserIdentity] Usuário '01015479430' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 09:30:01 [info] [system.controllers.AlunoController] Inscrição 5848 se inscreveu na oferta 2352
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 09:30:01 [info] [system.controllers.AlunoController] Inscrição 5848 se inscreveu na oferta 2353
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 09:30:01 [info] [system.controllers.AlunoController] Inscrição 5848 se inscreveu na oferta 2195
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 09:30:01 [info] [system.controllers.AlunoController] Inscrição 5848 se inscreveu na oferta 2192
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 09:30:01 [info] [system.controllers.AlunoController] Inscrição 5848 se inscreveu na oferta 2207
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 09:30:01 [info] [system.controllers.AlunoController] Inscrição 5848 se inscreveu na oferta 2211
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 09:30:01 [info] [system.controllers.AlunoController] Inscrição 5848 se inscreveu na oferta 2226
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (222)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 09:30:01 [info] [system.controllers.AlunoController] [Inscrição de Adriano de Araújo Santos (CPF 01015479430) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 10:11:51 [info] [system.components.UserIdentity] Usuário '93523050944' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 10:17:34 [info] [system.controllers.AlunoController] Inscrição 5039 se desinscreveu da oferta 2197 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 10:17:34 [info] [system.controllers.AlunoController] [Inscrição de Solange da Silva Barros (CPF 93523050944) (Número UFSCar 797524)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 10:21:00 [info] [system.components.UserIdentity] Usuário '93523050944' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 10:30:26 [info] [system.components.UserIdentity] Usuário '34859279883' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 11:07:40 [info] [system.components.UserIdentity] Usuário '03250184489' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 11:38:51 [info] [system.components.UserIdentity] Usuário '81085125068' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 11:49:38 [info] [system.components.UserIdentity] Erro no login do usuário '03624607103' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 11:49:49 [info] [system.components.UserIdentity] Erro no login do usuário '03624607103' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 11:49:54 [info] [system.components.UserIdentity] Usuário '05310541870' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 11:51:10 [info] [system.components.UserIdentity] Usuário '03603664140' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 12:03:38 [info] [system.components.UserIdentity] Erro no login do usuário '03477913019' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 12:03:45 [info] [system.components.UserIdentity] Erro no login do usuário '034.779.130-19' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 12:09:28 [info] [system.components.UserIdentity] Erro no login do usuário '03477913019' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 12:09:44 [info] [system.components.Email] Enviando e-mail para bruno.scienza@gmail.com sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/22 12:09:44 [info] [system.models.ResetarSenha] [Usuário(a) BRUNO SCIENZA SCHMIDT (03477913019)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 12:12:12 [info] [system.components.UserIdentity] Erro no login do usuário '034.779.130-19' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 12:15:45 [info] [system.components.Email] Enviando e-mail para bruno.scienza@gmail.com sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/22 12:15:45 [info] [system.models.ResetarSenha] [Usuário(a) BRUNO SCIENZA SCHMIDT (03477913019)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 12:26:17 [info] [system.components.UserIdentity] Usuário '95191500644' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 13:54:57 [info] [system.components.UserIdentity] Usuário '93008074120' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 14:36:53 [info] [system.components.UserIdentity] Erro no login do usuário '03477913019' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 14:39:24 [info] [system.components.UserIdentity] Usuário '00669643696' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 14:40:45 [info] [system.components.UserIdentity] Erro no login do usuário '41664350861' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 14:41:08 [info] [system.components.Email] Enviando e-mail para silvaabreu.joaovitor@gmail.com sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/22 14:41:08 [info] [system.models.ResetarSenha] [Usuário(a) João Vitor Silva de Abreu (41664350861)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 14:41:44 [info] [system.controllers.AlunoController] [Inscrição de Leila Beatriz Azevedo Ponciano (CPF 00669643696) (Número UFSCar 809921)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 14:42:56 [info] [system.components.UserIdentity] Erro no login do usuário '03477913019' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 14:43:12 [info] [system.components.Email] Enviando e-mail para bruno.scienza@gmail.com sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/22 14:43:12 [info] [system.models.ResetarSenha] [Usuário(a) BRUNO SCIENZA SCHMIDT (03477913019)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 14:43:16 [info] [system.components.UserIdentity] Usuário '35164899876' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 14:43:33 [info] [system.controllers.TrocarSenhaController] [Usuário(a) BRUNO SCIENZA SCHMIDT (03477913019)] trocou de senha.
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (57)
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (32)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 14:43:36 [info] [system.components.UserIdentity] Usuário '03477913019' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 14:58:04 [info] [system.components.UserIdentity] Erro no login do usuário '35094763873' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 14:58:14 [info] [system.components.UserIdentity] Erro no login do usuário '35094763873' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 14:58:26 [info] [system.components.Email] Enviando e-mail para poliannae.moreira@hotmail.com sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/22 14:58:26 [info] [system.models.ResetarSenha] [Usuário(a) Poliana Egidia Moreira Mota (35094763873)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 14:59:51 [info] [system.controllers.TrocarSenhaController] [Usuário(a) Poliana Egidia Moreira Mota (35094763873)] trocou de senha.
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (57)
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (32)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 15:00:06 [info] [system.components.UserIdentity] Erro no login do usuário '35094763873' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 15:00:16 [info] [system.components.UserIdentity] Usuário '35094763873' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2352 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2353 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2196 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2188 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2183 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2203 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2204 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2205 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2227 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2229 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2230 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2235 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2236 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2239 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2247 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2244 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2241 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2252 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2254 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2269 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] Inscrição 5843 se inscreveu na oferta 2126 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 15:04:07 [info] [system.controllers.AlunoController] [Inscrição de BRUNO SCIENZA SCHMIDT (CPF 03477913019) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 15:24:22 [info] [system.components.UserIdentity] Usuário '95191500644' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 18:09:01 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 18:09:09 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 18:09:22 [info] [system.components.Email] Enviando e-mail para rednata@bol.com.br sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/22 18:09:22 [info] [system.models.ResetarSenha] [Usuário(a) Renata Alves da Silva (25861461821)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 18:11:45 [info] [system.components.UserIdentity] Usuário '10029849713' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 18:39:26 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 18:39:34 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 18:39:55 [info] [system.components.Email] Enviando e-mail para rednata@bol.com.br sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/22 18:39:55 [info] [system.models.ResetarSenha] [Usuário(a) Renata Alves da Silva (25861461821)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 19:18:46 [info] [system.components.UserIdentity] Usuário '25179670837' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 19:37:39 [info] [system.controllers.AlunoController] Inscrição 5426 se inscreveu na oferta 2192 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 19:37:39 [info] [system.controllers.AlunoController] Inscrição 5426 se inscreveu na oferta 2209 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 19:37:39 [info] [system.controllers.AlunoController] [Inscrição de Dannielle Fernandes Godoi (CPF 25179670837) (Número UFSCar 810957)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 19:43:45 [info] [system.components.UserIdentity] Usuário '02354754086' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 19:48:25 [info] [system.components.UserIdentity] Usuário '47679719691' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 20:03:50 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 20:04:07 [info] [system.components.Email] Enviando e-mail para rednata@bol.com.br sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/22 20:04:07 [info] [system.models.ResetarSenha] [Usuário(a) Renata Alves da Silva (25861461821)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2352 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2353 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2196 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2183 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2203 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2205 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2226 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2236 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2245 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2250 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2251 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2259 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2260 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2282 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2279 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2284 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2271 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2286 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2293 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2298 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2305 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] Inscrição 5859 se inscreveu na oferta 2323 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:08:33 [info] [system.controllers.AlunoController] [Inscrição de Carolina Tavares de Freitas (CPF 02354754086) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 20:10:25 [info] [system.controllers.AlunoController] [Inscrição de Carolina Tavares de Freitas (CPF 02354754086) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 20:10:31 [info] [system.components.UserIdentity] Usuário '40079125808' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 20:13:38 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 20:13:44 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 20:13:49 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 20:14:01 [info] [system.components.Email] Enviando e-mail para rednata@bol.com.br sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/22 20:14:01 [info] [system.models.ResetarSenha] [Usuário(a) Renata Alves da Silva (25861461821)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 20:33:26 [info] [system.components.UserIdentity] Usuário '08672408659' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 20:33:28 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 20:34:20 [info] [system.components.Email] Enviando e-mail para rednata@bol.com.br sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/22 20:34:20 [info] [system.models.ResetarSenha] [Usuário(a) Renata Alves da Silva (25861461821)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 20:35:15 [info] [system.controllers.AlunoController] Inscrição 5783 se desinscreveu da oferta 2195 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:35:15 [info] [system.controllers.AlunoController] Inscrição 5783 se inscreveu na oferta 2230 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/22 20:35:15 [info] [system.controllers.AlunoController] [Inscrição de VICTOR GOMES DOS SANTOS (CPF 08672408659) (Número UFSCar 819812)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/22 20:36:05 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 20:36:35 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 20:47:11 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 20:48:08 [info] [system.components.Email] Enviando e-mail para rednata@bol.com.br sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/22 20:48:08 [info] [system.models.ResetarSenha] [Usuário(a) Renata Alves da Silva (25861461821)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/22 21:30:52 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 21:39:25 [info] [system.components.UserIdentity] Erro no login do usuário '27627466806' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 21:39:31 [info] [system.components.UserIdentity] Usuário '27627466806' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/22 23:25:42 [info] [system.components.UserIdentity] Usuário '25501632810' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 00:01:21 [info] [system.components.UserIdentity] Usuário '31443032832' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 04:58:13 [info] [system.controllers.InscricaoController] GABRIEL (CPF 60901199389) pré-inscrito com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (28)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 04:58:13 [info] [system.models.Inscricao] [Usuário(a) GABRIEL FERNANDES DA SILVA (60901199389)] criado com sucesso.
+in /var/www/html/edutec/sca/protected/models/Inscricao.php (470)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (29)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 04:58:13 [info] [system.components.Email] Enviando e-mail para GABRIEL FERNANDES DA SILVA (gabriel_fernandesdasilva@hotmail.com) sobre inscrição
+in /var/www/html/edutec/sca/protected/components/Email.php (73)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (31)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 04:58:13 [info] [system.components.Email] Enviando e-mail para edutec@ead.ufscar.br sobre inscrição de GABRIEL FERNANDES DA SILVA - 60901199389
+in /var/www/html/edutec/sca/protected/components/Email.php (85)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (35)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 08:08:09 [info] [system.components.UserIdentity] Usuário '05310541870' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 08:13:31 [info] [system.components.UserIdentity] Usuário '05310541870' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 08:15:36 [info] [system.components.UserIdentity] Usuário '60901199389' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 08:15:53 [info] [system.components.Email] Enviando e-mail para gabriel_fernandesdasilva@hotmail.com sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (118)
+2023/05/23 08:15:53 [info] [system.models.ResetarSenha] [Usuário(a) GABRIEL FERNANDES DA SILVA (60901199389)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (118)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 08:16:29 [info] [system.controllers.TrocarSenhaController] [Usuário(a) GABRIEL FERNANDES DA SILVA (60901199389)] trocou de senha.
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (57)
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (32)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 08:31:51 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 10:46:50 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 11:27:40 [info] [system.controllers.InscricaoController] Júlio César (CPF 05163319906) pré-inscrito com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (28)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 11:27:40 [info] [system.models.Inscricao] [Usuário(a) Júlio César Vieira (05163319906)] criado com sucesso.
+in /var/www/html/edutec/sca/protected/models/Inscricao.php (470)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (29)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 11:27:40 [info] [system.components.Email] Enviando e-mail para Júlio César Vieira (ju.cesarvieira@gmail.com) sobre inscrição
+in /var/www/html/edutec/sca/protected/components/Email.php (73)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (31)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 11:27:40 [info] [system.components.Email] Enviando e-mail para edutec@ead.ufscar.br sobre inscrição de Júlio César Vieira - 05163319906
+in /var/www/html/edutec/sca/protected/components/Email.php (85)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (35)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 11:59:22 [info] [system.components.UserIdentity] Erro no login do usuário '00838404782' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 11:59:32 [info] [system.components.UserIdentity] Usuário '00838404782' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 12:00:30 [info] [system.controllers.AlunoController] TCC TCC "O designer instrucional na mentoria de processos de ensino e aprendizagem significativos" de Marilene da Silva ([Inscrição de Marilene da Silva (CPF 00838404782) (Número UFSCar 796334)]->id) (ID 150) entregue.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (324)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 12:02:27 [info] [system.controllers.AlunoController] [Inscrição de Marilene da Silva (CPF 00838404782) (Número UFSCar 796334)] alterou suas informações de perfil.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (92)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 12:13:48 [info] [system.components.UserIdentity] Erro no login do usuário '38553489876' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 12:13:59 [info] [system.components.UserIdentity] Usuário '38553489876' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 12:15:57 [info] [system.controllers.AlunoController] Inscrição 5691 se desinscreveu da oferta 2203 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 12:15:57 [info] [system.controllers.AlunoController] Inscrição 5691 se desinscreveu da oferta 2204 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 12:15:57 [info] [system.controllers.AlunoController] Inscrição 5691 se inscreveu na oferta 2258 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 12:15:57 [info] [system.controllers.AlunoController] Inscrição 5691 se inscreveu na oferta 2259 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 12:15:57 [info] [system.controllers.AlunoController] [Inscrição de Daniela Camila de Lima Matias (CPF 38553489876) (Número UFSCar 819831)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 13:12:06 [info] [system.controllers.InscricaoController] ROBERTO (CPF 29947147878) pré-inscrito com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (28)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 13:12:06 [info] [system.models.Inscricao] [Usuário(a) ROBERTO COSTA (29947147878)] criado com sucesso.
+in /var/www/html/edutec/sca/protected/models/Inscricao.php (470)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (29)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 13:12:06 [info] [system.components.Email] Enviando e-mail para ROBERTO COSTA (costaroberto@prof.educacao.sp.gov.br) sobre inscrição
+in /var/www/html/edutec/sca/protected/components/Email.php (73)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (31)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 13:12:06 [info] [system.components.Email] Enviando e-mail para edutec@ead.ufscar.br sobre inscrição de ROBERTO COSTA - 29947147878
+in /var/www/html/edutec/sca/protected/components/Email.php (85)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (35)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 14:08:12 [info] [system.components.UserIdentity] Usuário '42383061808' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 14:16:54 [info] [system.components.UserIdentity] Usuário '12910633748' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 14:19:08 [info] [system.components.UserIdentity] Usuário '29449963800' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 14:36:17 [info] [system.components.UserIdentity] Usuário '05310541870' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 16:23:05 [info] [system.components.UserIdentity] Erro no login do usuário '13655012721' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 16:23:16 [info] [system.components.UserIdentity] Erro no login do usuário '13655012721' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 16:24:10 [info] [system.components.Email] Enviando e-mail para jessyoli.sil@gmail.com sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/23 16:24:10 [info] [system.models.ResetarSenha] [Usuário(a) jessica de oliveira souza da silva (13655012721)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 16:25:52 [info] [system.controllers.TrocarSenhaController] [Usuário(a) jessica de oliveira souza da silva (13655012721)] trocou de senha.
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (57)
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (32)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 16:25:58 [info] [system.components.UserIdentity] Usuário '13655012721' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 16:53:59 [info] [system.components.UserIdentity] Usuário '10029849713' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 17:03:05 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 17:17:31 [info] [system.controllers.AlunoController] Inscrição 5648 se desinscreveu da oferta 2176 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 17:17:31 [info] [system.controllers.AlunoController] Inscrição 5648 se desinscreveu da oferta 2126 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 17:17:31 [info] [system.controllers.AlunoController] Inscrição 5648 se inscreveu na oferta 2195 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 17:17:31 [info] [system.controllers.AlunoController] Inscrição 5648 se inscreveu na oferta 2180 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 17:17:31 [info] [system.controllers.AdminController] Administrador editou inscrições em ofertas de [Inscrição de Lilian Gióia Sebstião (CPF 33913012877) (Número UFSCar 722104)].
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (527)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 17:54:38 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 18:01:04 [info] [system.controllers.AlunoController] Inscrição 5107 se inscreveu na oferta 2129 pela habilitação 6
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 18:01:04 [info] [system.controllers.AdminController] Administrador editou inscrições em ofertas de [Inscrição de Lucimara Pereira dos Santos (CPF 16569308890) (Número UFSCar 797495)].
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (527)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 18:22:27 [info] [system.components.UserIdentity] Usuário '10029849713' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 18:26:33 [info] [system.components.UserIdentity] Usuário '93523050944' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 19:09:38 [info] [system.components.UserIdentity] Usuário '10029849713' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2352 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2353 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2196 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2188 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2203 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2205 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2229 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2230 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2247 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2245 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2246 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2248 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2254 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2255 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2259 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2267 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2268 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2281 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2285 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2271 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] Inscrição 5855 se inscreveu na oferta 2286 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:09:44 [info] [system.controllers.AlunoController] [Inscrição de Adriano da Silva Lourenço (CPF 10029849713) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 19:50:27 [info] [system.components.UserIdentity] Usuário '36253741888' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 19:52:32 [info] [system.controllers.AlunoController] Inscrição 5512 se desinscreveu da oferta 2171 pela habilitação 1
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:52:32 [info] [system.controllers.AlunoController] Inscrição 5512 se desinscreveu da oferta 2192 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:52:32 [info] [system.controllers.AlunoController] Inscrição 5512 se desinscreveu da oferta 2196 pela habilitação 1
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:52:32 [info] [system.controllers.AlunoController] Inscrição 5512 se desinscreveu da oferta 2196 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:52:32 [info] [system.controllers.AlunoController] Inscrição 5512 se desinscreveu da oferta 2199 pela habilitação 1
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:52:32 [info] [system.controllers.AlunoController] Inscrição 5512 se desinscreveu da oferta 2209 pela habilitação 6
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:52:32 [info] [system.controllers.AlunoController] Inscrição 5512 se desinscreveu da oferta 2211 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:52:32 [info] [system.controllers.AlunoController] Inscrição 5512 se desinscreveu da oferta 2212 pela habilitação 1
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/23 19:52:32 [info] [system.controllers.AlunoController] [Inscrição de Nathalia Silva Oliveira (CPF 36253741888) (Número UFSCar 811206)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 19:52:42 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 19:52:50 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 19:53:11 [info] [system.components.Email] Enviando e-mail para rednata@bol.com.br sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/23 19:53:11 [info] [system.models.ResetarSenha] [Usuário(a) Renata Alves da Silva (25861461821)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 20:05:31 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 20:21:03 [info] [system.components.UserIdentity] Erro no login do usuário '25861461821' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 20:21:19 [info] [system.components.UserIdentity] Erro no login do usuário '258614618-21' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 21:38:50 [info] [system.components.UserIdentity] Usuário '04200936488' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 22:43:43 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 22:51:49 [info] [system.controllers.AdminController] Inscrição de Sabrina (CPF 37042496884) atualizada com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (324)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 22:53:07 [info] [system.components.Email] Enviando e-mail para apoioedutec@ufscar.br sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/23 22:53:07 [info] [system.models.ResetarSenha] [Usuário(a) Sabrina Salveti Della Vecchia (37042496884)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 22:55:37 [info] [system.controllers.TrocarSenhaController] [Usuário(a) Sabrina Salveti Della Vecchia (37042496884)] trocou de senha.
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (57)
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (32)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/23 23:01:03 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 23:03:57 [info] [system.components.UserIdentity] Usuário '03603664140' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/23 23:14:49 [info] [system.controllers.OfertaController] Administrador salvou ofertas de componentes.
+in /var/www/html/edutec/sca/protected/controllers/OfertaController.php (126)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/23 23:18:29 [info] [system.controllers.OfertaController] Administrador salvou ofertas de componentes.
+in /var/www/html/edutec/sca/protected/controllers/OfertaController.php (126)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 08:29:02 [info] [system.controllers.InscricaoController] Suellen (CPF 31414084838) pré-inscrito com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (28)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 08:29:02 [info] [system.models.Inscricao] [Usuário(a) Suellen Pereira Thames (31414084838)] criado com sucesso.
+in /var/www/html/edutec/sca/protected/models/Inscricao.php (470)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (29)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 08:29:02 [info] [system.components.Email] Enviando e-mail para Suellen Pereira Thames (suellen.thames@gmail.com) sobre inscrição
+in /var/www/html/edutec/sca/protected/components/Email.php (73)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (31)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 08:29:02 [info] [system.components.Email] Enviando e-mail para edutec@ead.ufscar.br sobre inscrição de Suellen Pereira Thames - 31414084838
+in /var/www/html/edutec/sca/protected/components/Email.php (85)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (35)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 08:29:14 [info] [system.components.UserIdentity] Usuário '07610493805' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 09:15:36 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 09:27:13 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 11:31:30 [info] [system.components.UserIdentity] Erro no login do usuário '796295' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 11:31:40 [info] [system.components.UserIdentity] Erro no login do usuário '26688824272' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 11:36:25 [info] [system.components.UserIdentity] Usuário '26688824272' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 11:39:08 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 11:39:40 [info] [system.controllers.AlunoController] Inscrição 5787 se desinscreveu da oferta 2231
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (219)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/24 11:39:40 [info] [system.controllers.AdminController] Administrador editou inscrições em ofertas de [Inscrição de Bruno Manhaes (CPF 03598031998) (Número UFSCar 819825)].
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (527)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 12:18:28 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 13:13:57 [info] [system.components.UserIdentity] Usuário '35608407830' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 13:53:28 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 13:54:17 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 13:54:36 [info] [system.controllers.AdminController] Inscrição de Jéssica Fernanda (CPF 02164644042) atualizada com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (324)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 14:06:38 [info] [system.controllers.InscricaoController] MICHELE CRISTINA (CPF 37377177888) pré-inscrito com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (28)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 14:06:38 [info] [system.models.Inscricao] [Usuário(a) MICHELE CRISTINA DE SOUZA (37377177888)] criado com sucesso.
+in /var/www/html/edutec/sca/protected/models/Inscricao.php (470)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (29)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 14:06:38 [info] [system.components.Email] Enviando e-mail para MICHELE CRISTINA DE SOUZA (michellecristina99@gmail.com) sobre inscrição
+in /var/www/html/edutec/sca/protected/components/Email.php (73)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (31)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 14:06:38 [info] [system.components.Email] Enviando e-mail para edutec@ead.ufscar.br sobre inscrição de MICHELE CRISTINA DE SOUZA - 37377177888
+in /var/www/html/edutec/sca/protected/components/Email.php (85)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (35)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 14:09:27 [info] [system.components.Email] Enviando e-mail para MICHELE CRISTINA DE SOUZA (michellecristina99@gmail.com) sobre pagamento de matrícula
+in /var/www/html/edutec/sca/protected/components/Email.php (147)
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (304)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 14:09:27 [info] [system.controllers.AdminController] Inscrição de MICHELE CRISTINA (CPF 37377177888) atualizada com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (324)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 14:13:15 [info] [system.components.Email] Enviando e-mail para KAMILLA SILVA GODOY (KAMILLAGODOY2014@GMAIL.COM) sobre pagamento de matrícula
+in /var/www/html/edutec/sca/protected/components/Email.php (147)
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (304)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 14:13:15 [info] [system.controllers.AdminController] Inscrição de KAMILLA (CPF 03624727184) atualizada com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (324)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 14:17:01 [info] [system.components.Email] Enviando e-mail para MARIZE MORENO DE CARVALHO (moreno.marize@estudante.ufjf.br) sobre pagamento de matrícula
+in /var/www/html/edutec/sca/protected/components/Email.php (147)
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (304)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 14:17:01 [info] [system.controllers.AdminController] Inscrição de MARIZE (CPF 41797037854) atualizada com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (324)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 14:18:52 [info] [system.components.Email] Enviando e-mail para GABRIEL FERNANDES DA SILVA (gabriel_fernandesdasilva@hotmail.com) sobre pagamento de matrícula
+in /var/www/html/edutec/sca/protected/components/Email.php (147)
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (304)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 14:18:52 [info] [system.controllers.AdminController] Inscrição de GABRIEL (CPF 60901199389) atualizada com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (324)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 14:20:10 [info] [system.components.Email] Enviando e-mail para Júlio César Vieira (ju.cesarvieira@gmail.com) sobre pagamento de matrícula
+in /var/www/html/edutec/sca/protected/components/Email.php (147)
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (304)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 14:20:10 [info] [system.controllers.AdminController] Inscrição de Júlio César (CPF 05163319906) atualizada com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (324)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 14:21:32 [info] [system.components.Email] Enviando e-mail para ROBERTO COSTA (costaroberto@prof.educacao.sp.gov.br) sobre pagamento de matrícula
+in /var/www/html/edutec/sca/protected/components/Email.php (147)
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (304)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 14:21:32 [info] [system.controllers.AdminController] Inscrição de ROBERTO (CPF 29947147878) atualizada com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (324)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 14:23:15 [info] [system.components.Email] Enviando e-mail para Suellen Pereira Thames (suellen.thames@gmail.com) sobre pagamento de matrícula
+in /var/www/html/edutec/sca/protected/components/Email.php (147)
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (304)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 14:23:15 [info] [system.controllers.AdminController] Inscrição de Suellen (CPF 31414084838) atualizada com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (324)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 14:50:21 [info] [system.components.UserIdentity] Usuário '26688824272' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 14:58:23 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 15:11:43 [info] [system.controllers.AlunoController] Inscrição 4715 se inscreveu na oferta 2195 pela habilitação 1
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/24 15:11:43 [info] [system.controllers.AlunoController] Inscrição 4715 se inscreveu na oferta 2196 pela habilitação 1
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/24 15:11:43 [info] [system.controllers.AlunoController] Inscrição 4715 se inscreveu na oferta 2180 pela habilitação 1
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/24 15:11:43 [info] [system.controllers.AlunoController] Inscrição 4715 se inscreveu na oferta 2183 pela habilitação 1
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/24 15:11:43 [info] [system.controllers.AlunoController] [Inscrição de FRANCISCO JOSE AQUINO COSTA (CPF 26688824272) (Número UFSCar 796295)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 15:12:23 [info] [system.controllers.AlunoController] [Inscrição de FRANCISCO JOSE AQUINO COSTA (CPF 26688824272) (Número UFSCar 796295)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 15:13:12 [info] [system.components.UserIdentity] Usuário '81085125068' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 15:15:59 [info] [system.controllers.AlunoController] Inscrição 4123 se desinscreveu da oferta 2192 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/24 15:15:59 [info] [system.controllers.AlunoController] Inscrição 4123 se inscreveu na oferta 2225 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/24 15:15:59 [info] [system.controllers.AlunoController] [Inscrição de Deise Becker Kirsch (CPF 81085125068) (Número UFSCar 702654)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 15:21:23 [info] [system.components.UserIdentity] Usuário '26688824272' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 15:37:54 [info] [system.controllers.AlunoController] Inscrição 4715 se desinscreveu da oferta 2180 pela habilitação 1
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/24 15:37:54 [info] [system.controllers.AlunoController] Inscrição 4715 se inscreveu na oferta 2188 pela habilitação 1
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/24 15:37:54 [info] [system.controllers.AlunoController] [Inscrição de FRANCISCO JOSE AQUINO COSTA (CPF 26688824272) (Número UFSCar 796295)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/24 15:40:57 [info] [system.components.UserIdentity] Usuário '95191500644' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 16:08:52 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 16:21:28 [info] [system.components.UserIdentity] Usuário '93523050944' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 16:26:40 [info] [system.components.UserIdentity] Usuário '43747595812' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 16:38:06 [info] [system.components.UserIdentity] Usuário '02599712785' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 18:25:56 [info] [system.components.UserIdentity] Erro no login do usuário '298.251.988-77 ' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 18:26:31 [info] [system.components.UserIdentity] Erro no login do usuário '298.251.988-77 ' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 18:37:21 [info] [system.components.UserIdentity] Erro no login do usuário '298.251.988-77 ' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 18:37:31 [info] [system.components.UserIdentity] Erro no login do usuário '298.251.988-77 ' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 18:37:33 [info] [system.components.UserIdentity] Erro no login do usuário '298.251.988-77 ' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 18:50:03 [info] [system.components.UserIdentity] Erro no login do usuário '38553489876' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 18:50:12 [info] [system.components.UserIdentity] Usuário '38553489876' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 21:56:11 [info] [system.components.UserIdentity] Erro no login do usuário '370.424.968-84' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 21:56:21 [info] [system.components.UserIdentity] Erro no login do usuário '370.424.968-84' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 21:56:31 [info] [system.components.UserIdentity] Erro no login do usuário '370.424.968-84' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 21:56:40 [info] [system.components.UserIdentity] Erro no login do usuário '370.424.968-84' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 21:56:45 [info] [system.components.UserIdentity] Erro no login do usuário '370.424.968-84' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 21:56:49 [info] [system.components.UserIdentity] Erro no login do usuário '370.424.968-84' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 22:00:20 [info] [system.components.Email] Enviando e-mail para apoioedutec@ufscar.br sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+2023/05/24 22:00:20 [info] [system.models.ResetarSenha] [Usuário(a) Sabrina Salveti Della Vecchia (37042496884)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (122)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 22:19:19 [info] [system.components.UserIdentity] Usuário '37042496884' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 22:19:50 [info] [system.components.Email] Enviando e-mail para apoioedutec@ufscar.br sobre troca de senha
+in /var/www/html/edutec/sca/protected/components/Email.php (106)
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (61)
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (118)
+2023/05/24 22:19:51 [info] [system.models.ResetarSenha] [Usuário(a) Sabrina Salveti Della Vecchia (37042496884)] solicitou troca de senha.
+in /var/www/html/edutec/sca/protected/models/ResetarSenha.php (71)
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (118)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/24 23:38:37 [info] [system.components.UserIdentity] Usuário '74979825672' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/24 23:40:16 [info] [system.controllers.AlunoController] Inscrição 5307 se inscreveu na oferta 2196 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/24 23:40:16 [info] [system.controllers.AlunoController] [Inscrição de Rogério Guimarães Rodrigues (CPF 74979825672) (Número UFSCar 806514)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/25 00:03:51 [info] [system.controllers.TrocarSenhaController] [Usuário(a) Sabrina Salveti Della Vecchia (37042496884)] trocou de senha.
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (57)
+in /var/www/html/edutec/sca/protected/controllers/TrocarSenhaController.php (32)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/25 07:40:08 [info] [system.components.UserIdentity] Usuário '22563053846' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 08:10:16 [info] [system.components.UserIdentity] Usuário '03477913019' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 09:45:39 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 09:45:56 [info] [system.controllers.AdminController] Inscrição de Renata (CPF 25861461821) atualizada com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (324)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/25 10:27:03 [info] [system.components.UserIdentity] Usuário '03598031998' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 10:45:14 [info] [system.components.UserIdentity] Erro no login do usuário 'jeanpablo' - usuário não autenticado.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (41)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 10:45:27 [info] [system.components.UserIdentity] Usuário '17536772700' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 11:04:41 [info] [system.components.UserIdentity] Usuário '93523050944' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 12:02:35 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 13:46:51 [info] [system.components.UserIdentity] Usuário '03503390669' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 16:13:32 [info] [system.components.UserIdentity] Usuário '35237845819' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 17:45:10 [info] [system.components.UserIdentity] Usuário '40767181867' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 18:06:47 [info] [system.controllers.InscricaoController] JONATHAS (CPF 03918873510) pré-inscrito com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (28)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/25 18:06:47 [info] [system.models.Inscricao] [Usuário(a) JONATHAS FELIPE (03918873510)] criado com sucesso.
+in /var/www/html/edutec/sca/protected/models/Inscricao.php (470)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (29)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/25 18:06:47 [info] [system.components.Email] Enviando e-mail para JONATHAS FELIPE (felipejone@hotmail.com) sobre inscrição
+in /var/www/html/edutec/sca/protected/components/Email.php (73)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (31)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/25 18:06:47 [info] [system.components.Email] Enviando e-mail para edutec@ead.ufscar.br sobre inscrição de JONATHAS FELIPE - 03918873510
+in /var/www/html/edutec/sca/protected/components/Email.php (85)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (35)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/25 20:57:33 [info] [system.components.UserIdentity] Usuário '37042496884' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/25 20:59:54 [info] [system.components.UserIdentity] Usuário '30224732811' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 03:38:34 [info] [system.components.UserIdentity] Usuário '00669643696' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 08:29:11 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 09:08:27 [info] [system.components.UserIdentity] Usuário '42288028858' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 09:36:02 [info] [system.components.UserIdentity] Usuário '37042496884' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 10:28:45 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 11:39:02 [info] [system.components.UserIdentity] Usuário '03524136117' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 12:27:43 [info] [system.components.UserIdentity] Usuário '03503390669' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 12:36:16 [info] [system.components.UserIdentity] Usuário '70740535110' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 13:41:41 [info] [system.components.UserIdentity] Usuário '81085125068' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 13:43:06 [info] [system.components.UserIdentity] Usuário '37042496884' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2196 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2209 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2210 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2197 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2229 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2232 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2239 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2242 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2241 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2250 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2256 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2258 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2267 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2282 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2268 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2276 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2278 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2284 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2285 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2271 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2292 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2307 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2308 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] Inscrição 5858 se inscreveu na oferta 2337 pela habilitação 8
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 13:54:11 [info] [system.controllers.AlunoController] [Inscrição de Sabrina Salveti Della Vecchia (CPF 37042496884) (Número UFSCar )] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/26 14:33:26 [info] [system.controllers.InscricaoController] Wender (CPF 48382514839) pré-inscrito com sucesso.
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (28)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/26 14:33:26 [info] [system.models.Inscricao] [Usuário(a) Wender Domingos Lopes (48382514839)] criado com sucesso.
+in /var/www/html/edutec/sca/protected/models/Inscricao.php (470)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (29)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/26 14:33:26 [info] [system.components.Email] Enviando e-mail para Wender Domingos Lopes (lopeswender36@gmail.com) sobre inscrição
+in /var/www/html/edutec/sca/protected/components/Email.php (73)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (31)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/26 14:33:26 [info] [system.components.Email] Enviando e-mail para edutec@ead.ufscar.br sobre inscrição de Wender Domingos Lopes - 48382514839
+in /var/www/html/edutec/sca/protected/components/Email.php (85)
+in /var/www/html/edutec/sca/protected/controllers/InscricaoController.php (35)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+2023/05/26 14:35:38 [info] [system.components.UserIdentity] Usuário '48382514839' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 14:40:22 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 14:42:14 [info] [system.components.UserIdentity] Usuário 'admin' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2087 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2131 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2081 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2093 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2103 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2101 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2127 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2075 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2090 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2091 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2136 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2140 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2100 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2144 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2107 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2145 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2154 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2155 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AlunoController] Inscrição 3019 se desinscreveu da oferta 2168 pela habilitação 2
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 14:44:43 [info] [system.controllers.AdminController] Administrador editou inscrições em ofertas de [Inscrição de PALOMA BREIT DOS SANTOS (CPF 21840034840) (Número UFSCar 764854)].
+in /var/www/html/edutec/sca/protected/controllers/AdminController.php (527)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/26 14:49:01 [info] [system.components.UserIdentity] Usuário '93523050944' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 15:00:16 [info] [system.components.UserIdentity] Usuário '10815253710' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 15:04:33 [info] [system.components.UserIdentity] Usuário '10815253710' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 16:43:32 [info] [system.components.UserIdentity] Usuário '48382514839' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 16:47:06 [info] [system.components.UserIdentity] Usuário '43725127832' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 16:47:45 [info] [system.controllers.AlunoController] [Inscrição de Laura Borges dos Penedos (CPF 43725127832) (Número UFSCar 797485)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/26 16:48:43 [info] [system.controllers.AlunoController] Inscrição 5031 se desinscreveu da oferta 2200 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (204)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 16:48:43 [info] [system.controllers.AlunoController] Inscrição 5031 se inscreveu na oferta 2188 pela habilitação 5
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (211)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (126)
+in /var/www/html/edutec/sca/protected/components/SalvadorDeInscricoesEmOfertas.php (49)
+2023/05/26 16:48:43 [info] [system.controllers.AlunoController] [Inscrição de Laura Borges dos Penedos (CPF 43725127832) (Número UFSCar 797485)] se inscreveu em ofertas.
+in /var/www/html/edutec/sca/protected/controllers/AlunoController.php (52)
+in /var/www/html/edutec/sca/protected/modules/rights/components/RController.php (36)
+in /var/www/html/edutec/sca/index.php (13)
+2023/05/26 16:59:43 [info] [system.components.UserIdentity] Usuário '17086053716' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 17:48:29 [info] [system.components.UserIdentity] Usuário '03240308860' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 18:05:12 [info] [system.components.UserIdentity] Usuário '35089200890' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)
+2023/05/26 18:54:49 [info] [system.components.UserIdentity] Usuário '06605269802' se logou no sistema.
+in /var/www/html/edutec/sca/protected/components/UserIdentity.php (34)
+in /var/www/html/edutec/sca/protected/models/LoginForm.php (53)
+in /var/www/html/edutec/sca/protected/controllers/SiteController.php (36)

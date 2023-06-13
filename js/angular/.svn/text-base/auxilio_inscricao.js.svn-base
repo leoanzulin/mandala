@@ -1,0 +1,95 @@
+var app = angular.module("inscricaoApp", []);
+
+app.controller('controlador', function ($scope) {
+
+    $scope.formacoes = [];
+    $scope.cpf = '';
+
+    var novaFormacao = {
+        "id": 0,
+        "nivel": "",
+        "nivel_": "",
+        "curso": "",
+        "instituicao": "",
+        "conclusao": ""
+    };
+
+    var dePara = {
+        "graduacao": "Graduação",
+        "especializacao": "Especialização",
+        "mestrado": "Mestrado",
+        "doutorado": "Doutorado"
+    };
+
+    var contador = 1;
+
+    $scope.cpfValido = function (cpf) {
+        if (cpf.length != 11) return true;
+        if (!/^\d+$/.test(cpf)) return false;
+        if (cpf == "00000000000" || cpf == "11111111111" || cpf == "22222222222" ||
+                cpf == "33333333333" || cpf == "44444444444" || cpf == "55555555555" ||
+                cpf == "66666666666" || cpf == "77777777777" || cpf == "88888888888" ||
+                cpf == "99999999999") return false;
+
+        var soma;
+        var resto;
+
+        // verifica dígito 1
+        soma = 0;
+        for (i = 1; i <= 9; i++)
+            soma = soma + parseInt(cpf.substring(i - 1, i)) * (11 - i);
+        resto = (soma * 10) % 11;
+        if (resto == 10 || resto == 11) resto = 0;
+        if (resto != parseInt(cpf.substring(9, 10))) return false;
+
+        // verifica dígito 2
+        soma = 0;
+        for (i = 1; i <= 10; i++)
+            soma = soma + parseInt(cpf.substring(i - 1, i)) * (12 - i);
+        resto = (soma * 10) % 11;
+        if (resto == 10 || resto == 11) resto = 0;
+        if (resto != parseInt(cpf.substring(10, 11))) return false;
+
+        return true;
+    }
+
+    $scope.adicionar = function () {
+
+        $scope.formacao.nivel = $scope.formacao.nivel.trim();
+        $scope.formacao.curso = $scope.formacao.curso.trim();
+        $scope.formacao.instituicao = $scope.formacao.instituicao.trim();
+        if (angular.isUndefined($scope.formacao.conclusao)) {
+            alert('- O ano de conclusão deve ser um número');
+            return;
+        }
+        $scope.formacao.conclusao = $scope.formacao.conclusao.trim();
+
+        var anoEhNumerico = /^\d+$/.test($scope.formacao.conclusao);
+        if (!anoEhNumerico) {
+            alert('- O ano de conclusão deve ser um número');
+            return;
+        }
+
+        if ($scope.formacao.nivel === '' ||
+                $scope.formacao.curso === '' ||
+                $scope.formacao.instituicao === '' ||
+                $scope.formacao.conclusao === '') {
+            alert('- Preencha todos os campos da formação');
+            return;
+        }
+
+        $scope.formacao.id = contador++;
+        $scope.formacao.nivel_ = $scope.formacao.nivel;
+        $scope.formacao.nivel = dePara[$scope.formacao.nivel];
+        $scope.formacoes.push($scope.formacao);
+        $scope.formacao = angular.copy(novaFormacao);
+    };
+
+    $scope.remover = function (formacao) {
+        var indice = $scope.formacoes.indexOf(formacao);
+        $scope.formacoes.splice(indice, 1);
+    };
+
+    $scope.formacao = angular.copy(novaFormacao);
+
+});

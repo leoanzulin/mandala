@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/edtec/!svn/ver/72/trunk/protected/views/inscricao
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/24/trunk/protected/views/inscricao/_view.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/edtec/!svn/ver/33/trunk/protected/views/inscricao/view.php
+END
+documentos.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/edtec/!svn/ver/54/trunk/protected/views/inscricao/documentos.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/edtec/!svn/ver/24/trunk/protected/views/inscricao/update.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/24/trunk/protected/views/inscricao/_form.php
+END
+_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/edtec/!svn/ver/24/trunk/protected/views/inscricao/_search.php
+END
+sucesso.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/edtec/!svn/ver/72/trunk/protected/views/inscricao/sucesso.php
+END
+informacoesComplementares.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/edtec/!svn/ver/54/trunk/protected/views/inscricao/informacoesComplementares.php
+END
+documentosSucesso.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/edtec/!svn/ver/34/trunk/protected/views/inscricao/documentosSucesso.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/50/trunk/protected/views/inscricao/index.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/24/trunk/protected/views/inscricao/admin.php
+END

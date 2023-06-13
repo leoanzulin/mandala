@@ -1,0 +1,92 @@
+<?php
+
+function classeLinha($row, $data)
+{
+    return ($row % 2) ? 'linha-par' : 'linha-impar';
+}
+
+?>
+
+<h1>Visualizar alunos matriculados</h1>
+<br>
+
+<?php
+$this->widget('zii.widgets.grid.CGridView', array(
+    'id' => 'visualizar-matriculas-grid',
+    'dataProvider' => $model->search(),
+    'filter'=>$model,
+    'columns' => array(
+        'cpf',
+        'nome',
+        'sobrenome',
+        'email',
+        array(
+            'header' => 'Documentos',
+            'class' => 'CButtonColumn',
+            'template' => '{cpf} {rg} {diploma} {comprovante_residencia} {curriculo} {justificativa}',
+            'htmlOptions' => array(
+                'style' => 'width: 120px',
+            ),
+            'buttons' => array(
+                'cpf' => array(
+                    'label' => 'CPF',
+                    'imageUrl' => Yii::app()->request->baseUrl . '/images/documento.png',
+                    'url' => '$data->recuperarArquivoDocumento("cpf", true)',
+                    'visible' => '$data->recuperarArquivoDocumento("cpf") != ""',
+                ),
+                'rg' => array(
+                    'label' => 'RG',
+                    'imageUrl' => Yii::app()->request->baseUrl . '/images/documento.png',
+                    'url' => '$data->recuperarArquivoDocumento("rg", true)',
+                    'visible' => '$data->recuperarArquivoDocumento("cpf") != ""',
+                ),
+                'diploma' => array(
+                    'label' => 'Diploma',
+                    'imageUrl' => Yii::app()->request->baseUrl . '/images/documento.png',
+                    'url' => '$data->recuperarArquivoDocumento("diploma", true)',
+                    'visible' => '$data->recuperarArquivoDocumento("cpf") != ""',
+                ),
+                'comprovante_residencia' => array(
+                    'label' => 'Comprovante de residência',
+                    'imageUrl' => Yii::app()->request->baseUrl . '/images/documento.png',
+                    'url' => '$data->recuperarArquivoDocumento("comprovante_residencia", true)',
+                    'visible' => '$data->recuperarArquivoDocumento("cpf") != ""',
+                ),
+                'curriculo' => array(
+                    'label' => 'Currículo',
+                    'imageUrl' => Yii::app()->request->baseUrl . '/images/documento.png',
+                    'url' => '$data->recuperarArquivoDocumento("curriculo", true)',
+                    'visible' => '$data->recuperarArquivoDocumento("cpf") != ""',
+                ),
+                'justificativa' => array(
+                    'label' => 'Justificativa de próprio punho',
+                    'imageUrl' => Yii::app()->request->baseUrl . '/images/documento.png',
+                    'url' => '$data->recuperarArquivoDocumento("justificativa", true)',
+                    'visible' => '$data->recuperarArquivoDocumento("cpf") != ""',
+                ),
+            )
+        ),
+        array(
+            'name' => 'candidato_a_bolsa_search',
+            'value' => '$data->candidato_a_bolsa ? "Sim" : "Não"',
+            'htmlOptions' => array(
+                'style' => 'width: 80px; text-align: center',
+            ),
+        ),
+        array(
+            'name' => 'recebe_bolsa_search',
+            'value' => '$data->recebe_bolsa ? "Sim" : "Não"',
+            'htmlOptions' => array(
+                'style' => 'width: 80px; text-align: center',
+            ),
+        ),
+        'observacoes',
+        array(
+            'class' => 'CButtonColumn',
+            'template' => '{view}',
+        ),
+    ),
+    'rowCssClassExpression' => 'classeLinha($row, $data)',
+));
+
+?>

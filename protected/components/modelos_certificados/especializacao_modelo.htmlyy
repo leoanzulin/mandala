@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="estilo-aperfeicoamento.css" type="text/css">
+</head>
+<body>
+    <div class="fundo-frente"></div>
+    <div class="conteudo">
+        <h3>República Federativa do Brasil</h3>
+        <h3>Ministério da Educação</h3>
+        <h1>Universidade Federal de São Carlos</h1>
+        <h2>Certificado de Conclusão de Curso de Pós-Graduação Lato Sensu</h2>
+
+        <p class="corpo">Certificamos que <b>{NOME}</b>, documento de identidade n° {IDENTIDADE} e CPF n° {CPF},
+            concluiu o Curso de Especialização em Educação e Tecnologias: {HABILITACOES}, oferecido
+            pelo Grupo Horizonte (Grupo de Estudos e Pesquisas em Educação, Tecnologias e Linguagens) em
+            colaboração com a SEaD (Secretaria Geral de Educação a Distância) da Universidade Federal de
+            São Carlos, no período de {PERIODO_INICIO} a {PERIODO_FIM}, em um total de {CARGA_HORARIA_TOTAL} horas/aula.
+        </p>
+
+        <p class="data">São Carlos, {DATA}.</p>
+    </div>
+    <div class="assinatura assinatura1">
+        
+        <p class="assinatura">Prof.Dr.Gláuber Santiago</p>
+        <p class="assinatura">Coordenador do curso</p>
+        <p class="assinatura">Co-Líder do Grupo Horizonte UFSCar</p>
+
+    </div>
+    <div class="assinatura assinatura2">
+        <p>&nbsp;</p>
+        <p>Pró-Reitor de Extensão</p>
+    </div>
+
+    <pagebreak>
+
+    <div class="fundo-verso"></div>
+    <div class="cabecalho-verso">
+        <h2 class="titulo-verso">Universidade Federal de São Carlos &nbsp;&nbsp; Pró-Reitoria de Extensão</h2>
+        <h3 class="subtitulo-verso">Curso de Pós-Graduação Lato Sensu — Especialização em</h3>
+        <h3 class="subtitulo-verso2"><b></b>Educação e Tecnologias</b>: {HABILITACOES}</h3>
+    </div>
+    <div class="cabecalho-bolinha"><span class="bolinha">●</span></div>
+    <div class="div-nome-aluno">
+        <p class="nome-aluno">Aluno(a): {NOME}</p>
+    </div>
+    <div class="tabela-componentes-cursados">
+        <table class="componentes-cursados">
+            <thead>
+                <tr>
+                    <th>Nome da disciplina (componente curricular)</th>
+                    <th class="coluna-docente">Docente responsável</th>
+                    <th class="coluna-nota-carga-horaria">Nota</th>
+                    <th class="coluna-nota-carga-horaria">C. H.</th>
+                </tr>
+            </thead>
+            <tbody>
+                {COMPONENTES}
+                <tr>
+                    <td style="border: none"></td>
+                    <td style="border: none"></td>
+                    <td class="nota-carga-horaria">{MEDIA_FINAL}</td>
+                    <td class="nota-carga-horaria">{CARGA_HORARIA_TOTAL}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="tabela-tcc">
+        <table class="tcc">
+            <tbody>
+                <tr>
+                    <td colspan="2" style="padding-bottom: 90px;">
+                        <p>Trabalho de Conclusão de Curso</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 60%">Orientador(a): {TCC_ORIENTADOR}</td>
+                    <td style="width: 40%">Resultado: {TCC_NOTA}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="nome-tcc"><p>{TCC_TITULO}</p></div>
+    <div class="tabela-media">
+        <table class="totais">
+            <tbody>
+                <tr>
+                    <td>Frequência: {FREQUENCIA}%</td>
+                    <td>Média Final: {MEDIA_FINAL}</td>      
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="quadro-processo"><p class="processo">Processo n°: 23112.00</p></div>
+
+    <div class="quadro-nome-social">
+        <p class="quadro">Este(a) aluno(a), cujo nome civil é _____________</p>
+        <p class="linha-preenchimento-2">________________________________________________</p>
+        <p class="quadro">solicitou o uso de seu nome social neste documento, conforme requerimento
+        protocolado junto à Secretaria Geral de Ações Afirmativas, Diversidade e Equidade (SAADE) da
+        UFSCar, de acordo com o previsto no Decreto Presidencial nº 8.727/2016 e na Resolução
+        ConsUni nº 861/2016 do Conselho Universitário da UFSCar. <i>(Não preenchido quando não se
+        aplica)</i>.</p>
+    </div>
+    <div class="quadro-periodo">
+        <p class="quadro">
+            Este Curso de Pós-Graduação Lato Sensu foi realizado no período de {PERIODO_INICIO} a {PERIODO_FIM}, na Universidade Federal de São Carlos (UFSCar).
+            O curso ocorreu de acordo com as disposições da Resolução n° 01 de 08 de junho de 2007 da Câmara de
+            Educação Superior do Conselho Nacional de Educação, da Resolução CoEx n° 03/16, de 17 de março de 2016
+            do Conselho de Extensão da UFSCar e das demais normas e legislações pertinentes ao assunto..</p>
+    </div>
+    <div class="quadro-forma-avaliacao">
+        <p class="quadro">Forma de Avaliação Adotada:</p>
+    </div>
+    <div class="quadro-coordenador">
+        <p class="coordenador">Coordenador do Curso</p>
+    </div>
+    <div class="quadro-registro">
+        <p class="quadro">Registrado sob nº _____, página nº _____, do Livro nº ______ de Registro de Certificados
+            da Pró-Reitoria de Extensão (ProEx) da Universidade Federal de São Carlos (UFSCar),
+            em ____/____/______.</p>
+    </div>
+
+</body>
+</html>

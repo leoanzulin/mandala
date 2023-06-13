@@ -1,0 +1,12 @@
+<div>
+    R$ <input type="text" style="width: 80px"
+              ng-model="pagamento.valor"
+              ng-focus="campoValor($event, pagamento.valor)"
+              ng-keydown="campoValor($event, pagamento.valor)"
+              >
+    Data <input type="tel" style="width: 80px"
+                ng-model="pagamento.data_pagamento"
+                ng-focus="campoData($event, pagamento.data_pagamento)"
+                ng-keydown="campoData($event, pagamento.data_pagamento)"
+                >
+</div>

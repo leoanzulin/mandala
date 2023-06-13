@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document
+    xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+    xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex"
+    xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex"
+    xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex"
+    xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex"
+    xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex"
+    xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex"
+    xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex"
+    xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex"
+    xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink"
+    xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d"
+    xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+    xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
+    xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing"
+    xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+    xmlns:w10="urn:schemas-microsoft-com:office:word"
+    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+    xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+    xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml"
+    xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex"
+    xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid"
+    xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml"
+    xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex"
+    xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"
+    xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk"
+    xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+    xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex wp14">
+    <w:body>
+        <w:p w14:paraId="7D8405B9" w14:textId="77777777" w:rsidR="009D450F" w:rsidRPr="00A82D0C" w:rsidRDefault="009D450F" w:rsidP="00171239">
+            <w:pPr>
+                <w:pStyle w:val="Ttulo6"/>
+                <w:spacing w:line="360" w:lineRule="auto"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Candara" w:hAnsi="Candara" w:cs="Calibri"/>
+                    <w:spacing w:val="190"/>
+                    <w:sz w:val="48"/>
+                    <w:szCs w:val="48"/>
+                </w:rPr>
+            </w:pPr>
+        </w:p>
+        <w:p w14:paraId="4CDC7A13" w14:textId="23F14B7B" w:rsidR="009D450F" w:rsidRPr="00A82D0C" w:rsidRDefault="009D450F" w:rsidP="00171239">
+            <w:pPr>
+                <w:pStyle w:val="Ttulo6"/>
+                <w:spacing w:line="360" w:lineRule="auto"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Calibri"/>
+                    <w:spacing w:val="190"/>
+                    <w:sz w:val="48"/>
+                    <w:szCs w:val="48"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00A82D0C">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Calibri"/>
+                    <w:spacing w:val="190"/>
+                    <w:sz w:val="48"/>
+                    <w:szCs w:val="48"/>
+                </w:rPr>
+                <w:t>ATESTADO</w:t>
+            </w:r>
+            <w:r w:rsidR="00077C28" w:rsidRPr="00A82D0C">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Calibri"/>
+                    <w:spacing w:val="190"/>
+                    <w:sz w:val="48"/>
+                    <w:szCs w:val="48"/>
+                </w:rPr>
+                <w:t xml:space="preserve"></w:t>
+            </w:r>
+            <w:r w:rsidR="00171239" w:rsidRPr="00A82D0C">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Calibri"/>
+                    <w:spacing w:val="190"/>
+                    <w:sz w:val="48"/>
+                    <w:szCs w:val="48"/>
+                </w:rPr>
+                <w:br/>
+            </w:r>
+            <w:r w:rsidR="00077C28" w:rsidRPr="00A82D0C">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Calibri"/>
+                    <w:spacing w:val="190"/>
+                    <w:sz w:val="48"/>
+                    <w:szCs w:val="48"/>
+                </w:rPr>
+                <w:t>DE MATRÍCULA</w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="41440C16" w14:textId="77777777" w:rsidR="009D450F" w:rsidRPr="00CC01FF" w:rsidRDefault="009D450F" w:rsidP="00171239">
+            <w:pPr>
+                <w:spacing w:line="360" w:lineRule="auto"/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Calibri"/>
+                    <w:b/>
+                    <w:spacing w:val="190"/>
+                    <w:sz w:val="24"/>
+                    <w:szCs w:val="24"/>
+                </w:rPr>
+            </w:pPr>
+        </w:p>
+        <w:p w14:paraId="42731557" w14:textId="77777777" w:rsidR="009D450F" w:rsidRPr="00CC01FF" w:rsidRDefault="009D450F" w:rsidP="00171239">
+            <w:pPr>
+                <w:spacing w:line="360" w:lineRule="auto"/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Calibri"/>
+                    <w:b/>
+                    <w:spacing w:val="190"/>
+                    <w:sz w:val="24"/>
+                    <w:szCs w:val="24"/>
+                </w:rPr>
+            </w:pPr>
+        </w:p>
+        <w:p w14:paraId="171711FB" w14:textId="7A80FC17" w:rsidR="009D450F" w:rsidRPr="00171239" w:rsidRDefault="009D450F" w:rsidP="00171239">
+            <w:pPr>
+                <w:spacing w:line="360" w:lineRule="auto"/>
+                <w:ind w:firstLine="1134"/>
+                <w:jc w:val="both"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Atestamos, para os devidos fins, que </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+<w:t>Claudio Diniz Pinto Leite</w:t>            </w:r>
+            <w:r w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve">, portador(a) do CPF: </w:t>
+            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+<w:t>72899328620</w:t>            </w:r>
+            <w:r w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t></w:t>
+            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>,</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve"></w:t>
+            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve"> RA: </w:t>
+            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+<w:t></w:t>            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve"> </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>está regularmente matricul</w:t>
+            </w:r>
+            <w:r w:rsidR="00F449F3" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve">ado(a) no período letivo de </w:t>
+            </w:r>
+            <w:r w:rsidR="00F449F3" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+<w:t>2021/02</w:t>            </w:r>
+            <w:r w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve">, no curso de </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>Educação e Tecnologias</w:t>
+            </w:r>
+            <w:r w:rsidR="00F449F3" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>,</w:t>
+            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve"> em nível de </w:t>
+            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+<w:t>Especialização</w:t>            </w:r>
+            <w:r w:rsidR="007B25CA">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>,</w:t>
+            </w:r>
+            <w:r w:rsidR="007B25CA">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:tab/>
+            </w:r>
+            <w:r w:rsidR="00F449F3" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve"></w:t>
+            </w:r>
+            <w:r w:rsidR="00AC76B7" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>oferecido pela Universidade Federal de São Carlos (UFSCar), por meio do Grupo Horizonte (Grupo de Estudos e Pesquisas sobre Inovação em Educação, Tecnologias e Linguagens),</w:t>
+            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve"></w:t>
+            </w:r>
+            <w:bookmarkStart w:id="0" w:name="_Hlk52789101"/>
+            <w:r w:rsidR="00171239" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>conforme</w:t>
+            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve"> do </w:t>
+            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve">processo: </w:t>
+            </w:r>
+            <w:r w:rsidR="00E67A3C" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>23112.003256/2018-44</w:t>
+            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve"></w:t>
+            </w:r>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve"> registrado na </w:t>
+            </w:r>
+            <w:bookmarkStart w:id="1" w:name="_Hlk52788434"/>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>PROEX</w:t>
+            </w:r>
+            <w:r w:rsidR="00C7243C">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>-UFSCar</w:t>
+            </w:r>
+            <w:r w:rsidR="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve"> (</w:t>
+            </w:r>
+            <w:proofErr w:type="spellStart"/>
+            <w:r w:rsidR="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>Pró-Reitoria</w:t>
+            </w:r>
+            <w:proofErr w:type="spellEnd"/>
+            <w:r w:rsidR="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve"> de Extensão)</w:t>
+            </w:r>
+            <w:bookmarkEnd w:id="0"/>
+            <w:bookmarkEnd w:id="1"/>
+            <w:r w:rsidR="00D15301" w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve">. </w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="4DEC3546" w14:textId="77777777" w:rsidR="009D450F" w:rsidRPr="00171239" w:rsidRDefault="009D450F" w:rsidP="00171239">
+            <w:pPr>
+                <w:spacing w:line="360" w:lineRule="auto"/>
+                <w:ind w:firstLine="1134"/>
+                <w:jc w:val="both"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="28"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t>Por ser expressão da verdade, firmo a presente declaração.</w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="79C49318" w14:textId="3A66511C" w:rsidR="009D450F" w:rsidRPr="00171239" w:rsidRDefault="00AC76B7" w:rsidP="00171239">
+            <w:pPr>
+                <w:spacing w:line="360" w:lineRule="auto"/>
+                <w:jc w:val="right"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="20"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+            </w:pPr>
+            <w:bookmarkStart w:id="2" w:name="_Hlk52789370"/>
+            <w:r w:rsidRPr="00171239">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="20"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t xml:space="preserve">São Carlos-SP, </w:t>
+            </w:r>
+            <w:r w:rsidRPr="00A442B6">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="20"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+<w:t>03 de fevereiro de 2021.</w:t>            </w:r>
+            <w:r w:rsidR="00A82D0C" w:rsidRPr="00A442B6">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="20"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t></w:t>
+            </w:r>
+            <w:r w:rsidRPr="00A442B6">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:position w:val="20"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t></w:t>
+            </w:r>
+        </w:p>
+        <w:bookmarkEnd w:id="2"/>
+        <w:p w14:paraId="6D2CD268" w14:textId="77777777" w:rsidR="007B25CA" w:rsidRDefault="007B25CA" w:rsidP="007B25CA">
+            <w:pPr>
+                <w:spacing w:line="360" w:lineRule="auto"/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+            </w:pPr>
+        </w:p>
+        <w:p w14:paraId="1F308586" w14:textId="3390148D" w:rsidR="007B25CA" w:rsidRPr="00C50B05" w:rsidRDefault="007B25CA" w:rsidP="007B25CA">
+            <w:pPr>
+                <w:spacing w:line="360" w:lineRule="auto"/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00C50B05">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+<w:t>Prof. Dr. Glauber Santiago</w:t>            </w:r>
+            <w:r w:rsidRPr="00C50B05">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:color w:val="FF0000"/>
+                    <w:sz w:val="28"/>
+                    <w:szCs w:val="28"/>
+                </w:rPr>
+                <w:t></w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="237F322F" w14:textId="77777777" w:rsidR="007B25CA" w:rsidRPr="00A74C7B" w:rsidRDefault="007B25CA" w:rsidP="007B25CA">
+            <w:pPr>
+                <w:tabs>
+                    <w:tab w:val="center" w:pos="4252"/>
+                    <w:tab w:val="right" w:pos="8505"/>
+                </w:tabs>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:sz w:val="24"/>
+                    <w:szCs w:val="24"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00A74C7B">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:b/>
+                    <w:sz w:val="24"/>
+                    <w:szCs w:val="24"/>
+                </w:rPr>
+                <w:t>Coordenação Curso</w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="61B4FA02" w14:textId="77777777" w:rsidR="007B25CA" w:rsidRPr="00A74C7B" w:rsidRDefault="007B25CA" w:rsidP="007B25CA">
+            <w:pPr>
+                <w:tabs>
+                    <w:tab w:val="center" w:pos="4252"/>
+                    <w:tab w:val="right" w:pos="8505"/>
+                </w:tabs>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:sz w:val="24"/>
+                    <w:szCs w:val="24"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00A74C7B">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:sz w:val="24"/>
+                    <w:szCs w:val="24"/>
+                </w:rPr>
+                <w:t>Especialização em Educação e Tecnologias</w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="76E7FCC2" w14:textId="77777777" w:rsidR="007B25CA" w:rsidRPr="00A74C7B" w:rsidRDefault="007B25CA" w:rsidP="007B25CA">
+            <w:pPr>
+                <w:pStyle w:val="Cabealho"/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:sz w:val="24"/>
+                    <w:szCs w:val="24"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00A74C7B">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:sz w:val="24"/>
+                    <w:szCs w:val="24"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Universidade Federal de São Carlos – UFSCar </w:t>
+            </w:r>
+        </w:p>
+        <w:p w14:paraId="3CD89D1B" w14:textId="77777777" w:rsidR="007B25CA" w:rsidRPr="00A74C7B" w:rsidRDefault="007B25CA" w:rsidP="007B25CA">
+            <w:pPr>
+                <w:pStyle w:val="Cabealho"/>
+                <w:jc w:val="center"/>
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="24"/>
+                    <w:szCs w:val="24"/>
+                </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00A74C7B">
+                <w:rPr>
+                    <w:rFonts w:ascii="Arial Narrow" w:hAnsi="Arial Narrow" w:cs="Arial"/>
+                    <w:sz w:val="24"/>
+                    <w:szCs w:val="24"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Grupo Horizonte – UFSCar </w:t>
+            </w:r>
+        </w:p>
+        <w:sectPr w:rsidR="00171239" w:rsidRPr="00CC01FF" w:rsidSect="009D450F">
+            <w:headerReference w:type="even" r:id="rId6"/>
+            <w:headerReference w:type="default" r:id="rId7"/>
+            <w:footerReference w:type="default" r:id="rId8"/>
+            <w:headerReference w:type="first" r:id="rId9"/>
+            <w:pgSz w:w="11907" w:h="16839" w:code="9"/>
+            <w:pgMar w:top="1843" w:right="720" w:bottom="720" w:left="720" w:header="708" w:footer="1814" w:gutter="0"/>
+            <w:cols w:space="708"/>
+            <w:docGrid w:linePitch="360"/>
+        </w:sectPr>
+    </w:body>
+</w:document>

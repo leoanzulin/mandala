@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components
+END
+RController.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/RController.php
+END
+RightsFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/RightsFilter.php
+END
+RGenerator.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/RGenerator.php
+END
+RAuthorizer.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/RAuthorizer.php
+END
+RWebUser.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/RWebUser.php
+END
+RInstaller.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/RInstaller.php
+END
+Rights.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/Rights.php
+END
+RDbAuthManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/RDbAuthManager.php
+END

@@ -1,0 +1,51 @@
+<div class="simulador-resumo">
+
+    <p>Número total de componentes inscritas: <b>{{cargaHorariaTotal().total}}</b></p>
+    <br>
+
+    <div ng-repeat="habilitacao in habilitacoes">
+
+        <p>Divisão de componentes de acordo com a habilitação <b>{{habilitacao.nome}} ({{habilitacao.letra}})</b>:</p>
+
+        <table>
+            <tr>
+                <td>TCC {{$index + 1}}</td><td></td><td><i class="fa fa-check fa-2x"></i></td>
+            </tr>
+            <tr>
+                <td>Necessárias (min. {{constantes.NUMERO_MINIMO_DE_COMPONENTES_NECESSARIAS}} componentes: {{constantes.NUMERO_MINIMO_DE_COMPONENTES_NECESSARIAS - 1}} + Desenvolvimento de Projeto Integrador)</td>
+                <td><b>{{cargaHorariaTotal()[$index][0]}}</b></td>
+                <td>
+                    <i ng-if="cargaHorariaTotal()[$index][0] >= constantes.NUMERO_MINIMO_DE_COMPONENTES_NECESSARIAS" class="fa fa-check fa-2x"></i>
+                    <i ng-if="cargaHorariaTotal()[$index][0] < constantes.NUMERO_MINIMO_DE_COMPONENTES_NECESSARIAS" class="fa fa-times fa-2x vermelho"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Optativas (min. {{constantes.NUMERO_MINIMO_DE_COMPONENTES_OPTATIVAS}} componentes)</td>
+                <td><b>{{cargaHorariaTotal()[$index][1]}}</b></td>
+                <td>
+                    <i ng-if="cargaHorariaTotal()[$index][1] >= constantes.NUMERO_MINIMO_DE_COMPONENTES_OPTATIVAS" class="fa fa-check fa-2x"></i>
+                    <i ng-if="cargaHorariaTotal()[$index][1] < constantes.NUMERO_MINIMO_DE_COMPONENTES_OPTATIVAS" class="fa fa-times fa-2x vermelho"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Livres e optativas adicionais (min. {{constantes.NUMERO_MINIMO_DE_COMPONENTES_LIVRES}} componentes)</td>
+                <td><b>{{cargaHorariaTotal()[$index][2]}}</b></td>
+                <td>
+                    <i ng-if="cargaHorariaTotal()[$index][2] >= constantes.NUMERO_MINIMO_DE_COMPONENTES_LIVRES" class="fa fa-check fa-2x"></i>
+                    <i ng-if="cargaHorariaTotal()[$index][2] < constantes.NUMERO_MINIMO_DE_COMPONENTES_LIVRES" class="fa fa-times fa-2x vermelho"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Componentes totais requisitados para a {{constantes.ORDINAIS[$index + 1]}} habilitação (min. {{constantes.NUMERO_MINIMO_DE_COMPONENTES_PARA_CUMPRIR_HABILITACOES[$index + 1]}})</td>
+                <td><b>{{cargaHorariaTotal().totalHabilitacoes[$index + 1]}}</b></td>
+                <td>
+                    <i ng-if="cargaHorariaTotal().totalHabilitacoes[$index + 1] >= constantes.NUMERO_MINIMO_DE_COMPONENTES_PARA_CUMPRIR_HABILITACOES[$index + 1]" class="fa fa-check fa-2x"></i>
+                    <i ng-if="cargaHorariaTotal().totalHabilitacoes[$index + 1] < constantes.NUMERO_MINIMO_DE_COMPONENTES_PARA_CUMPRIR_HABILITACOES[$index + 1]" class="fa fa-times fa-2x vermelho"></i>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+    </div>
+
+</div>

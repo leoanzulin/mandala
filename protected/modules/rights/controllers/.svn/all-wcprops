@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/controllers
+END
+AuthItemController.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/controllers/AuthItemController.php
+END
+InstallController.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/controllers/InstallController.php
+END
+AssignmentController.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/controllers/AssignmentController.php
+END

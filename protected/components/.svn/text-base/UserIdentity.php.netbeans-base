@@ -1,0 +1,137 @@
+<?php
+
+/**
+ * UserIdentity represents the data needed to identity a user.
+ * It contains the authentication method that checks if the provided
+ * data can identity the user.
+ */
+class UserIdentity extends CUserIdentity
+{
+
+    private $_id;
+
+    public function __construct($username, $password, $ldap = null)
+    {
+        parent::__construct($username, $password);
+    }
+
+    /**
+     * Autentica um usuário no sistema, baseado nas credenciais fornecidas nas
+     * variáveis $this->username e $this->password. Verifica se o usuário está
+     * no LDAP e, caso não esteja, verifica se está no banco (podem haver
+     * usuários cadastrados apenas para esta aplicação).
+     *
+     * Autenticação
+     * http://www.yiiframework.com/doc/guide/1.1/en/topics.auth
+     *
+     * Códigos de erro:
+     * http://www.yiiframework.com/doc/api/1.1/CBaseUserIdentity#c2217
+     *
+     * @return boolean Verdadeiro se o usuário se autenticou com sucesso, falso
+     *                 caso contrário
+     */
+    public function authenticate()
+    {
+        if ($this->verificarUsuarioNoBd($this->username, $this->password) === true) {
+            // Usuário está autenticado
+            Yii::log("Usuário '{$this->username}' se logou no sistema pelo banco.", 'info', 'system.components.UserIdentity');
+            // Atribuir a propriedade _id é importante para o restante do sistema
+            $this->_id = $this->username;
+            $this->errorCode = self::ERROR_NONE;
+            return true;
+        }
+
+        // Não está no banco
+        Yii::log("Erro no login do usuário '{$this->username}' - usuário não autenticado pelo LDAP nem com o banco.", 'info', 'system.components.UserIdentity');
+        $this->errorCode = self::ERROR_USERNAME_INVALID;
+        return false;
+    }
+
+    public function getId()
+    {
+        return $this->_id;
+    }
+
+    /**
+     * Verifica se o usuário está presente no banco e verifica se suas
+     * credenciais são válidas.
+     *
+     * @param $username Login fornecido pelo usuário
+     * @param $password Senha fornecida pelo usuário
+     * @return Verdadeiro se o usuário está no banco e suas credenciais estão
+     *         corretas, falso caso contrário
+     */
+    private function verificarUsuarioNoBd($username, $password)
+    {
+        $usuario = Usuario::model()->findByPk($username);
+        if (empty($usuario)) {
+            return false;
+        }
+        return password_verify($password, $usuario->senha);
+    }
+    /**
+     * Armazena o usuário que se logou pelo LDAP no banco se ele ainda não
+     * estava armazenado, ou atualiza seu registro.
+     *
+     * @param $username Login do usuário
+     * @param $registro Array com informações do LDAP
+     */
+    /*
+      private function atualizarUsuarioNoBd($username, $registro)
+      {
+      $usuario = Usuario::model()->findByPk($username);
+
+      $ehNovoUsuario = ($usuario === null) ? true : false;
+
+      if ($ehNovoUsuario) {
+      $usuario = new Usuario();
+      $usuario->scenario = 'insercao_ldap';
+      $usuario->setAttribute('id', $username);
+      }
+
+      $usuario->setAttribute('senha', $registro['campoSenha']);
+      $usuario->setAttribute('nome', $registro['campoPrimeiroNome']);
+      $usuario->setAttribute('sobrenome', $registro['campoSobrenome']);
+      $usuario->setAttribute('email', $registro['campoEmail']);
+
+      if ($usuario->save()) {
+      if ($ehNovoUsuario) {
+      Yii::app()->authManager->assign('ProfessorNaoAutenticado', $usuario->id);
+      }
+      return true;
+      }
+
+      Yii::log("Problema na inserção/atualização do usuário no banco. Erros no modelo usuário: " . print_r($usuario->errors, true), 'error', 'system.components.UserIdentity');
+      return false;
+      }
+     */
+
+    /**
+     * Verifica a autenticidade do usuário de acordo com a senha fornecida. Faz
+     * a verificação de qual método de hashing foi utilizado e aplica o
+     * algoritmo adequado à senha fornecida.
+     *
+     * @param $challenge Senha fornecida pelo usuário
+     * @param $originalPassword Senha original hasheada
+     * @return Verdadeiro se o usuário foi autenticado, falso caso contrário
+     */
+    /*
+      private function autenticar($challenge, $originalPassword)
+      {
+      // Verifica algoritmo de encriptação da senha
+      if (substr($originalPassword, 0, 5) == '{SHA}') {
+      $hashedPassword = GeradorSenha::sha($challenge);
+      } else if (substr($originalPassword, 0, 6) == '{SSHA}') {
+      $hashedPassword = GeradorSenha::ssha($challenge, $originalPassword);
+      } else if (substr($originalPassword, 0, 5) == '{MD5}') {
+      $hashedPassword = GeradorSenha::md5($challenge);
+      } else {
+      Yii::log("A senha do usuário '{$this->username}' está em um formato desconhecido no LDAP.", 'error', 'system.components.UserIdentity');
+      return false;
+      }
+
+      return $hashedPassword === $originalPassword;
+      }
+     */
+
+}

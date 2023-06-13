@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/edtec/!svn/ver/19/trunk/protected/views/discipline
+END
+_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/edtec/!svn/ver/9/trunk/protected/views/discipline/_search.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/9/trunk/protected/views/discipline/index.php
+END
+createDiscipline.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/edtec/!svn/ver/9/trunk/protected/views/discipline/createDiscipline.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/9/trunk/protected/views/discipline/admin.php
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/9/trunk/protected/views/discipline/_view.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/19/trunk/protected/views/discipline/view.php
+END
+_viewOffer.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/edtec/!svn/ver/16/trunk/protected/views/discipline/_viewOffer.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/edtec/!svn/ver/9/trunk/protected/views/discipline/_form.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/edtec/!svn/ver/9/trunk/protected/views/discipline/update.php
+END

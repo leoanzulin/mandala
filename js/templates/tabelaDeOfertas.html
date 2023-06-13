@@ -1,0 +1,42 @@
+<div>
+
+    <!-- Visualização de ofertas por períodos do simulador -->
+    <h3 ng-if="periodos.length === 0"><b>Não há nenhum período em sua grade</b></h3>
+
+    <table class="simulador" ng-repeat="periodo in periodos| orderBy: ['ano', 'mes']" style="background: {{periodo.fundoCss}}">
+
+        <!-- Cabeçalho -->
+        <tr><td colspan="8">
+                <p><b>Ofertas do mês {{periodo.mes}}/{{periodo.ano}}<span ng-if="periodo.bloqueado"> (fechado)</span></b></p>
+                <ul>
+                    <li>Carga horária: {{cargaHorariaDoPeriodo(periodo)}} horas</li>
+                    <li>{{numeroDeComponentesDoPeriodo(periodo)}} componentes</li>
+                </ul>
+            </td></tr>
+        <tr><th>Componente curricular</th><th>G</th><th>D</th><th>M</th><th>T</th><th>P</th><th style="width: 30px">Carga horária</th><th style="width: 15px"></th></tr>
+
+        <!-- Quando não há ofertas -->
+        <tr ng-if="naoHaOfertasNeste(periodo)"><td><i>Não há nenhuma componente neste período</i></td><td colspan="7"></td></tr>
+
+        <!-- Ofertas -->
+        <tr ng-repeat="oferta in periodo.ofertas | orderBy: ['-ehNecessaria', 'nome']" class="simulador-linha" ng-if="oferta.selecionadaSimulador">
+            <td style="width: auto; text-align: left">{{oferta.componente.nome}}</td>
+            <td ng-class="oferta.componente.classesCss[3]">{{oferta.componente.prioridadesLetras[3]}}</td>
+            <td ng-class="oferta.componente.classesCss[4]">{{oferta.componente.prioridadesLetras[4]}}</td>
+            <td ng-class="oferta.componente.classesCss[1]">{{oferta.componente.prioridadesLetras[1]}}</td>
+            <td ng-class="oferta.componente.classesCss[2]">{{oferta.componente.prioridadesLetras[2]}}</td>
+            <td ng-class="oferta.componente.classesCss[5]">{{oferta.componente.prioridadesLetras[5]}}</td>
+            <td style="text-align: center">{{oferta.componente.cargaHoraria}}</td>
+            <td><button ng-click="remover(oferta, periodo)" ng-if="modo != 'visualizar'" type="button" class="btn btn-default">X</button></td>
+
+            <input id="Inscricao_{{oferta.id}}" type="hidden" name="Inscricao[ofertas][]" value="{{oferta.id}}" ng-if="modo != 'visualizar'">
+        </tr>
+
+        <!-- Botão de adicionar novas ofertas ao período -->
+        <tr ng-if="modo != 'visualizar'"><td colspan="8">
+            <button type="button" class="btn btn-default" ng-click="adicionarOfertasAo(periodo)">+</button>
+        </td></tr>
+
+    </table>
+
+</div>

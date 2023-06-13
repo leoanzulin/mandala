@@ -1,0 +1,147 @@
+10
+
+dir
+0
+http://sistemas5.sead.ufscar.br/svn/edtec/trunk/protected/extensions/phpexcel/vendor/PHPExcel/locale
+http://sistemas5.sead.ufscar.br/svn/edtec
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+acf247a1-c502-4d2e-a52e-1ba132d4bf59
+
+bg
+dir
+
+
+
+add
+
+cs
+dir
+
+
+
+add
+
+da
+dir
+
+
+
+add
+
+de
+dir
+
+
+
+add
+
+en
+dir
+
+
+
+add
+
+es
+dir
+
+
+
+add
+
+fi
+dir
+
+
+
+add
+
+fr
+dir
+
+
+
+add
+
+hu
+dir
+
+
+
+add
+
+it
+dir
+
+
+
+add
+
+nl
+dir
+
+
+
+add
+
+no
+dir
+
+
+
+add
+
+pl
+dir
+
+
+
+add
+
+pt
+dir
+
+
+
+add
+
+ru
+dir
+
+
+
+add
+
+sv
+dir
+
+
+
+add
+
+tr
+dir
+
+
+
+add
+

@@ -1,0 +1,90 @@
+<?php
+
+class Email
+{
+
+    public static function mensagemPreInscricao($nome, $email)
+    {
+        $to = "{$nome} <{$email}>\r\n";
+        $subject = "[Educação e Tecnologias] Confirmação de recebimento de formulário de pré-inscrição.";
+        $message = "
+<html>
+<head><title>Confirmação de recebimento de formulário de pré-inscrição</title></head>
+<body>
+<p>Caro(a) {$nome}, sua pré-inscrição foi realizada com sucesso!</p><br>
+<p>Caso ainda não tenha efetuado o pagamento clique no link abaixo para gerar o boleto <a href='http://www3.fai.ufscar.br/Fundacao/CURSOS/asp/mostraturma.asp?turma=675**1*2/16' target='_blank'>http://www3.fai.ufscar.br/Fundacao/CURSOS/asp/mostraturma.asp?turma=675**1*2/16</a></p>
+<p>Após realizarmos a confirmação de seu pagamento daremos prosseguimento ao processo de inscrição.</p>
+<p>Obrigado!</p>
+<p>Secretaria do Curso Educação e Tecnologias</p>
+</body>
+</html>";
+        $headers = "From: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+            "Reply-To: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+<<<<<<< .mine
+            "Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+=======
+            "Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .    
+>>>>>>> .r34
+            "MIME-Version: 1.0\r\n" .
+            "Content-Type: text/html; charset=UTF-8\r\n";
+        mail($to, $subject, $message, $headers);
+    }
+
+    public static function mensagemPreInscricaoDetalhada()
+    {
+//
+//<p>Você se inscreveu na(s) seguinte(s) habilitação(ões):</p>
+//<ul>
+//    <li><b>{$nomesHabilitacoes[0]}</b></li>";
+//                if (count($nomesHabilitacoes) > 1) {
+//                    $message .= "<li><b>{$nomesHabilitacoes[1]}</b></li>";
+//                }
+//                $message .= "
+//</ul>
+//<p>Futuramente você receberá mais informações sobre sua inscrição.</p>
+//<p>No caso de dúvidas, favor entrar em contato com a secretaria do curso pelo e-mail:</p>
+//<p>edutec@ead.ufscar.br</p>
+//<p>Obrigado!</p><br>
+//<p>Grupo Horizonte</p>
+//<p>Secretaria do Curso Educação e Tecnologias</p>
+//</body>
+//</html>
+//";
+    }
+
+    public static function mensagemEnviarDocumentos($nome, $email, $cpf)
+    {
+        $to = "{$nome} <{$email}>\r\n";
+        $subject = "[Educação e Tecnologias] Confirmação de pagamento da inscrição";
+        $message = "
+<html>
+<head><title>Confirmação de pagamento da inscrição</title></head>
+<body>
+<p>Caro(a) {$nome},</p><br>
+<p>O pagamento de sua inscrição no curso de Educação e Tecnologias foi confirmado.</p>
+<p>Para dar prosseguimento ao processo de inscrição, solicitamos que acesse o endereço <a href=\"http://edutec.ead.ufscar.br/index.php?r=inscricao/documentos&cpf={$cpf}\">http://edutec.ead.ufscar.br/index.php?r=inscricao/documentos&cpf={$cpf}</a>
+e envie uma cópia simples dos seguintes documentos:</p>
+<ul>
+<li>CPF</li>
+<li>RG</li>
+<li>Diploma de maior titulação</li>
+<li>Comprovante de residência</li>
+<li>Currículo</li>
+</ul>
+<p>Obrigado!</p>
+<p>Secretaria do Curso Educação e Tecnologias</p>
+</body>
+</html>";
+        $headers = "From: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+            "Reply-To: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+<<<<<<< .mine
+            "Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .
+=======
+            "Cc: Coordenação EDUTEC <edutec@ead.ufscar.br>\r\n" .     
+>>>>>>> .r34
+            "MIME-Version: 1.0\r\n" .
+            "Content-Type: text/html; charset=UTF-8\r\n";
+        mail($to, $subject, $message, $headers);
+    }
+    
+}

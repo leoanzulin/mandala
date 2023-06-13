@@ -1,0 +1,69 @@
+<?php
+
+function temPapel($papel)
+{
+    return !ehSuperUsuario() && Yii::app()->user->checkAccess($papel);
+}
+
+function ehSuperUsuario()
+{
+    return Yii::app()->user->isSuperuser === true;
+}
+
+function ehVisitante()
+{
+    return Yii::app()->user->isGuest;
+}
+
+// Recupera as páginas personalizadas
+$criteria = new CDbCriteria(array('order' => 'page_position asc'));
+$menuPaginas = array();
+
+//$menuPaginas[] = array('label' => 'Fazer pré-inscrição', 'url' => array('/inscricao'), 'visible' => ehVisitante());
+foreach (Pages::model()->findAll($criteria) as $pagina) {
+    $menuPaginas[] = array('label' => $pagina->page_shortname, 'url' => array('/pages/view&id=' . $pagina->page_id), 'visible' => ehVisitante());
+}
+
+// Funcionalidades do administrador
+$menuPaginas[] = array('label' => 'Editar páginas',                           'url' => array('/pages/administrar'),                          'visible' => ehSuperUsuario());
+$menuPaginas[] = array('label' => 'Criar nova página',                        'url' => array('/pages/create'),                               'visible' => ehSuperUsuario());
+$menuPaginas[] = array('label' => 'Gerenciar pré-inscrições',                 'url' => array('/admin/gerenciarPreInscricoes'),               'visible' => ehSuperUsuario());
+$menuPaginas[] = array('label' => 'Visualizar pré-inscrições em componentes', 'url' => array('/admin/visualizarPreInscricoesEmComponentes'), 'visible' => ehSuperUsuario());
+$menuPaginas[] = array('label' => 'Gerenciar ofertas de componentes',         'url' => array('/admin/gerenciarOfertas'),                     'visible' => ehSuperUsuario());
+$menuPaginas[] = array('label' => 'Configurações',                            'url' => array('/admin/configuracoes'),                        'visible' => ehSuperUsuario());
+//$menuPaginas[] = array('label' => 'Rights',                                   'url' => array('/rights'),                                     'visible' => ehSuperUsuario());
+
+// Funcionalidades dos alunos
+$menuPaginas[] = array('label' => 'Fazer inscrição em componentes', 'url' => array('/aluno/inscricao'), 'visible' => temPapel('Aluno'));
+$menuPaginas[] = array('label' => 'Simulador',                      'url' => array('/aluno/simulador'), 'visible' => temPapel('Aluno'));
+$menuPaginas[] = array('label' => 'Meu perfil',                     'url' => array('/aluno/perfil'),    'visible' => temPapel('Aluno') || temPapel('Inscrito'));
+
+//$menuPaginas[] = array('label' => 'Login', 'url' => array('/site/login'), 'visible' => ehVisitante());  // , 'linkOptions' => array("data-description" => "member area")
+//$menuPaginas[] = array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !ehVisitante(), 'linkOptions' => array("data-description" => "member area"));
+?>
+<section id="navigation-main">  
+    <div class="navbar" style="margin-bottom: 0">
+        <div class="navbar-inner" style="padding: 0">
+            <div class="container" style="padding: 0">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                <div class="nav-collapse">
+                    <?php
+                    $this->widget('zii.widgets.CMenu', array(
+                        'htmlOptions' => array('class' => 'nav'),
+                        'submenuHtmlOptions' => array('class' => 'dropdown-menu'),
+                        'itemCssClass' => 'item-test',
+                        'encodeLabel' => false,
+                        'items' => $menuPaginas,
+                        'firstItemCssClass' => 'menu-inscricao',
+                    ));
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- /#navigation-main -->

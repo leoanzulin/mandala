@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * Controlador que implementa uma interface REST para o modelo
+ * Configuracao.
+ * 
+ * Métodos:
+ * 
+ * configuracao/get&atributo=X
+ * - Retorna um objeto JSON representando o atributo de configuração X.
+ * 
+ * configuracao/todos
+ * - Retorna um vetor contendo todas as configurações do sistema.
+ * 
+ */
+class ConfiguracaoController extends Controller
+{
+
+    public function actionGet($atributo)
+    {
+        $configuracao = Configuracao::mdoel()->findByPk($atributo);
+        $this->respostaJSON($configuracao->toJSON());
+    }
+
+    public function actionTodos()
+    {
+        $configuracoes = Configuracao::model()->findAll();
+        $configuracoesArray = array_map(function($configuracao) {
+            return $configuracao->asArray();
+        }, $configuracoes);
+        $this->respostaJSON(json_encode($configuracoesArray));
+    }
+
+}

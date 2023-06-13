@@ -1,0 +1,87 @@
+<?php
+/* @var $this AdminController */
+/* @var $model Inscricao */
+
+$this->breadcrumbs = array(
+    'Gerenciar pré-inscrições' => array('gerenciarPreInscricoes'),
+    $model->cpf,
+);
+?>
+
+<h1>Inscrição de <?php echo $model->nome; ?></h1>
+
+<br>
+<p><b>Status da inscrição:</b> <?php echo $model->statusPorExtenso; ?></p>
+<br>
+
+<?php $this->widget('zii.widgets.CDetailView', array(
+    'data' => $model,
+    'attributes' => array(
+        'id',
+        'cpf',
+        'tipo_identidade',
+        'identidade',
+        'orgao_expedidor',
+        'nome',
+        'sobrenome',
+        'email',
+        'data_nascimento',
+        'naturalidade',
+        'nome_mae',
+        'nome_pai',
+        'estado_civil',
+        'telefone_fixo',
+        'telefone_celular',
+        'telefone_alternativo',
+        'whatsapp',
+        'skype',
+        'cep',
+        'endereco',
+        'numero',
+        'complemento',
+        'cidade',
+        'estado',
+        'cargo_atual',
+        'empresa',
+        'telefone_comercial',
+        'modalidade',
+        'candidato_a_bolsa',
+        'recebe_bolsa',
+        'observacoes',
+    ),
+)); ?>
+<br>
+
+<h2>Formação</h2>
+
+<ul>
+<?php
+foreach ($model->formacoes as $formacao) {
+    $tabelaNivel = array('graduacao' => 'Graduação', 'especializacao' => 'Especialização', 'mestrado' => 'Mestrado', 'doutorado' => 'Doutorado');
+    echo "<li>{$tabelaNivel[$formacao->nivel]} - {$formacao->curso} - {$formacao->instituicao} ({$formacao->ano_conclusao})</li>\n";
+}
+?>
+</ul>
+<br>
+
+<h2>Habilitações escolhidas</h2>
+    <h3>Habilitação prioritária: <b><?php echo $model->habilitacao1PorExtenso; ?></b></h3>
+    <?php if ($model->recuperarhabilitacao2() != false) { ?>
+    <h3>Habilitação secundária: <b><?php echo $model->habilitacao2PorExtenso; ?></b></h3>
+    <?php } ?>
+<h2>Documentos</h2>
+
+<?php if (empty($model->documento_cpf)) { ?>
+<p>Ainda não enviou os documentos</p>
+<?php } else { ?>
+
+<ul>
+    <li><a href="<?php echo $model->recuperarArquivoDocumento('cpf', true); ?>">CPF</a></li>
+    <li><a href="<?php echo $model->recuperarArquivoDocumento('rg', true); ?>">RG</a></li>
+    <li><a href="<?php echo $model->recuperarArquivoDocumento('diploma', true); ?>">Diploma</a></li>
+    <li><a href="<?php echo $model->recuperarArquivoDocumento('comprovante_residencia', true); ?>">Comprovante de residência</a></li>
+    <li><a href="<?php echo $model->recuperarArquivoDocumento('curriculo', true); ?>">Currículo</a></li>
+    <li><a href="<?php echo $model->recuperarArquivoDocumento('justificativa', true); ?>">Justificativa de próprio punho</a></li>
+</ul>
+
+<?php } ?>

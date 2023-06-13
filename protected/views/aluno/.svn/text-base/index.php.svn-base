@@ -1,0 +1,16 @@
+<?php
+
+?>
+
+<h2>Olá, <?php echo $nome; ?></h2>
+
+<p>Seja bem vindo(a) à sua área online do curso EduTec!</p>
+
+<?php if ($temQueEnviarDocumentos) { ?>
+<h3 style="color: red; font-weight: bold">
+    Para dar prosseguimento à sua inscrição no curso, por favor envie seus documentos no link
+    <a href="<?php echo Yii::app()->createUrl('inscricao/documentos', array('cpf' => Yii::app()->user->id)); ?>">
+        <?php echo Yii::app()->createAbsoluteUrl('inscricao/documentos', array('cpf' => Yii::app()->user->id)); ?>
+    </a>.
+</h3>
+<?php } ?>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/dataproviders
+END
+RAuthItemChildDataProvider.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/dataproviders/RAuthItemChildDataProvider.php
+END
+RAssignmentDataProvider.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/dataproviders/RAssignmentDataProvider.php
+END
+RPermissionDataProvider.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/dataproviders/RPermissionDataProvider.php
+END
+RAuthItemParentDataProvider.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/dataproviders/RAuthItemParentDataProvider.php
+END
+RAuthItemDataProvider.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/components/dataproviders/RAuthItemDataProvider.php
+END

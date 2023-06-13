@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * This is the model class for table "configuracao".
+ *
+ * The followings are the available columns in table 'componente_curricular':
+ * @property string $atributo
+ * @property string $valor
+ */
+class Configuracao extends CActiveRecord
+{
+
+    public function tableName()
+    {
+        return 'configuracao';
+    }
+
+    public function rules()
+    {
+        return array(
+            array('atributo, valor', 'required'),
+        );
+    }
+
+    public static function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
+
+    public function asArray()
+    {
+        return array(
+            'atributo' => $this->atributo,
+            'valor' => $this->valor,
+        );
+    }
+
+    public function toJSON()
+    {
+        return json_encode($this->asArray());
+    }
+
+}

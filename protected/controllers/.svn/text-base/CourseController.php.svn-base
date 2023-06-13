@@ -1,0 +1,129 @@
+<?php
+
+class CourseController extends RController
+{
+    public $layout = '//layouts/column2';
+
+//    public function filters()
+//    {
+//        return array('rights',);
+//    }
+
+    public function actionIndex()
+    {
+        $dataProvider = new CActiveDataProvider('Course', array(
+            'criteria' => array(
+                'order' => 'course_id ASC',
+            )
+        ));
+
+        $this->render('index', array(
+            'dataProvider' => $dataProvider,
+        ));
+    }
+
+    public function actionView($id)
+    {
+        $dataProviderDisciplinas = new CActiveDataProvider('Discipline', array(
+            'criteria' => array(
+                'condition' => "course_id = {$id}"
+            )
+        ));
+
+        $this->render('view', array(
+            'model' => $this->loadModel($id),
+            'dataProviderDisciplinas' => $dataProviderDisciplinas,
+        ));
+    }
+
+    public function actionCreate()
+    {
+        $model = new Course();
+
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
+
+        if (isset($_POST['Course'])) {
+            $model->attributes = $_POST['Course'];
+            if ($model->save()) {
+                Yii::app()->user->setFlash('success', "Curso '{$model->course_name}' criado com sucesso.");
+                $this->redirect(array('view', 'id' => $model->course_id));
+            }
+            else {
+                Yii::app()->user->setFlash('error', "Problemas na criação do curso '{$model->course_name}'.");
+            }
+        }
+
+        $this->render('create', array(
+            'model' => $model,
+        ));
+    }
+
+    public function actionUpdate($id)
+    {
+        $model = $this->loadModel($id);
+
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
+
+        if (isset($_POST['Course'])) {
+            $model->attributes = $_POST['Course'];
+            if ($model->save()) {
+                Yii::app()->user->setFlash('success', "Curso '{$model->course_name}' atualizado com sucesso.");
+                $this->redirect(array('view', 'id' => $model->course_id));
+            }
+            else {
+                Yii::app()->user->setFlash('error', "Problemas na atualização do curso '{$model->course_name}'.");
+            }
+        }
+
+        $this->render('update', array(
+            'model' => $model,
+        ));
+    }
+
+    public function actionDelete($id)
+    {
+        $model = $this->loadModel($id);
+        $courseName = $model->course_name;
+        if (!$model->delete()) {
+            Yii::app()->user->setFlash('error', "Problemas na remoção do curso '{$courseName}'.");
+        }
+
+        Yii::app()->user->setFlash('success', "Curso '{$courseName}' removido com sucesso.");
+
+        if (!isset($_GET['ajax'])) {
+            $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
+        }
+    }
+
+    public function actionAdmin()
+    {
+        $model = new Course('search');
+        $model->unsetAttributes();  // clear any default values
+        if (isset($_GET['Course'])) {
+            $model->attributes = $_GET['Course'];
+        }
+
+        $this->render('admin', array(
+            'model' => $model,
+        ));
+    }
+
+    public function loadModel($id)
+    {
+        $model = Course::model()->findByPk($id);
+        if ($model === null) {
+            throw new CHttpException(404, 'The requested page does not exist.');
+        }
+        return $model;
+    }
+
+    protected function performAjaxValidation($model)
+    {
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'course-form') {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
+    }
+}

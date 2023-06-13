@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/edtec/!svn/ver/28/trunk/protected/views/pages
+END
+administrar.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/edtec/!svn/ver/24/trunk/protected/views/pages/administrar.php
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/edtec/!svn/ver/28/trunk/protected/views/pages/_form.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/edtec/!svn/ver/24/trunk/protected/views/pages/update.php
+END
+create.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/edtec/!svn/ver/24/trunk/protected/views/pages/create.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/edtec/!svn/ver/24/trunk/protected/views/pages/view.php
+END

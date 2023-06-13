@@ -1,0 +1,403 @@
+@import "comuns";
+
+label {
+    width: 145px;
+    padding-right: 8px;
+    text-align: right;
+    float: left;
+}
+
+input[type="checkbox"] {
+    float: left;
+    margin-top: 0;
+}
+
+input[type="radio"] {
+    @extend input[type="checkbox"];
+
+    & + label {
+        width: auto;
+        padding-left: 10px;
+    }
+    & + label + input[type="radio"] { margin-left: 20px; }
+}
+
+.checkboxes { 
+    label {
+        float: none;
+        width: auto;
+        margin: 7px;
+        display: inline-block;
+    }
+    td {
+        background: #F9F9F9;
+        padding: 5px;
+        border-top: 1px solid $cor-borda-clara;
+        border-bottom: 1px solid $cor-borda-clara;
+    }
+    /* Seleção de habilitações quando faz inscrição */
+    tr.selecionado td { background: #FFF2E6; }
+}
+
+fieldset {
+    margin: 20px 0 30px 0;
+}
+
+span.errorMessage {
+    color: #F00;
+    margin-left: 10px;
+}
+
+.checkboxes span.errorMessage {
+    margin-left: 0;
+}
+
+select.curto { width: 150px; }
+select.muito-curto { width: 80px; }
+input.curto { width: 120px; }
+input.muito-curto { width: 60px; }
+
+/* OK - Mostra as formações de uma determinada inscrição */
+#tabela-formacao {
+    background: $cor-cinza-mais-claro;
+    margin: 10px 0 20px 0;
+
+    tr {
+        border-top: 1px solid $cor-borda-clara;
+        border-bottom: 1px solid $cor-borda-clara;
+    }
+    th, td { padding: 5px; }
+    th {
+        &:nth-child(1) { width: 15%; }
+        &:nth-child(2), &:nth-child(3) { width: 35% }
+        &:nth:child(4) { width: 5% }
+        &:nth:child(5) { width:  10% }
+    }
+}
+
+/* OK - Estilo aplicado quando uma oferta é selecionada no simulador ou na inscrição real */
+tr.selecionado td {
+    background: $cor-verde-edutec;
+    color: #000;
+}
+
+/* Deixa o simulador com fundo azul. Usado em todos os locais que mostram a grade do simulador  */
+div.simulador-container {
+    border: 1px solid $cor-borda-escura;
+    padding: 15px;
+    background: #eff3ff;
+}
+
+/* Deixa os fundos das letras das habilitações com suas respectivas cores */
+table td.prioridade3 { background-color: $cor-prioridade3; font-weight: bold; text-align: center; }
+table td.prioridade4 { background-color: $cor-prioridade4; font-weight: bold; text-align: center; }
+table td.prioridade1 { background-color: $cor-prioridade1; font-weight: bold; text-align: center; }
+table td.prioridade2 { background-color: $cor-prioridade2; font-weight: bold; text-align: center; }
+table td.prioridade5 { background-color: $cor-prioridade5; font-weight: bold; text-align: center; }
+
+/* OK - Usado nas tabelas que mostram a lista de ofertas em que um usuário pode se inscrever */
+table.tabela-inscricao {
+    margin-bottom: 30px;
+
+    th {
+        width: 20px;
+        background: $cor-cinza-claro;
+        text-align: center;
+
+        &:first-child {
+            width: auto;
+            text-align: left;
+        }
+    }
+    td {
+        text-align: center;
+        vertical-align: middle;
+
+        &:first-child { text-align: left; }
+    }
+}
+
+/**
+  * OK - Aplicado nos resumos de número de componentes por prioridade,
+  *      encapsulado na diretiva contagem-de-componentes
+  */
+div.resumo-inscricoes {
+    margin: 30px 0;
+    padding: 15px;
+    border: 1px solid $cor-borda-escura;
+
+    & > div { margin-top: 40px; }
+
+    table {
+        width: 100%;
+        td { padding: 5px; }
+    }
+
+    i {
+        color: blue;
+        margin-left: 20px;
+    }
+    i.vermelho { color: red; }
+}
+
+/**
+ * OK - Aplicado nas tabelas de seleção de ofertas no simulador e no gerenciamento de ofertas.
+ *      Também no gerenciamento de componentes curriculares
+ *      TODO: Verificar esta classe, está sendo usada
+ *      em lugares diferentes demais.
+ */
+table.simulador {
+    width: 100%;
+    border: 1px solid $cor-borda-escura;
+    margin-bottom: 20px;
+    background-color: #FFF;
+
+    tr {
+        border-top: 1px solid $cor-borda-escura;
+        border-bottom: 1px solid $cor-borda-escura;
+    }
+    th { text-align: center; }
+    td { padding: 7px; }
+    /* Estilo usado apenas em oferta/gerenciar */
+    tr.simulador-linha td {
+        width: 15px;
+        text-align: center;
+
+        &:first-child {
+            width: auto;
+            text-align: left
+        }
+    }
+}
+
+/* OK - Usado na view admin/visualizarInscricoesEmOfertasSimulador */
+table.numero-inscricoes-ofertas-resumo {
+    width: 100%;
+
+    tr { border-top: 1px solid $cor-borda-escura; }
+    th {
+        padding: 5px;
+        background: $cor-cinza-claro;
+    }
+    td {
+        padding: 5px 0;
+        /* Campo de número de inscritos */
+        &:nth-child(2) { text-align: center; }
+    }
+}
+
+p.explicacao {
+    color: #AAA;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Muda o cabeçalho dos CGridviews do yii */
+#inscritos-form table thead tr th,
+#visualizar-matriculas-grid table thead tr th,
+#docente-grid table thead tr th,
+#tutor-grid table thead tr th
+{
+    background-color: $cor-verde-musgo;
+    background-image: none;
+}
+/* Muda o tamanho dos inputs de filtro dos cgridviews */
+.grid-view .filters input { width: 85%; }
+.button-column { min-width: 20px; }
+
+/*
+  Submenu
+  http://www.yiiframework.com/forum/index.php/topic/7589-cmenu-multiple-submenu/
+  https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
+*/
+
+ul.nav {
+    position: relative;
+    z-index: 10;
+
+    li {
+        .item-test { position: relative; }
+        &:hover > ul { visibility: visible; }
+    }
+
+    ul.nav-sub {
+        visibility: hidden;
+        position: absolute;
+        top: 36px;
+        margin-left: 0;
+        z-index: 10000;
+        background: #FFF;
+        border: 1px solid $cor-borda-escura;
+        border-top: none;
+
+        li {
+            list-style: none;
+            padding: 0;
+            float: none;
+            width: 200px;
+            margin: 0;
+            background: #FFF;
+
+            a {
+                display: block;
+                padding: 10px 15px;
+                line-height: 20px;
+                float: none;
+                margin: 0;
+                color: #444;
+                background: #FFF;
+                &:hover {
+                    background: #e7f0c7;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+}
+
+/* Gerenciamento de notas */
+
+#gerenciar-notas-form table {
+    width: 100%;
+    margin-top: 20px;
+
+    th, td { padding: 5px; }
+    thead { border-bottom: 1px solid $cor-borda-escura; }
+    tbody tr {   
+        &:nth-child(odd) { background: $cor-cinza-mais-claro; }
+
+        td {
+            font-size: 16px;
+            text-align: center;
+
+            &:first-child {
+                text-align: left;
+                font-size: 14px;
+            }
+            select { width: 120px; }
+        }
+    }
+}
+
+/* Gerenciamento de pagamento de bolsas para docentes e tutores */
+
+table.bolsas {
+    width: 100%;
+    margin-top: 20px;
+
+    th, td {
+        border: 1px solid $cor-borda-escura;
+        padding: 7px;        
+    }
+
+    thead tr {
+        /* Nome do docente/tutor */
+        &:nth-child(1) td:nth-child(1) {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        /* Campos "valor" e "data" */
+        &:nth-child(3) th:nth-child(2), &:nth-child(3) th:nth-child(3) { width: 120px; }
+        /* Botão "$" */
+        &:nth-child(3) th:nth-child(4) { width: 30px; }
+    }
+
+    /* Centraliza as datas */
+    tbody td:nth-child(3) { text-align: center; }
+}
+
+/* Consutla do saldo total do projeto, descontando as bolsas pagas e adicionando pagamentos de alunos */
+
+table.saldo-bolsas {
+    width: 100%;
+    margin-top: 20px;
+
+    th, td {
+        border: 1px solid $cor-borda-escura;
+        padding: 7px;
+    }
+
+    thead th {
+        /* Campos "docente" e "tutor" */
+        &:nth-child(2), &:nth-child(3) { width: 150px; }
+        /* Campos "data" e "valor" */
+        &:nth-child(4), &:nth-child(5) { width: 100px; }
+    }
+
+    /* Centraliza campo "data" */
+    tbody td:nth-child(4) { text-align: center; }
+
+    tfoot {
+        font-weight: bold;
+        background: $cor-cinza-claro;
+    }
+}
+
+/* Controle de pagamento feito por alunos */
+
+table.pagamentos {
+    width: 100%;
+    margin-top: 20px;
+
+    th, td {
+        border: 1px solid $cor-borda-escura;
+        padding: 7px;
+    }
+
+    tbody {
+        tr:nth-child(odd) { background: $cor-cinza-mais-claro; }
+
+        td {
+            text-align: center;
+            &.item-de-pagamento-selecionado { background: #ffd5a1; }
+        }
+    }
+}
+
+table.historico {
+    table-layout: fixed;
+
+    th {
+        width: 200px;
+        padding: 10px;
+        &:first-child {
+            width: 600px;
+        }
+    }
+
+    tbody {
+        tr {
+            background-color: #FCFCFC;
+            &:nth-child(odd) {
+                background-color: #F0F0F0;
+            }
+        }
+        td {
+            text-align: center;
+            padding: 10px;
+            &:first-child {
+                text-align: left;
+            }
+        }
+    }
+}
+
+/* Estilos das mensagens flash */
+div.notificacao {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid $cor-borda-escura;
+    background: #e7f0c7;
+    color: black;
+    text-align: center;
+}
+div.notificacao-negativa {
+    @extend div.notificacao;
+    background: #f9d9a7;
+}
+
+.esmaecido { opacity: 0.5; }
+.atencao { color: red; }
+.atencao-grande { color: red; font-size: 1.5em; }

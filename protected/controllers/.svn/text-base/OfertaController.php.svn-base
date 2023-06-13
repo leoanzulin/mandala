@@ -1,0 +1,71 @@
+<?php
+
+/**
+ * Controlador que implementa uma interface REST para o modelo Oferta.
+ * 
+ * Métodos:
+ * 
+ * oferta/todos
+ * - Retorna um vetor contendo todas as ofertas de componentes.
+ * 
+ * oferta/periodo&deMes=A&deAno=B&ateMes=C&ateAno=D
+ * - Retorna um vetor contendo as ofertas de componentes do período do mês A e
+ *   ano B até o mês C e ano D.
+ * 
+ */
+class OfertaController extends Controller
+{
+
+    public function actionTodos()
+    {
+        $ofertas = Oferta::model()->findAll();
+        $ofertasArray = array_map(function($oferta) {
+            return $oferta->asArray();
+        }, $ofertas);
+        $this->respostaJSON(json_encode($ofertasArray));
+    }
+
+    public function actionPeriodo($deMes, $deAno, $ateMes, $ateAno)
+    {
+        $todasOfertas = Oferta::model()->findAll();
+        $ofertasDoPeriodo = $this->filtrarOfertasPorPeriodo($todasOfertas, $deMes, $deAno, $ateMes, $ateAno);
+        $ofertasArray = array_map(function($oferta) {
+            return $oferta->asArray();
+        }, $ofertasDoPeriodo);
+        $this->respostaJSON(json_encode($ofertasArray));
+    }
+
+    private function filtrarOfertasPorPeriodo($todasOfertas, $deMes, $deAno, $ateMes, $ateAno)
+    {
+        return array_values(array_filter($todasOfertas, function($oferta) use($deMes, $deAno, $ateMes, $ateAno) {
+            $ano = $oferta->ano;
+            $mes = $oferta->mes;
+            if ($deAno <= $ano && $ano <= $ateAno) {
+                if ($deAno == $ano && $mes < $deMes) {
+                    return false;
+                }
+                if ($ano == $ateAno && $ateMes < $mes) {
+                    return false;
+                }
+                return true;
+            }
+            return false;
+        }));
+    }
+    
+    public function actionDoPeriodoAberto()
+    {
+        $deMes = Configuracao::model()->findByPk('inscricoes.inicio_periodo_aberto.mes')->valor;
+        $deAno = Configuracao::model()->findByPk('inscricoes.inicio_periodo_aberto.ano')->valor;
+        $ateMes = Configuracao::model()->findByPk('inscricoes.fim_periodo_aberto.mes')->valor;
+        $ateAno = Configuracao::model()->findByPk('inscricoes.fim_periodo_aberto.ano')->valor;
+
+        $todasOfertas = Oferta::model()->findAll();
+        $ofertasDoPeriodo = $this->filtrarOfertasPorPeriodo($todasOfertas, $deMes, $deAno, $ateMes, $ateAno);
+        $ofertasArray = array_map(function($oferta) {
+            return $oferta->asArray();
+        }, $ofertasDoPeriodo);
+        $this->respostaJSON(json_encode($ofertasArray));
+    }
+
+}

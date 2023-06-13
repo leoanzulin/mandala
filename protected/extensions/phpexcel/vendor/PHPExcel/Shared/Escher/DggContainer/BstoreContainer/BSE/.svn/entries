@@ -1,0 +1,28 @@
+10
+
+dir
+0
+http://sistemas5.sead.ufscar.br/svn/edtec/trunk/protected/extensions/phpexcel/vendor/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE
+http://sistemas5.sead.ufscar.br/svn/edtec
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+acf247a1-c502-4d2e-a52e-1ba132d4bf59
+

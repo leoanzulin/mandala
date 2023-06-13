@@ -1,0 +1,39 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 20
+/svn/edtec/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/edtec/!svn/ver/31/trunk/protected
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/edtec/!svn/ver/2/trunk/protected/.htaccess
+END
+yiic
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/edtec/!svn/ver/2/trunk/protected/yiic
+END
+composer.json
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/edtec/!svn/ver/5/trunk/protected/composer.json
+END
+yiic.bat
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/edtec/!svn/ver/2/trunk/protected/yiic.bat
+END
+yiic.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/edtec/!svn/ver/2/trunk/protected/yiic.php
+END

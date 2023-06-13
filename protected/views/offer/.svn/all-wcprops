@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/edtec/!svn/ver/19/trunk/protected/views/offer
+END
+_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/edtec/!svn/ver/14/trunk/protected/views/offer/_form.php
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/edtec/!svn/ver/19/trunk/protected/views/offer/update.php
+END
+create.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/edtec/!svn/ver/18/trunk/protected/views/offer/create.php
+END
+_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/edtec/!svn/ver/2/trunk/protected/views/offer/_search.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/edtec/!svn/ver/14/trunk/protected/views/offer/index.php
+END
+admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/edtec/!svn/ver/2/trunk/protected/views/offer/admin.php
+END
+_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/edtec/!svn/ver/2/trunk/protected/views/offer/_view.php
+END
+view.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/edtec/!svn/ver/2/trunk/protected/views/offer/view.php
+END

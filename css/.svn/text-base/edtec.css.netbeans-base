@@ -1,0 +1,240 @@
+label {
+    width: 140px;
+    float: left;
+    text-align: right;
+    padding-right: 8px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    float: left;
+    margin-top: 0;
+}
+
+input[type="radio"] + label {
+    width: auto;
+    padding-left: 10px;
+}
+
+input[type="radio"] + label + input[type="radio"] {
+    margin-left: 20px;
+}
+
+.checkboxes label {
+    float: none;
+    width: auto;
+    margin: 7px;
+    display: inline-block;
+}
+
+.checkboxes td {
+    padding: 5px;
+}
+
+.checkboxes table, .checkboxes td {
+    background: #F9F9F9;
+}
+
+.checkboxes tr {
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+}
+
+.checkboxes tr.selecionado td {
+    background: #fff2e6;
+}
+
+fieldset {
+    margin: 20px 0 30px 0;
+}
+
+span.errorMessage {
+    color: #F00;
+    margin-left: 10px;
+}
+
+.checkboxes span.errorMessage {
+    margin-left: 0;
+}
+
+input.curto {
+    width: 120px;
+}
+
+select.curto {
+    width: 150px;
+}
+
+#tabela-formacao {
+    background: #F9F9F9;
+    margin: 10px 0 20px 0;
+}
+
+#tabela-formacao tr {
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+}
+
+#tabela-formacao th, #tabela-formacao td {
+    padding: 5px;
+}
+
+#tabela-formacao th.tabela-formacao-1 {
+    width: 15%
+}
+
+#tabela-formacao th.tabela-formacao-2, #tabela-formacao th.tabela-formacao-3 {
+    width: 35%
+}
+
+#tabela-formacao th.tabela-formacao-4 {
+    width: 5%
+}
+
+#tabela-formacao th.tabela-formacao-5 {
+    width:  10%
+}
+
+tr.selecionado td {
+    /*background-color:#C6D880;*/
+    background: #e7f0c7;
+    color: #000;
+}
+
+div.simulador-container {
+    border: 1px solid black;
+    padding: 15px;
+    background: #eff3ff
+}
+
+table.simulador, table.inscricoes {
+    width: 100%;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    background-color: #FFF;
+}
+
+table.simulador tr {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+ }
+ 
+table.simulador td {
+    //border: 1px solid #000;
+    padding: 7px;
+}
+
+table td.prioridade3 { background-color: #e5b8b7; font-weight: bold; text-align: center; }
+table td.prioridade4 { background-color: #fabf8f; font-weight: bold; text-align: center; }
+table td.prioridade1 { background-color: #ccc0d9; font-weight: bold; text-align: center; }
+table td.prioridade2 { background-color: #b6dde8; font-weight: bold; text-align: center; }
+table td.prioridade5 { background-color: #c2d69b; font-weight: bold; text-align: center; }
+
+table.tabela-inscricao th {
+    width: 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+table.tabela-inscricao th:first-child {
+    width: auto;
+    text-align: left;
+}
+table.tabela-inscricao td {
+    text-align: center;
+}
+table.tabela-inscricao td:first-child {
+    text-align: left;
+}
+table.tabela-inscricao {
+    margin-bottom: 30px;
+}
+
+
+
+table.simulador > tr > th {
+    width: 15px;
+    text-align: center;
+}
+
+div.simulador-resumo {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+div.simulador-resumo table td {
+    padding: 5px;
+}
+
+table.simulador tr.simulador-linha td {
+    width: 15px;
+    text-align: center
+}
+
+table.inscricoes {
+    width: 100%;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    background-color: #EEE;
+}
+
+table.inscricoes td {
+    border: 1px solid black;
+    padding: 5px
+}
+
+table.inscricoes tr.detalhes {
+    display: none;
+}
+
+table.inscricoes tr.detalhes > td {
+    padding: 10px;
+    background: #FFF;
+}
+
+table.simulador th.habilitacao {
+    width: 40px;
+}
+
+table.simulador td.habilitacao {
+    text-align: center;
+}
+
+table.inscricoes-resumo {
+    width: 100%;
+}
+
+table.inscricoes-resumo tr {
+    border-top: 1px solid black;
+}
+
+table.inscricoes-resumo th {
+    background: #EEE;
+}
+
+table.inscricoes-resumo td.numero {
+    width: 100px;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+div.notificacao, div.notificacao-negativa {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background: #e7f0c7;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    color: black;
+}
+
+div.notificacao-negativa {
+    background: #f9d9a7;
+}
+
+p.explicacao {
+    color: #AAA;
+    font-style: italic;
+    font-size: 0.9em;
+}

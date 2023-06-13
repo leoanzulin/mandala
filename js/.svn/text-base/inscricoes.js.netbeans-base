@@ -1,0 +1,168 @@
+/**
+ * Script que cuida do destaque nas habilitações selecionadas quando
+ * é feita a inscrição no curso.
+ */
+
+function atualizarEstiloDasHabilitacoes() {
+    $("tr[data-habilitacao='edtec']").each(function (index) {
+        var checkbox = $(this).find("input");
+        var estado = checkbox.prop('checked');
+        if (estado) {
+            $(this).addClass('selecionado');
+        }
+        else {
+            $(this).removeClass('selecionado');
+        }
+    });
+}
+
+$(document).ready(function () {
+    atualizarEstiloDasHabilitacoes();
+
+    $("tr[data-habilitacao='edtec']").click(function () {
+        var checkbox = $(this).find("input");
+        var estado = checkbox.is(':checked');//prop('checked');
+        checkbox.prop('checked', !estado);
+        if (estado) {
+            $(this).removeClass('selecionado');
+        }
+        else {
+            $(this).addClass('selecionado');
+        }
+    });
+    
+    $("tr[data-habilitacao='edtec'] input[type='checkbox']").click(function() {
+        var estado = $(this).is(':checked');
+        $(this).prop('checked', !estado);
+        atualizarEstiloDasHabilitacoes();
+    });
+
+    $("tr[data-habilitacao='edtec'] label").click(function() {
+        var checkbox = $(this).parent().parent().find('input');
+        var estado = checkbox.is(':checked');
+        checkbox.prop('checked', !estado);
+        atualizarEstiloDasHabilitacoes();
+    });
+    
+});
+
+function validarCampo(campo, nomeFormatado) {
+    var nomeElemento = '#Inscricao_' + campo;
+    var elemento = $(nomeElemento);
+    if (elemento == null || elemento.val() == null || elemento.val().trim() === '') {
+        return "- " + nomeFormatado + " deve ser preenchido\n";
+    }
+    return '';
+}
+
+function validarCpf() {
+    var strCPF = $("#Inscricao_cpf").val();
+    if (!/^\d+$/.test(strCPF)) {
+        return "- CPF deve conter apenas números\n";
+    }
+    var Soma;
+    var Resto;
+    Soma = 0;
+    if (strCPF == "00000000000") {
+        return "- CPF inválido\n";
+    }
+    for (i = 1; i <= 9; i++)
+        Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (11 - i);
+    Resto = (Soma * 10) % 11;
+    if ((Resto == 10) || (Resto == 11))
+        Resto = 0;
+    if (Resto != parseInt(strCPF.substring(9, 10)))
+        return "- CPF inválido\n";
+    Soma = 0;
+    for (i = 1; i <= 10; i++)
+        Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (12 - i);
+    Resto = (Soma * 10) % 11;
+    if ((Resto == 10) || (Resto == 11))
+        Resto = 0;
+    if (Resto != parseInt(strCPF.substring(10, 11)))
+        return "- CPF inválido\n";
+    return '';
+}
+
+function validarSexo() {
+    var sexo1 = $("#Inscricao_sexo_0").is(":checked");
+    var sexo2 = $("#Inscricao_sexo_1").is(":checked");
+    if (!sexo1 && !sexo2) {
+        return "- Sexo deve ser preenchido\n";
+    }
+    return '';
+}
+
+function validarFormacao() {
+    var numeroDeLinhasDaTabelaDeFormacao = $('#tabela-formacao tr').length;
+    if (numeroDeLinhasDaTabelaDeFormacao <= 2) {
+        return "- Preencha pelo menos uma formação acadêmica\n";
+    }
+    return '';
+}
+
+function validarHabilitacoes() {
+    var nomeCampo = "#Inscricao_habilitacoesEscolhidas_";
+    var numeroHabilitacoesSelecionadas = 0;
+    for (var i = 0; i < 5; ++i) {
+        var campo = $(nomeCampo + i);
+        if ((campo).is(":checked")) {
+            numeroHabilitacoesSelecionadas++;
+        }
+    }
+
+    if (numeroHabilitacoesSelecionadas < 1) {
+        return "- Selecione pelo menos 1 habilitação\n";
+    }
+    if (numeroHabilitacoesSelecionadas > 2) {
+        return "- Selecione no máximo 2 habilitações\n";
+    }
+    return '';
+}
+
+function validarBolsa() {
+    var forma_pagamento = $('#Inscricao_forma_pagamento').val();
+    if (forma_pagamento !== 'bolsa_parcial' && forma_pagamento !== 'bolsa_integral') {
+        return '';
+    }
+
+    var mensagem = '';
+    mensagem += validarCampo('criterio_bolsa', 'Critério para solicitação de bolsa');
+    mensagem += validarCampo('renda_familiar_aproximada', 'Renda familiar aproximada');
+    mensagem += validarCampo('justificativa_bolsa', 'Justificativa para solicitação de bolsa');
+
+    return mensagem;
+}
+
+function validar() {
+    var mensagem = '';
+    var campos = {
+        'cpf': 'CPF',
+        'nome': 'Nome',
+        'sobrenome': 'Sobrenome',
+        'email': 'E-mail',
+        'confirmarEmail': 'Confirmação de e-mail',
+        'data_nascimento': 'Data de nascimento',
+        'naturalidade': 'Naturalidade',
+        'estado_civil': 'Estado civil',
+        'cep': 'CEP',
+        'endereco': 'Endereço',
+        'numero': 'Número',
+        'cidade': 'Cidade',
+        'estado': 'Estado',
+    };
+
+    mensagem += validarCpf();
+    for (campo in campos) {
+        mensagem += validarCampo(campo, campos[campo]);
+    }
+    mensagem += validarSexo();
+    mensagem += validarFormacao();
+    mensagem += validarHabilitacoes();
+//    mensagem += validarBolsa();
+    if (mensagem !== '') {
+        alert(mensagem);
+    }
+
+    return mensagem === '' ? true : false;
+}

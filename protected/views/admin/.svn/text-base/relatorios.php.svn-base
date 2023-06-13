@@ -1,0 +1,11 @@
+<?php
+
+?>
+
+<h1>Relatórios</h1>
+
+<ul>
+    <li><?php echo CHtml::link('Pré-inscrições que não pagaram a inscrição', array('exportador/relatorioDeInscricoesComStatus', 'status' => 0, 'formato' => 'xls')); ?></li>
+    <li><?php echo CHtml::link('Inscrições pagas', array('exportador/relatorioDeInscricoesComStatus', 'status' => 1, 'formato' => 'xls')) ?></li>
+    <li><?php echo CHtml::link('Alunos matriculados', array('exportador/relatorioDeInscricoesComStatus', 'status' => 3, 'formato' => 'xls')) ?></li>
+</ul>

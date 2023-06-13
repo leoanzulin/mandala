@@ -1,0 +1,41 @@
+<?php
+
+class ResetarSenha extends CActiveRecord
+{
+
+    public function tableName()
+    {
+        return 'resetar_senha';
+    }
+
+    public function rules()
+    {
+        return array(
+            array('id, datahora, usuario_cpf', 'required'),
+        );
+    }
+
+    public function relations()
+    {
+        return array(
+            'usuario' => array(self::HAS_MANY, 'Usuario', 'usuario_id'),
+        );
+    }
+
+    public static function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
+
+    /**
+     * Verifica se passou mais de um dia desde a requisição de mudança de senha.
+     * @return boolean
+     */
+    public function passouMaisDeUmDia()
+    {
+        $agora = time();
+        $segundosEmUmDia = 86400;
+        return $agora - strtotime($this->datahora) > $segundosEmUmDia;
+    }
+    
+}

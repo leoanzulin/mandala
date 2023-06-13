@@ -1,0 +1,156 @@
+<div>
+<!--
+    O atributo nivelDeEdicao não estava funcionando dentro do ng-repeat,
+    aparentemente é um bug quando se usa replace: true e ng-repeat no
+    elemento raiz do template.
+    https://stackoverflow.com/questions/29339588/in-directive-template-inside-ng-repeat-scope-not-working
+-->
+
+<!--
+    Mostra "Desenvolvimento de projeto integrador" para alunos de especialização.
+    A oferta desse componente é extraída em um atributo ofertaProjetoIntegrador para
+    ser mostrada neste local separado dos demais componentes.
+-->
+<br>
+<div ng-if="habilitacoes.length > 0 && ofertaProjetoIntegrador != null">
+    <table class="table tabela-inscricao">
+        <tr>
+            <th>Componente Curricular</th>
+            <th ng-repeat="habilitacao in habilitacoes">H{{$index + 1}}</th>
+        </tr>
+        <tr
+            ng-class="{'selecionado': ofertaProjetoIntegrador.selecionada}"
+            ng-click="selecionarComponente(ofertaProjetoIntegrador)"
+        >
+            <td>
+              <b>{{ ofertaProjetoIntegrador.componente.nome }}</b>
+                
+            </td>
+            <td ng-repeat="habilitacao in habilitacoes"
+                ng-style="{'background-color': habilitacao.cor,'font-weight': 'bold'}"
+            >
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <span ng-click="selecionar(ofertaProjetoIntegrador, habilitacao, false); $event.stopPropagation()">
+                        {{ recuperarLetraParaHabilitacao(ofertaProjetoIntegrador, habilitacao.id) }}
+                    </span>
+                    <input
+                        type="checkbox"
+                        ng-model="ofertaProjetoIntegrador.selecionadaParaHabilitacoes[ habilitacao.id ]"
+                        ng-if="podeCriarCheckbox(ofertaProjetoIntegrador)"
+                        ng-show="podeMostrarCheckbox(ofertaProjetoIntegrador)"
+                        ng-click="selecionar(ofertaProjetoIntegrador, habilitacao, true); $event.stopPropagation()"
+                    >
+                    <i class="fa fa-check" aria-hidden="true" ng-show="podeMostrarTick(ofertaProjetoIntegrador)"></i>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!--
+    O período em que a oferta do Projeto Integrador realmente está (12/9999) é escondido pois
+    esse componente é mostrado logo no início da lista.
+-->
+<div ng-repeat="periodo in periodos | orderBy: ['ano', 'mes']"
+    ng-show="deveMostrarPeriodo(periodo)"
+    ng-class="{'esmaecido': mudarEstiloSeOPeriodoEstiverBloqueado(periodo)}"
+    ng-if="!periodo.projetoIntegrador"
+>
+
+    <h2>
+        Ofertas de {{periodo.mes}}/{{periodo.ano}}
+        <span ng-if="mudarEstiloSeOPeriodoEstiverBloqueado(periodo)">(período bloqueado)</span>
+    </h2>
+
+    <table class="table tabela-inscricao">
+        <tr>
+            <th>Componente Curricular</th>
+            <th ng-if="habilitacoes.length == 0"></th>
+            <th ng-if="habilitacoes.length > 0" ng-repeat="habilitacao in habilitacoes">H{{$index + 1}}</th>
+        </tr>
+        <tr
+            ng-repeat="oferta in periodo.ofertas | orderBy: ['-ehNecessaria', 'nome']"
+            ng-class="{'selecionado': oferta.selecionada}"
+            ng-click="selecionarComponente(oferta)"
+        >
+            <td>
+                <b ng-style="{'color': componenteEhObrigatorio(oferta) ? 'red' : ''}">{{oferta.componente.nome}}</b><br>
+                {{ oferta.componente.ementa }}
+                Docentes: {{oferta.nomesDocentes}}<br>
+                <span ng-if="componenteEstaSelecionadoEmOutroPeriodo(oferta)">
+                    Este componente já está selecionado em {{periodoEmQueComponenteEstaSelecionado(oferta)}}
+                </span>
+                <span ng-if="oferta.selecionada && !oferta.componente.ativo">
+                    Componente inativo
+                </span>
+            </td>
+
+            <!-- Alunos de extensão e aperfeiçoamento -->
+            <td ng-if="habilitacoes.length == 0"
+                ng-style="{'font-weight': recuperarFonte(oferta, habilitacao.id)}"
+                ng-click="selecionar(oferta, null, false); $event.stopPropagation()"
+            >
+                <span ng-if="componenteEhObrigatorio(oferta)">{{constantes.LETRA_PRIORIDADE_NECESSARIA}}</span>
+                <input
+                    type="checkbox"
+                    ng-model="oferta.selecionada"
+                    ng-if="podeCriarCheckbox(oferta)"
+                    ng-show="podeMostrarCheckbox(oferta)"
+                    ng-click="selecionar(oferta, null, true); $event.stopPropagation()"
+                >
+                <i class="fa fa-check" aria-hidden="true" ng-show="podeMostrarTick(oferta)"></i>
+            </td>
+
+            <!-- Alunos de especialização -->
+            <td ng-repeat="habilitacao in habilitacoes"
+                class="{{oferta.componente.classesCss[habilitacao.id]}}"
+                ng-style="{
+                    'background-color': recuperarCor(oferta, habilitacao.id),
+                    'font-weight': recuperarFonte(oferta, habilitacao.id)
+                }"
+                ng-click="selecionar(oferta, habilitacao, false); $event.stopPropagation()"
+            >
+                <div
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center;"
+                    ng-click="selecionar(oferta, habilitacao, false); $event.stopPropagation()"
+                >
+                    <span ng-click="selecionar(oferta, habilitacao, false); $event.stopPropagation()">
+                        {{ recuperarLetraParaHabilitacao(oferta, habilitacao.id) }}
+                    </span>
+                    <input
+                        type="checkbox"
+                        ng-model="oferta.selecionadaParaHabilitacoes[ habilitacao.id ]"
+                        ng-if="podeCriarCheckbox(oferta)"
+                        ng-show="podeMostrarCheckbox(oferta)"
+                        ng-click="selecionar(oferta, habilitacao, true); $event.stopPropagation()"
+                    >
+                    <i class="fa fa-check" aria-hidden="true" ng-show="podeMostrarTick(oferta)"></i>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- div escondido para salvar todas as inscrições em ofertas de uma vez -->
+<div ng-repeat="periodo in periodos">
+    <div ng-repeat="oferta in periodo.ofertas">
+        <!-- Alunos de extensão e aperfeiçoamento -->
+        <input
+            name="Inscricao[{{oferta.id}}]"
+            value="true"
+            type="hidden"
+            ng-if="habilitacoes.length == 0 && oferta.selecionada"
+        >
+        <!-- Alunos de especialização -->
+        <div ng-repeat="habilitacaoSelecionada in oferta.selecionadaParaHabilitacoes track by $index">
+            <input
+                name="Inscricao[{{oferta.id}}][]"
+                value="{{$index}}"
+                type="hidden"
+                ng-if="habilitacaoSelecionada"
+            >
+        </div>
+    </div>
+</div>
+
+</div>

@@ -1,0 +1,124 @@
+<?php
+
+class SiteController extends Controller
+{
+
+    public function actionIndex()
+    {
+        $this->redirect(array('pages/view&id=1'));
+    }
+
+    public function actionError()
+    {
+        if ($error = Yii::app()->errorHandler->error) {
+            if (Yii::app()->request->isAjaxRequest)
+                echo $error['message'];
+            else
+                $this->render('error', $error);
+        }
+    }
+
+    public function actionLogin()
+    {
+        $model = new LoginForm;
+
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
+
+        if (isset($_POST['LoginForm'])) {
+            $model->attributes = $_POST['LoginForm'];
+            if ($model->validate() && $model->login()) {
+                $usuario = Usuario::model()->findByPk($model->username);
+                $usuario->atualizarUltimoAcesso();
+                $this->redirecionarParaOLocalAdequado($usuario);
+            }
+        }
+
+        $this->render('login', array('model' => $model));
+    }
+
+    private function redirecionarParaOLocalAdequado($usuario)
+    {
+        // Quando o administrador logar, cria um usuário para todas as
+        // inscrições que estão no sistema e não têm usuário
+        if ($usuario->temPapel('Admin')) {
+            $this->transformarInscricoesEmUsuarios();
+            $this->redirect(Yii::app()->createUrl('admin/gerenciarPreInscricoes'));
+        }
+
+        // Verifica se o usuário preencheu todas as informações necessárias
+        // (informações constantes no novo formulário de cadastro). Se não
+        // preencheu, o força a preencher.
+        $inscricao = Inscricao::model()->findByCpf($usuario->cpf);
+        if (!empty($inscricao) && empty($inscricao->identidade)) {
+            Yii::app()->authManager->assign('InscritoComInformacoesFaltantes', $model->username);
+            $this->redirect(Yii::app()->createUrl('inscricao/informacoesComplementares'));
+        }
+
+        // É um aluno comum
+        $this->redirect(Yii::app()->createUrl('aluno'));
+    }
+
+    public function actionLogout()
+    {
+        Yii::app()->user->logout();
+        $this->redirect(Yii::app()->homeUrl);
+    }
+
+    private function transformarInscricoesEmusuarios()
+    {
+        $todasInscricoesQueNaoSaoUsuarios = Inscricao::model()->findAllByAttributes(array(
+            'eh_usuario' => false
+        ));
+
+        foreach ($todasInscricoesQueNaoSaoUsuarios as $inscricao) {
+            if (!$inscricao->ehUsuario()) {
+                $senha = $inscricao->transformarEmUsuario();
+                Email::mensagemUsuarioCriado($inscricao->nome, $inscricao->email, $inscricao->cpf, $senha);
+            }
+            $inscricao->eh_usuario = true;
+            $inscricao->saveAttributes(array('eh_usuario'));
+            Yii::app()->authManager->assign('InscritoComInformacoesFaltantes', $inscricao->cpf);
+        }
+    }
+
+    public function actionEsqueciSenha()
+    {
+        $houveErro = false;
+
+        if (isset($_POST['solicitar'])) {
+            $cpf = $_POST['cpf'];
+            $dataNascimento = $_POST['data_nascimento'];
+
+            $houveErro = $this->haErro($cpf, $dataNascimento);
+
+            if (!$houveErro) {
+                ResetarSenha::model()->fazerSolicitacao($cpf);
+                $this->redirect(Yii::app()->createUrl('site/login'));
+            }
+        }
+
+        $this->render('esqueciSenha', array(
+            'houveErro' => $houveErro,
+        ));
+    }
+
+    private function haErro($cpf, $dataNascimento)
+    {
+        if (!preg_match('/^\d\d\d\d\d\d\d\d\d\d\d$/', $cpf))
+            return true;
+        if (!preg_match('/^\d\d\/\d\d\/\d\d\d\d$/', $dataNascimento))
+            return true;
+        $inscricao = Inscricao::model()->findByCpf($cpf);
+        $usuario = Usuario::model()->findByPk($cpf);
+        if (empty($inscricao) || empty($usuario))
+            return true;
+        if ($inscricao->data_nascimento != $dataNascimento)
+            return true;
+
+        return false;
+    }
+
+}

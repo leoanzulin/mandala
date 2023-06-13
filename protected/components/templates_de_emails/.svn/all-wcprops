@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/edtec/!svn/ver/72/trunk/protected/components/templates_de_emails
+END
+interna_enviou_documentos.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/edtec/!svn/ver/72/trunk/protected/components/templates_de_emails/interna_enviou_documentos.html
+END
+usuario_criado.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/edtec/!svn/ver/72/trunk/protected/components/templates_de_emails/usuario_criado.html
+END
+link_pagamento_matricula.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/edtec/!svn/ver/72/trunk/protected/components/templates_de_emails/link_pagamento_matricula.html
+END
+inscricao.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/edtec/!svn/ver/72/trunk/protected/components/templates_de_emails/inscricao.html
+END
+resetar_email.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/edtec/!svn/ver/72/trunk/protected/components/templates_de_emails/resetar_email.html
+END

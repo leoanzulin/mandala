@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/models
+END
+AuthChildForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/models/AuthChildForm.php
+END
+AssignmentForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/models/AssignmentForm.php
+END
+GenerateForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/models/GenerateForm.php
+END
+AuthItemForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/edtec/!svn/ver/2/trunk/protected/modules/rights/models/AuthItemForm.php
+END

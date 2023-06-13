@@ -1,0 +1,223 @@
+<?php
+
+/**
+ * Componente que gera arquivos de exportação (listas, planilhas, relatórios).
+ */
+class Exportador
+{
+
+    /**
+     * Método público para acessar os exportadores para XLS e CSV.
+     * 
+     * @param type $cabecalho
+     * @param type $dados
+     * @param type $filename
+     * @param type $formato
+     */
+    public static function exportar($cabecalho, $dados, $filename, $formato)
+    {
+        switch ($formato) {
+            case 'xls':
+                Exportador::exportarXls($cabecalho, $dados, $filename);
+                break;
+            case 'csv':
+                Exportador::exportarCsv($cabecalho, $dados, $filename);
+                break;
+            case 'pdf':
+                Exportador::exportarPdf($cabecalho, $dados, $filename);
+                break;
+        }
+    }
+
+    /**
+     * Gera arquivos CSV. 
+     */
+    private static function exportarCsv($cabecalho, $dados, $filename = 'lista.txt')
+    {
+        // Configurações padrão do CSV
+        $csv_terminated = "\r\n";
+        $csv_separator = ",";
+        $csv_enclosed = '"';
+        $csv_escaped = "\\";
+
+        if (!is_array($cabecalho)) {
+            $quantidade_campos = count(explode(',', $cabecalho));
+        } else {
+            $quantidade_campos = count($cabecalho);
+            $cabecalho = implode(',', $cabecalho);
+        }
+        $saida = $cabecalho . $csv_terminated;
+
+        foreach ($dados as $registro) {
+            $linha = '';
+            for ($i = 0; $i < $quantidade_campos; $i++) {
+                if ($registro[$i] == '1' || $registro[$i] != '') {
+                    if ($csv_enclosed == '')
+                        $linha .= $registro[$i];
+                    else
+                        $linha .= $csv_enclosed . str_replace($csv_enclosed, $csv_escaped . $csv_enclosed, $registro[$i]) . $csv_enclosed;
+                } else
+                    $linha .= '';
+
+                if ($i < $quantidade_campos - 1)
+                    $linha .= $csv_separator;
+            }
+            $saida .= $linha;
+            $saida .= $csv_terminated;
+        }
+
+        header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+        header("Content-Length: " . strlen($saida));
+        header("Content-type: application/csv");
+        header("Content-Disposition: attachment; filename=\"{$filename}\"");
+        echo $saida;
+        Yii::app()->end();
+    }
+
+    /**
+     * Gera arquivos XLS.
+     */
+    private static function exportarXls($cabecalho, $dados, $filename = 'lista.xls')
+    {
+        Yii::import('ext.phpexcel.XPHPExcel');
+        $objPHPExcel = XPHPExcel::createPHPExcel();
+        $objPHPExcel->getProperties()->setCreator("SEad / UFSCar");
+
+        $objPHPExcel->setActiveSheetIndex(0);
+
+        $letra = 'A';
+        foreach ($cabecalho as $coluna) {
+            $objPHPExcel->getActiveSheet()->getColumnDimension($letra)->setAutoSize(true);
+            $objPHPExcel->getActiveSheet()->setCellValue($letra . '1', $coluna);
+            $objPHPExcel->getActiveSheet()->getStyle($letra . '1')->getFont()->setBold(true);
+            $letra++;
+        }
+
+        $i = 2;
+        foreach ($dados as $registro) {
+            $letra = 'A';
+            foreach ($registro as $valor) {
+//				$objPHPExcel->getActiveSheet()->setCellValue($letra . $i, $valor);
+                $objPHPExcel->getActiveSheet()->setCellValueExplicit($letra . $i, $valor, PHPExcel_Cell_DataType::TYPE_STRING);
+                $letra++;
+            }
+            $i++;
+        }
+
+        header("Content-type: application/vnd.ms-excel");
+        header("Content-Disposition: attachment; filename=\"{$filename}\"");
+        header("Cache-Control: max-age=0");
+        $exceldoc = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+        $exceldoc->save('php://output');
+        Yii::app()->end();
+    }
+
+    private static function exportarPdf($cabecalho, $dados, $filename = 'lista.pdf')
+    {
+        $pdf = new ExportarPdf();
+        $pdf->AliasNbPages();
+
+        $pdf->AddPage();
+        // Cabeçalho
+        $pdf->Cell(80);
+        $pdf->SetFont('Arial', 'B', 16);
+        $titulo = Exportador::formatarTituloAPartirDoNomeDeArquivo($filename);
+        $pdf->Cell(30, 5, $titulo, 0, 1, 'C');
+        $pdf->Ln(10);
+
+        // Colors, line width and bold font
+        $pdf->SetFillColor(0, 0, 128);
+        $pdf->SetTextColor(255);
+        $pdf->SetDrawColor(0, 0, 128);
+        $pdf->SetLineWidth(.3);
+        $pdf->SetFont('', 'B', 12);
+        // Header
+        $w = array(120, 20, 30, 20);
+        for ($i = 0; $i < count($cabecalho); $i++)
+            $pdf->Cell($w[$i], 7, utf8_decode ($cabecalho[$i]), 1, 0, 'C', true);
+        $pdf->Ln();
+        // Color and font restoration
+        $pdf->SetFillColor(224, 235, 255);
+        $pdf->SetTextColor(0);
+        $pdf->SetFont('');
+        // Data
+        $fill = false;
+        foreach ($dados as $registro) {
+            $pdf->Cell($w[0], 6, utf8_decode($registro[0]), 'LR', 0, 'L', $fill);
+            $pdf->Cell($w[1], 6, number_format($registro[1], 2, ',', ''), 'LR', 0, 'C', $fill);
+            $pdf->Cell($w[2], 6, number_format($registro[2], 2, ',', '') . '%', 'LR', 0, 'C', $fill);
+            $pdf->Cell($w[3], 6, number_format($registro[3]), 'LR', 0, 'C', $fill);
+            $pdf->Ln();
+            $fill = !$fill;
+        }
+        // Closing line
+        $pdf->Cell(array_sum($w), 0, '', 'T');
+
+        $pdf->Output('I', $filename, true);
+        Yii::app()->end();
+    }
+
+    private static function formatarTituloAPartirDoNomeDeArquivo($filename)
+    {
+        $titulo = ucfirst($filename);
+        $titulo = substr($titulo, 0, -4);
+        preg_match('/^Oferta da disciplina (.*) (\d\d\d\d)\-(\d)$/', $titulo, $matches);
+        $titulo = "Oferta da disciplina '{$matches[1]}' {$matches[2]}/{$matches[3]}";
+        return $titulo;
+    }
+
+    /**
+     * Gera um relatório detalhado sobre um determinado curso.
+     * 
+     * @param integer $curso_id ID do curso cujo relatório será gerado
+     */
+    public static function exportarPdf2($cabecalho, $dados, $filename = 'lista.pdf')
+    {
+        $mpdf = Yii::app()->ePdf->mpdf();
+        $mpdf->setFooter('{PAGENO}');
+        ob_start();
+        require(Yii::app()->baseUrl . '/protected/components/modelos_html/exportador_oferta.html');
+        $html = ob_end_clean();
+
+        $mpdf->WriteHTML($html);
+        $mpdf->Output();
+
+        Yii::app()->end();
+    }
+
+    /**
+     * Gera uma célula de um campo booleano formatada corretamente.
+     * 
+     * @param boolean $condicao Se o campo é verdadeiro ou falso
+     * @param string $texto O texto a ser mostrado na célula
+     * @param string $classeTd Classe a ser aplicada ao elemento TD
+     */
+    private function gerarCelulaBooleana($condicao, $texto, $classeTd = '')
+    {
+        if (!empty($classeTd))
+            $classeTd = ' class="' . $classeTd . '"';
+        $diretorioImagem = Yii::app()->baseUrl . '/images/';
+        if ($condicao === true)
+            $celula = '<td' . $classeTd . '>' . $texto . '<img src="' . $diretorioImagem . 'aprovar.png' . '"></td>';
+        else
+            $celula = '<td' . $classeTd . '><p class="falso">' . $texto . '</p><img src="' . $diretorioImagem . 'recusar.png' . '"></td>';
+        return $celula;
+    }
+
+    public static function relatorioPdf($dados)
+    {
+
+        $pdf = new FPDF();
+        $pdf->AddPage();
+        $pdf->SetFont('Arial', '', 14);
+
+        $pdf->cell(0, 10, 'Lista de alunos', 0, 1, 'C');
+
+        foreach ($dados as $chave => $valor) {
+            $pdf->write(10, $chave . ' - ' . utf8_decode($valor));
+            $pdf->ln();
+        }
+        $pdf->Output();
+    }
+
+}

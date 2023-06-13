@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * Controlador que implementa uma interface REST para o modelo
+ * ComponenteCurricular.
+ * 
+ * Métodos:
+ * 
+ * componenteCurricular/get&id=X
+ * - Retorna um objeto JSON representando a componente curricular de ID X.
+ * 
+ * componenteCurricular/todos
+ * - Retorna um vetor contendo todas as componentes curriculares do sistema e
+ *   suas prioridades para cada habilitacação.
+ * 
+ */
+class ComponenteCurricularController extends Controller
+{
+
+    public function filters()
+    {
+        return array('rights');
+    }
+
+    public function actionGet($id)
+    {
+        $componente = ComponenteCurricular::model()->findByPk($id);
+        $this->respostaJSON($componente->toJSON());
+    }
+
+    public function actionTodos()
+    {
+        $componentes = ComponenteCurricular::model()->findAll();
+        $componentesArray = array_map(function($componente) {
+            return $componente->asArray();
+        }, $componentes);
+        $this->respostaJSON(json_encode($componentesArray));
+    }
+
+}

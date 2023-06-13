@@ -1,0 +1,122 @@
+body {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 0.7em;
+}
+
+table.historico, table.simulador {
+    width: 100%;
+    border: 1px solid #666;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+table.historico td, table.simulador td {
+    padding: 5px;
+    border: none;
+}
+
+table.historico > tr > th {
+    width: 15px;
+    text-align: center;
+}
+
+table.historico tr.simulador-linha td {
+    width: 15px;
+    text-align: center
+}
+
+table.historico th.habilitacao {
+    width: 40px;
+}
+
+table.historico td.habilitacao {
+    text-align: center;
+}
+
+div.simulador-resumo {
+    margin: 30px 0;
+    padding: 15px;
+    border: 1px solid #666;
+}
+
+div.simulador-resumo table td {
+    padding: 5px;
+}
+
+table.simulador tr.cabecalho td {
+    border: 1px solid #666;
+}
+
+table.simulador tr.linha-cabecalho th {
+    text-align: center;
+    padding: 2px;
+}
+
+table.simulador tr.linha-cabecalho th.habilitacao {
+    width: 25px;
+}
+
+table.simulador tr.linha-cabecalho th.carga-horaria {
+    width: 50px;
+}
+
+table.simulador tr.linha-componente {
+    border: 1px solid #666;
+}
+
+table.simulador tr.linha-componente td {
+    text-align: center;
+    padding: 5px
+}
+
+table.simulador tr.linha-componente td.componente {
+    text-align: left;
+}
+
+table.simulador tr.linha-componente td.prioridade3 { background-color: #e5b8b7; font-weight: bold; }
+table.simulador tr.linha-componente td.prioridade4 { background-color: #fabf8f; font-weight: bold; }
+table.simulador tr.linha-componente td.prioridade1 { background-color: #ccc0d9; font-weight: bold; }
+table.simulador tr.linha-componente td.prioridade2 { background-color: #b6dde8; font-weight: bold; }
+table.simulador tr.linha-componente td.prioridade5 { background-color: #c2d69b; font-weight: bold; }
+
+table.simulador tr.linha-componente td.prioridade-habilitacao {
+    width: 25px;
+}
+
+table.simulador tr.linha-componente td.carga-horaria {
+    width: 50px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+p.cabecalho {
+    font-size:1.5em;
+    line-height: 1.3em;
+    padding-bottom: 13px;
+}
+
+table.historico thead tr {
+    border: 1px solid #666;
+}
+
+table.historico thead tr th.item {
+    width: 60px;
+    padding: 3px;
+}
+
+table.historico tbody tr.linha-periodo {
+    border: 1px solid #666;
+    background: #F0F0F0;
+}
+
+table.historico tbody tr.linha-oferta td.item {
+    text-align: center;
+    width: 60px;
+}

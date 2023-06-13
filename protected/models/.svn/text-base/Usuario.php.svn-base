@@ -1,0 +1,82 @@
+<?php
+
+/**
+ * This is the model class for table "usuario".
+ *
+ * The followings are the available columns in table 'usuario':
+ * @property string $cpf
+ * @property string $nome
+ * @property string $senha
+ * @property string $ultimo_acesso
+ */
+class Usuario extends CActiveRecord
+{
+
+    public function tableName()
+    {
+        return 'usuario';
+    }
+
+    public function rules()
+    {
+        return array(
+            array('cpf, senha, nome', 'required'),
+            array('cpf, senha, nome', 'length', 'max' => 256),
+            array('cpf, senha, nome', 'safe', 'on' => 'search'),
+        );
+    }
+
+    public function relations()
+    {
+        return array(
+        );
+    }
+
+    public function attributeLabels()
+    {
+        return array(
+            'cpf' => 'CPF',
+            'senha' => 'Senha',
+            'nome' => 'Nome',
+        );
+    }
+
+    public static function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
+
+    /**
+     * @return Verdadeiro se o usuário tem o papel $papel, falso caso contrário.
+     */
+    public function temPapel($papel)
+    {
+        $registros = Authassignment::model()->findAllByAttributes(array('userid' => $this->cpf));
+        $papeis = array_map(function($registro) {
+            return $registro->itemname;
+        }, $registros);
+//        die(var_dump($papeis));
+        return in_array($papel, $papeis);
+//        die(var_dump(array_keys(Rights::getAssignedRoles($this->cpf))));
+        return in_array($papel, array_keys(Rights::getAssignedRoles($this->cpf)));
+    }
+
+    public function atualizarUltimoAcesso()
+    {
+        $this->ultimo_acesso = date('Y-m-d H:i:s', time());
+        $this->update();
+    }
+
+    public function trocarSenha($novaSenha)
+    {
+        $hasher = new PasswordHash(8, false);
+        $this->senha = $hasher->HashPassword($novaSenha);
+        $this->update();
+    }
+
+    public function __toString()
+    {
+        return "[Usuário(a) {$this->nome} ({$this->cpf})]";
+    }
+
+}

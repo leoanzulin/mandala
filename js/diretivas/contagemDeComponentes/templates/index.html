@@ -1,0 +1,161 @@
+<div class="resumo-inscricoes">
+
+    <div>
+        <table class="criterios">
+            <thead><tr><th colspan="2">Critérios</th></tr></thead>
+            <tbody>
+                <tr
+                    ng-class="{
+                        'nao-cumpriu-criterios': !cumpriuNumeroMinimoDeComponentesObrigatorios(),
+                        'cumpriu-criterios': cumpriuNumeroMinimoDeComponentesObrigatorios()
+                    }"
+                >
+                    <td>Selecionou {{constantes.NUMERO_MINIMO_DE_COMPONENTES_NECESSARIAS}} {{constantes.LETRA_PRIORIDADE_NECESSARIA}}?</td>
+                    <td>
+                        <i class="fa fa-times" ng-if="!cumpriuNumeroMinimoDeComponentesObrigatorios()"></i>
+                        <i class="fa fa-check" ng-if="cumpriuNumeroMinimoDeComponentesObrigatorios()"></i>
+                    </td>
+                </tr>
+                <tr
+                    ng-repeat="habilitacao in habilitacoes"
+                    ng-class="{
+                        'nao-cumpriu-criterios': !cumpriuNumeroMinimoDeComponentesOptativosParaHabilitacao($index),
+                        'cumpriu-criterios': cumpriuNumeroMinimoDeComponentesOptativosParaHabilitacao($index)
+                    }"
+                >
+                    <td>H{{$index + 1}} tem {{constantes.NUMERO_MINIMO_DE_COMPONENTES_OPTATIVAS}} ou mais {{constantes.LETRA_PRIORIDADE_OPTATIVA}}?</td>
+                    <td>
+                        <i class="fa fa-times" ng-if="!cumpriuNumeroMinimoDeComponentesOptativosParaHabilitacao($index)"></i>
+                        <i class="fa fa-check" ng-if="cumpriuNumeroMinimoDeComponentesOptativosParaHabilitacao($index)"></i>
+                    </td>
+                </tr>
+                <tr
+                    ng-repeat="habilitacao in habilitacoes"
+                    ng-class="{
+                        'nao-cumpriu-criterios': !cumpriuNumeroIdealDeComponentesParaHabilitacao($index),
+                        'cumpriu-criterios': cumpriuNumeroIdealDeComponentesParaHabilitacao($index)
+                    }"
+                >
+                    <td>H{{$index + 1}} tem entre {{constantes.NUMERO_MINIMO_DE_COMPONENTES_PARA_CUMPRIR_HABILITACOES[$index + 1]}} e {{constantes.NUMERO_MAXIMO_DE_COMPONENTES_POR_HABILITACAO[$index + 1]}} no total?</td>
+                    <td>
+                        <i class="fa fa-times" ng-if="!cumpriuNumeroIdealDeComponentesParaHabilitacao($index)"></i>
+                        <i class="fa fa-check" ng-if="cumpriuNumeroIdealDeComponentesParaHabilitacao($index)"></i>
+                    </td>
+                </tr>
+                <tr
+                    ng-class="{
+                        'nao-cumpriu-criterios': !cumpriuNumeroIdealDeComponentesDistintos(),
+                        'cumpriu-criterios': cumpriuNumeroIdealDeComponentesDistintos()
+                    }"
+                >
+                    <td>
+                        O total de componentes distintos está entre {{constantes.NUMERO_MINIMO_DE_COMPONENTES_TOTAIS_SOMANDO_TODAS_HABILITACOES[habilitacoes.length]}} e {{constantes.NUMERO_MAXIMO_DE_COMPONENTES_TOTAIS_SOMANDO_TODAS_HABILITACOES[habilitacoes.length]}}?
+                    </td>
+                    <td>
+                        <i class="fa fa-times" ng-if="!cumpriuNumeroIdealDeComponentesDistintos()"></i>
+                        <i class="fa fa-check" ng-if="cumpriuNumeroIdealDeComponentesDistintos()"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="contagem-de-componentes">
+            <thead>
+                <tr>
+                    <th>Componentes</th>
+                    <th ng-repeat="habilitacao in habilitacoes">H{{$index + 1}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{constantes.LETRA_PRIORIDADE_NECESSARIA}} (min. {{constantes.NUMERO_MINIMO_DE_COMPONENTES_NECESSARIAS}})</td>
+                    <td
+                        ng-repeat="habilitacao in habilitacoes"
+                        ng-class="{
+                            'nao-cumpriu-criterios': !cumpriuNumeroMinimoDeComponentesObrigatorios(),
+                            'cumpriu-criterios': cumpriuNumeroMinimoDeComponentesObrigatorios()
+                        }"
+                    >
+                        {{numeroDeComponentesObrigatorios($index)}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{constantes.LETRA_PRIORIDADE_OPTATIVA}} (min. {{constantes.NUMERO_MINIMO_DE_COMPONENTES_OPTATIVAS}})</td>
+                    <td
+                        ng-repeat="habilitacao in habilitacoes"
+                        ng-class="{
+                            'nao-cumpriu-criterios': !cumpriuNumeroMinimoDeComponentesOptativosParaHabilitacao($index),
+                            'cumpriu-criterios': cumpriuNumeroMinimoDeComponentesOptativosParaHabilitacao($index)
+                        }"
+                    >
+                        {{numeroDeComponentesOptativos($index)}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{constantes.LETRA_PRIORIDADE_LIVRE}}</td>
+                    <td
+                        ng-repeat="habilitacao in habilitacoes"
+                        class="cumpriu-criterios"
+                    >
+                        {{numeroDeComponentesLivres($index)}}
+                    </td>
+                </tr>
+                <tr style="border-top: 1px solid #AAA">
+                    <td>
+                        Distintos
+                        <i
+                            class="fa fa-question-circle"
+                            title="Componentes distintos são aqueles que não estão sendo compartilhados com uma habilitação anterior"
+                        >
+                    </td>
+                    <td
+                        ng-repeat="habilitacao in habilitacoes"
+                        ng-class="{
+                            'nao-cumpriu-criterios': !cumpriuNumeroIdealDeComponentesDistintos(),
+                            'cumpriu-criterios': cumpriuNumeroIdealDeComponentesDistintos()
+                        }"
+                    >
+                        {{numeroDeComponentesDistintos($index)}}
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td
+                        ng-repeat="habilitacao in habilitacoes"
+                        ng-class="{
+                            'excedeu-total': excedeuNumeroIdealDeComponentesParaHabilitacao($index),
+                            'cumpriu-criterios': cumpriuNumeroIdealDeComponentesParaHabilitacao($index),
+                            'nao-cumpriu-criterios': !cumpriuNumeroIdealDeComponentesParaHabilitacao($index)
+                        }"
+                    >
+                        {{cargaHorariaTotal().totalHabilitacoes[$index + 1]}}
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p ng-if="algumaHabilitacaoExcedeuTotal()" class="explicacao-total">
+            Sua trilha tem mais componentes que o máximo previsto.
+            Se desejar mantê-la assim, <span style="color: red">pode haver cobrança de parcelas extras</span>.
+        </p>
+
+    </div>
+
+
+    <input name="ContagemDeComponentes[total_geral]" value="{{cargaHorariaTotal().total}}" type="hidden">
+    <div ng-repeat="habilitacao in habilitacoes" ng-show="false">
+        <input name="ContagemDeComponentes[{{$index + 1}}][habilitacao_id]" value="{{habilitacao.id}}" type="hidden">
+        <input name="ContagemDeComponentes[{{$index + 1}}][necessarias]" value="{{numeroDeComponentesObrigatorios($index)}}" type="hidden">
+        <input name="ContagemDeComponentes[{{$index + 1}}][necessarias_ok]" value="true" type="hidden" ng-if="cumpriuNumeroMinimoDeComponentesObrigatorios()">
+        <input name="ContagemDeComponentes[{{$index + 1}}][optativas]" value="{{numeroDeComponentesOptativos($index)}}" type="hidden">
+        <input name="ContagemDeComponentes[{{$index + 1}}][optativas_ok]" value="true" type="hidden" ng-if="cumpriuNumeroMinimoDeComponentesOptativosParaHabilitacao($index)">
+        <input name="ContagemDeComponentes[{{$index + 1}}][livres]" value="{{numeroDeComponentesLivres($index)}}" type="hidden">
+        <input name="ContagemDeComponentes[{{$index + 1}}][livres_ok]" value="true" type="hidden" ng-if="true">
+        <input name="ContagemDeComponentes[{{$index + 1}}][total]" value="{{cargaHorariaTotal().totalHabilitacoes[$index + 1]}}" type="hidden">
+        <input name="ContagemDeComponentes[{{$index + 1}}][total_ok]" value="true" type="hidden" ng-if="cumpriuNumeroIdealDeComponentesParaHabilitacao($index)">
+        <input name="ContagemDeComponentes[{{$index + 1}}][total_excedido]" value="true" type="hidden" ng-if="algumaHabilitacaoExcedeuTotal()">
+    </div>
+
+</div>

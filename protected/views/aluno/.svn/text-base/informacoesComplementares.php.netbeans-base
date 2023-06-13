@@ -1,0 +1,167 @@
+<?php
+/* @var $this AlunoController */
+/* @var $dataProvider CActiveDataProvider */
+?>
+
+<h1>Informações complementares</h1>
+<br>
+
+<p>Caro(a) <?php echo $usuario->nome ?>, antes de continuar, precisamos de mais algumas informações.</p>
+
+<div class="form">
+
+<br>
+<p class="explicacao">Campos com * são obrigatórios</p>
+    
+<?php
+	echo CHtml::beginForm(
+		Yii::app()->createUrl('aluno/informacoesComplementares'),
+		'post',
+		array('name'=>'formInformacoesComplementares')
+	);
+?>
+    
+    <fieldset><legend>Informações pessoais</legend>
+
+    <div class="row">
+        <?php echo CHtml::label('* Tipo de identidade', 'tipo_identidade');
+        echo CHtml::dropDownList('tipo_identidade', 'rg', array(
+            'rg' => 'RG',
+            'cnh' => 'CNH',
+            'passaporte' => 'Passaporte'
+        ));
+        if (!empty($erros['tipo_identidade'])) {
+            echo '<span class="errorMessage">Tipo de identidade deve ser selecionada</span>';
+        }?>
+        
+    </div>
+        
+    <div class="row">
+    <?php 
+        echo CHtml::label('* Identidade', 'identidade');
+        echo CHtml::textField('identidade', '');
+        if (!empty($erros['identidade'])) {
+            echo '<span class="errorMessage">Idnetidade deve ser preenchida</span>';
+        }
+    ?>
+        
+    </div>
+
+    <div class="row">
+    <?php
+        echo CHtml::label('* Órgão expedidor', 'orgao_expedidor');
+        echo CHtml::textField('orgao_expedidor', '');
+        if (!empty($erros['orgao_expedidor'])) {
+            echo '<span class="errorMessage">Órgão expedidor deve ser preenchido</span>';
+        }
+    ?>
+    </div>
+
+    <br>
+    <div class="row">
+    <?php
+        echo CHtml::label('Número de Whatsapp', 'whatsapp');
+        echo CHtml::textField('whatsapp', '');
+    ?>
+    </div>
+
+    <div class="row">
+    <?php
+        echo CHtml::label('Usuário no Skype', 'skype');
+        echo CHtml::textField('skype', '');
+    ?>
+    </div>
+        
+    </fieldset>
+    
+    <fieldset><legend>Habilitações</legend>
+
+        <h3>* Habilitação prioritária</h3>
+        <!--<p class="note">Selecione a habilitação de maior preferência</p>-->
+        
+        <?php
+        if (!empty($erros['habilitacao1'])) {
+            echo '<span class="errorMessage">A habilitação prioritária deve ser escolhida</span>';
+        }
+        ?>
+        
+        <div class="row checkboxes">
+            <?php //echo $form->error($model, 'habilitacoesEscolhidas'); ?>
+            <table>
+                <tr data-habilitacao="edtec"><td><?php echo CHtml::radioButton('habilitacao1', true, array('id' => 'habilitacao1_g', 'value' => 'g')); ?></td><td><label for="habilitacao1_g">Gestão da Educação a Distância</label></td></tr>
+                <tr data-habilitacao="edtec"><td><?php echo CHtml::radioButton('habilitacao1', false, array('id' => 'habilitacao1_d', 'value' => 'd')); ?></td><td><label for="habilitacao1_d">Docência Virtual</label></td></tr>
+                <tr data-habilitacao="edtec"><td><?php echo CHtml::radioButton('habilitacao1', false, array('id' => 'habilitacao1_m', 'value' => 'm')); ?></td><td><label for="habilitacao1_m">Mídias na Educação</label></td></tr>
+                <tr data-habilitacao="edtec"><td><?php echo CHtml::radioButton('habilitacao1', false, array('id' => 'habilitacao1_t', 'value' => 't')); ?></td><td><label for="habilitacao1_t">Produção e Uso de Tecnologias para Educação</label></td></tr>
+                <tr data-habilitacao="edtec"><td><?php echo CHtml::radioButton('habilitacao1', false, array('id' => 'habilitacao1_p', 'value' => 'p')); ?></td><td><label for="habilitacao1_p">Design Instrucional (Projeto e Desenho Pedagógico)</label></td></tr>
+            </table>
+        </div>
+        
+        <h3>* Habilitação secundária (demandará investimento adicional)</h3>
+
+        <?php
+        if (!empty($erros['habilitacao2'])) {
+            echo '<span class="errorMessage">A habilitação secundária deve ser escolhida</span>';
+        }
+        ?>
+
+        <div class="row checkboxes">
+            <?php //echo $form->error($model, 'habilitacoesEscolhidas'); ?>
+            <table>
+                <tr data-habilitacao="edtec"><td><?php echo CHtml::radioButton('habilitacao2', true, array('id' => 'habilitacao2_x', 'value' => 'x')); ?></td><td><label for="habilitacao2_x">Nenhuma</label></td></tr>
+                <tr data-habilitacao="edtec"><td><?php echo CHtml::radioButton('habilitacao2', false, array('id' => 'habilitacao2_g', 'value' => 'g')); ?></td><td><label for="habilitacao2_g">Gestão da Educação a Distância</label></td></tr>
+                <tr data-habilitacao="edtec"><td><?php echo CHtml::radioButton('habilitacao2', false, array('id' => 'habilitacao2_d', 'value' => 'd')); ?></td><td><label for="habilitacao2_d">Docência Virtual</label></td></tr>
+                <tr data-habilitacao="edtec"><td><?php echo CHtml::radioButton('habilitacao2', false, array('id' => 'habilitacao2_m', 'value' => 'm')); ?></td><td><label for="habilitacao2_m">Mídias na Educação</label></td></tr>
+                <tr data-habilitacao="edtec"><td><?php echo CHtml::radioButton('habilitacao2', false, array('id' => 'habilitacao2_t', 'value' => 't')); ?></td><td><label for="habilitacao2_t">Produção e Uso de Tecnologias para Educação</label></td></tr>
+                <tr data-habilitacao="edtec"><td><?php echo CHtml::radioButton('habilitacao2', false, array('id' => 'habilitacao2_p', 'value' => 'p')); ?></td><td><label for="habilitacao2_p">Design Instrucional (Projeto e Desenho Pedagógico)</label></td></tr>
+            </table>
+        </div>
+
+    </fieldset>
+    
+    <fieldset><legend>* Modalidade do curso</legend>
+
+    <?php
+    if (!empty($erros['modalidade'])) {
+        echo '<span class="errorMessage">A modalidade do curso deve ser escolhida</span>';
+    }
+    ?>
+        
+    <?php echo CHtml::radioButton('modalidade', true, array('id' => 'modalidade_distancia', 'value' => 'distancia')); ?>
+    <label for="modalidade_distancia">A distância</label>
+    <p class="explicacao">(curso a distância, com encontros presenciais para avaliação, realizados nas férias)</p>
+        
+    <?php echo CHtml::radioButton('modalidade', false, array('id' => 'modalidade_presencial', 'value' => 'presencial')); ?>
+    <label for="modalidade_presencial">Presencial</label>
+    <p class="explicacao">(aulas na sexta-feira a noite e sábado manhã e tarde)</p>
+
+    <?php echo CHtml::radioButton('modalidade', false, array('id' => 'modalidade_mista', 'value' => 'mista')); ?>
+    <label for="modalidade_mista">Mista</label>
+    <p class="explicacao">(com alguns componentes pela Educação a Distância e outros presencialmente).</p>
+
+    </fieldset>
+    
+    <fieldset><legend>* É candidato à bolsa de estudos?</legend>
+    <?php
+    if (!empty($erros['candidato_bolsa'])) {
+        echo '<span class="errorMessage">A candidatura à bolsa de estudos deve ser escolhida</span>';
+    }
+    ?>
+    <?php echo CHtml::radioButton('candidato_bolsa', true, array('id' => 'candidato_bolsa_nao', 'value' => 'nao')); ?>
+    <label for="candidato_bolsa_nao">Não</label>
+    <?php echo CHtml::radioButton('candidato_bolsa', false, array('id' => 'candidato_bolsa_sim', 'value' => 'sim')); ?>
+    <label for="candidato_bolsa_sim">Sim</label>
+    </fieldset>
+
+    <fieldset><legend>Se desejar, deixe comentários e sugestões no campo abaixo</legend>
+    <?php echo Chtml::textArea('sugestoes_comentarios', '', array(
+        'maxlength' => 3000, 'rows' => 6, 'cols' => 100
+    )); ?>
+    </fieldset>
+    
+    <div class="row">
+    <?php echo CHtml::submitButton('Continuar', array(
+        'onClick' => 'js:return validar();',
+    )); ?>
+    </div>
+
+<?php echo CHtml::endForm(); ?>
