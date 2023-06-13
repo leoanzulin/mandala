@@ -399,7 +399,7 @@ Yii::app()->clientScript->registerScript('scripts_locais', "
 
     </fieldset>
 
-    <fieldset><legend>* É candidato à bolsa de estudos?</legend>
+    <fieldset><legend>* Você irá solicitar bolsa de 40%? Pré-requisito: atuar como professor(a) da Educação Básica ou estar desempregado(a)</legend>
         <?php echo $form->error($model, 'candidato_a_bolsa'); ?>
 
         <?php echo $form->radioButton($model, 'candidato_a_bolsa', array('id' => 'candidato_bolsa_nao', 'value' => 'nao', 'uncheckValue' => null)); ?>
