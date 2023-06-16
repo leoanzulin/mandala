@@ -221,7 +221,7 @@ class Inscricao extends ActiveRecord
             'documento_diploma' => 'Diploma da maior titulação',
             'documento_comprovante_residencia' => 'Comprovante de residência',
             'documento_curriculo' => 'Currículo',
-            'documento_justificativa' => 'Justificativa de próprio punho (opcional)',
+            'documento_justificativa' => 'Documento bolsa (apenas para bolsista)',
             //
             'pagou_inscricao' => 'Pagou a inscrição?',
             'pagou_matricula' => 'Pagou a matrícula?',
