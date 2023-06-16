@@ -415,8 +415,7 @@ Yii::app()->clientScript->registerScript('scripts_locais', "
             <li>Apenas <b>cópias simples</b> dos documentos são necessárias</li>
             <li>Formatos aceitos: PDF, JPG, GIF, PNG</li>
             <li>Para o currículo: DOC, DOCX, PDF, JPG, GIF, PNG</li>
-            <li>Justificativa: Opcional, em caso de pedido de bolsa, o documento deve ser escrito de próprio punho</li>
-            <li>Justificativa de próprio punho e documentos comprobatórios (holerites, declarações etc.) em um único arquivo (ZIP).</li>
+            <li>Documentos bolsa: comprovante para professores da educação básica (Holerite, Carteira de trabalho ou Declaração da Instituição, apenas 1); comprovante para desempregados (Carteira de trabalho com o último registro).</li>
             <li>Tamanho máximo dos arquivos: 2MB</li>
         </ul>
         <br>
